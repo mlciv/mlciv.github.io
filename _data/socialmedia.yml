@@ -1,15 +1,10 @@
 - name: GitHub
-  url: http://github.com/
+  url: http://github.com/mlciv
   class: icon-github
   title: ""
 
-- name: YouTube
-  url: http://www.youtube.com/
-  class: icon-youtube
-  title: ""
-
 - name: Twitter
-  url: http://twitter.com/
+  url: http://twitter.com/ijiessie
   class: icon-twitter
   title: ""
 

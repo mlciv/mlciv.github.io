@@ -2,6 +2,7 @@
 layout: page
 title: "Note3-AofA: Recurrence"
 date: 2015-09-19 16:31
+mathjax : true
 comments: true
 categories: algo
 ---

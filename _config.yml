@@ -29,6 +29,7 @@ baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
+# improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 
 # This URL points directly to the images directory making
@@ -37,7 +38,7 @@ improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://blog.mlciv.com/assets/images/'
+urlimg: 'https://blog.mlciv.com/assets/img/'
 
 
 # Logo size is 600x80 pixels
@@ -54,7 +55,7 @@ paginate_path: "blog/page:num"
 
 # Theme works best with Kramdown (using the table of contents function)
 markdown: kramdown
-permalink: /:categories/:title/
+permalink: /blog/:year/:month/:day/:title/¬
 highlight: rouge
 gems: [jekyll-paginate]
 excerpt_separator: "<!--more-->"
@@ -102,7 +103,7 @@ defaults:
       show_meta: false 	# Hide metadata for all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: phlow     # Default author for pages
+      author: jiec# Default author for pages
   -
     scope:
       path: ""
@@ -110,8 +111,8 @@ defaults:
     values:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
-      comments: false
-      author: phlow     # Default author for posts
+      comments: true
+      author: jiec # Default author for posts
 
 
 
@@ -195,7 +196,7 @@ msapplication_tilecolor:                "#fabb00"
 #
 # used in _includes/comments
 
-# disqus_shortname: 
+disqus_shortname: jcao
 
 
 #      _____
@@ -219,9 +220,18 @@ sass:
 #
 # used in _includes/footer_scripts
 
-# google_analytics_tracking_id: 
+google_analytics_tracking_id: 'UA-50404010-1'
 
-
+page-view:
+    service_account_email:  461260937888-o22j71i9698fb104jdaiib4v3dcneqlu@developer.gserviceaccount.com
+    key_file: 7e1ec041d58a559b21c7036f143347936ddb1b78-privatekey.p12
+    key_secret: notasecret    # service account private key's password
+    profileID: ga:85292056    # ga:XXXXXXXX
+    start: 3 years ago        # Beginning of report
+    end: now                  # End of report
+    metric: ga:pageviews      # Metric code
+    segment:          # all visits
+    filters:                  # optional
 
 #   _                 _     _
 #  | |_ __ ___      _| | __| |_ ___
