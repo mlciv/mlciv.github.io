@@ -9,8 +9,8 @@
 			<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Atom Feed (Styled)</title>
-	<link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css" />
-	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://www.cs.utah.edu/~jcao/assets/css/styles_feeling_responsive.css" />
+	<script src="https://www.cs.utah.edu/~jcao/assets/js/modernizr.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
@@ -45,67 +45,67 @@ function toggleDiv(element){
 
 
 	
-	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png" />
+	<link rel="icon" sizes="32x32" href="https://www.cs.utah.edu/~jcao/assets/img/favicon-32x32.png" />
 
 
 
 
 	
-	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png" />
+	<link rel="icon" sizes="192x192" href="https://www.cs.utah.edu/~jcao/assets/img/touch-icon-192x192.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.cs.utah.edu/~jcao/assets/img/apple-touch-icon-180x180-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.cs.utah.edu/~jcao/assets/img/apple-touch-icon-152x152-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.cs.utah.edu/~jcao/assets/img/apple-touch-icon-144x144-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.cs.utah.edu/~jcao/assets/img/apple-touch-icon-120x120-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.cs.utah.edu/~jcao/assets/img/apple-touch-icon-114x114-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.cs.utah.edu/~jcao/assets/img/apple-touch-icon-76x76-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.cs.utah.edu/~jcao/assets/img/apple-touch-icon-72x72-precomposed.png" />
 
 
 
 
 	
-	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png" />	
+	<link rel="apple-touch-icon-precomposed" href="https://www.cs.utah.edu/~jcao/assets/img/apple-touch-icon-precomposed.png" />	
 
 
 
 
 	
-	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png" />
+	<meta name="msapplication-TileImage" content="https://www.cs.utah.edu/~jcao/assets/img/msapplication_tileimage.png" />
 
 
 
@@ -120,7 +120,7 @@ function toggleDiv(element){
 	
 	<meta property="og:title" content="Atom Feed (Styled)" />
 	<meta property="og:description" content="In my opinion, machine intelligence can be a future civilization just like our industrial era or information era. I want use this blog to record those history, current and future for machine learning civilization" />
-	<meta property="og:url" content="http://localhost:4000//assets/xslt/atom.xslt" />
+	<meta property="og:url" content="https://www.cs.utah.edu/~jcao//assets/xslt/atom.xslt" />
 	<meta property="og:site_name" content="MLCIV" />
 	
 
@@ -129,7 +129,7 @@ function toggleDiv(element){
 	<!-- Search Engine Optimization -->
 	
 
-	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt" />
+	<link type="text/plain" rel="author" href="https://www.cs.utah.edu/~jcao/humans.txt" />
 
 	
 
@@ -145,7 +145,7 @@ function toggleDiv(element){
   <nav class="top-bar" role="navigation" data-topbar>
     <ul class="title-area">
       <li class="name">
-      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> MLCIV</a></h1>
+      <h1 class="show-for-small-only"><a href="https://www.cs.utah.edu/~jcao" class="icon-tree"> MLCIV</a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
@@ -179,7 +179,7 @@ function toggleDiv(element){
 
             
             
-              <li><a href="http://localhost:4000/">Home</a></li>
+              <li><a href="https://www.cs.utah.edu/~jcao/">Home</a></li>
               <li class="divider"></li>
 
             
@@ -223,8 +223,8 @@ function toggleDiv(element){
 <div id="masthead-no-image-header">
 	<div class="row">
 		<div class="small-12 columns">
-			<a id="logo" href="http://localhost:4000" title="MLCIV – Machine Learning Civilization">
-				<img src="http://localhost:4000/assets/img/logo.png" alt="MLCIV – Machine Learning Civilization">
+			<a id="logo" href="https://www.cs.utah.edu/~jcao" title="MLCIV – Machine Learning Civilization">
+				<img src="https://www.cs.utah.edu/~jcao/assets/img/logo.png" alt="MLCIV – Machine Learning Civilization">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
@@ -302,7 +302,7 @@ function toggleDiv(element){
 
             <p class="shadow-black">
               In my opinion, machine intelligence can be a future civilization just like our industrial era or information era. I want use this blog to record those history, current and future for machine learning civilization
-              <a href="http://localhost:4000/info/">More ›</a>
+              <a href="https://www.cs.utah.edu/~jcao/info/">More ›</a>
             </p>
           </div><!-- /.large-6.columns -->
 
@@ -409,7 +409,7 @@ function toggleDiv(element){
 		
 
 
-<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+<script src="https://www.cs.utah.edu/~jcao/assets/js/javascript.min.js"></script>
 
 
 
