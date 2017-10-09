@@ -1,0 +1,22 @@
+/* TEAM */
+
+Name: Jie Cao
+Site: https://mlciv.com/
+Twitter: @ijiessie
+
+
+/* THANKS */
+
+Name: Moritz »mo.« Sauer
+Role: Creator of the Theme
+Site: http://mo.phlow.de/
+Twitter: @phlow
+Theme: http://phlow.github.io/feeling-responsive/
+
+
+/* SITE */
+
+Last Updated: 2017/10/09
+Standards: HTML5, CSS3
+Software: Sublime Text, Chrome, Jekyll, Git, Imageoptim, JPEGMini, Gulp.js, Sass
+Components: Foundation Framework, Modernizr, jQuery, Backstretch.js, Reveal

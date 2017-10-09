@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/xslt/atom.xslt" ?>
+<?xml-stylesheet type="text/css" href="/assets/css/atom.css" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>http://localhost:4000/</id>
+	<title>MLCIV</title>
+	<updated>2017-10-09T04:31:36-06:00</updated>
+
+	<subtitle>In my opinion, machine intelligence can be a future civilization just like our industrial era or information era. I want use this blog to record those history, current and future for machine learning civilization</subtitle>
+
+	
+		
+		<author>
+			
+				<name>jiec</name>
+			
+			
+			
+		</author>
+	
+
+	<link href="http://localhost:4000/atom.xml" rel="self" type="application/rss+xml" />
+	<link href="http://localhost:4000/" rel="alternate" type="text/html" />
+
+	<generator uri="http://jekyllrb.com" version="3.6.0">Jekyll</generator>
+
+	
+</feed>
