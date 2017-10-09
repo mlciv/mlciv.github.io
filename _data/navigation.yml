@@ -17,23 +17,23 @@
   #    url: "#"
   #
 - title: Blog
-  url: "/blog/"
+  url: "https://mlciv.com/blog/"
   side: left
   dropdown:
   - title: "Blog Archive"
-    url: "/blog/archive/"
+    url: "https://mlciv.com/blog/archive/"
 
 #
 #   Navigation to the right › side: right
 #
-- title: "Info"
-  url: "/info/"
-  side: right
-
-- title: "Search"
-  url: "/search/"
-  side: right
-
-- title: "Contact"
-  url: "/contact/"
-  side: right
+#- title: "Info"
+#  url: "/info/"
+#  side: right
+#
+#- title: "Search"
+#  url: "/search/"
+#  side: right
+#
+#- title: "Contact"
+#  url: "/contact/"
+#  side: right
