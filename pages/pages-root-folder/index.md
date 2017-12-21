@@ -11,10 +11,6 @@ permalink: /index.html
 
 # Publications
 
-### Under-Preparing
-* AMR Parsing Paper
-* AMR Alignment Paper
-
 ### 2015
 
 {% bibliography --query @*[year=2015] %}
