@@ -1,4 +1,5 @@
 .sass-cache/
 *.p12
 .DS_Store
-.gitignore
+_site
+
