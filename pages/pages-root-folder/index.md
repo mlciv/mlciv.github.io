@@ -12,12 +12,15 @@ permalink: /index.html
 # Publications
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Under-Preparing
 * AMR Parsing Paper
 * AMR Alignment Paper
 
 =======
 >>>>>>> ddcda6c11e0977acacccc802b96ed88ec1dd3497
+=======
+>>>>>>> 144ce0a253e96b22a25fdd953b388eea669b8a20
 ### 2015
 
 {% bibliography --query @*[year=2015] %}
