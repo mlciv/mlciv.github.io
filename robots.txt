@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mlciv.com/sitemap.xml
