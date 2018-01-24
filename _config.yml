@@ -23,7 +23,12 @@ author: jiec
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
+<<<<<<< HEAD
 url: 'https://mlciv.com'
+=======
+url: 'https://www.cs.utah.edu/~jcao'
+blogurl: 'https://mlciv.com'
+>>>>>>> ddcda6c11e0977acacccc802b96ed88ec1dd3497
 baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
@@ -37,7 +42,11 @@ improve_content:
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
+<<<<<<< HEAD
 urlimg: 'https://mlciv.com/assets/img/'
+=======
+urlimg: 'https://www.cs.utah.edu/~jcao/assets/img/'
+>>>>>>> ddcda6c11e0977acacccc802b96ed88ec1dd3497
 
 
 # Logo size is 600x80 pixels
@@ -69,6 +78,8 @@ exclude:
     - LICENSE
     - README.md
     - INSTALL.md
+    - publish_mlciv.sh
+    - publish_index.sh
 
 
 # The language setting is used in /includes/header.html for html-settings

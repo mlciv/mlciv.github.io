@@ -11,10 +11,13 @@ permalink: /index.html
 
 # Publications
 
+<<<<<<< HEAD
 ### Under-Preparing
 * AMR Parsing Paper
 * AMR Alignment Paper
 
+=======
+>>>>>>> ddcda6c11e0977acacccc802b96ed88ec1dd3497
 ### 2015
 
 {% bibliography --query @*[year=2015] %}
@@ -39,6 +42,10 @@ in Alibaba, Baidu, Sohu and one startup in ZunClub
 
 # CV
 
+<<<<<<< HEAD
 My CV is [Here](http://www.cs.utah.edu/~jcao/public/Jie_CV.pdf)
+=======
+My CV is [Here](http://www.cs.utah.edu/~jcao/public/CV_Jie-Cao.pdf)
+>>>>>>> ddcda6c11e0977acacccc802b96ed88ec1dd3497
 
 

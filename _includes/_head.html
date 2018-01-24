@@ -6,6 +6,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
+if (location.protocol != 'https:'){
+   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
     WebFont.load({
       google: {
         families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
