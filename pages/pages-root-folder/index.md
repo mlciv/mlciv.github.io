@@ -22,6 +22,7 @@ permalink: /index.html
 # Teaching 
 
 TA for CS 6350 Machine Learning Fall 2016
+TA for CS 6355 Structured Prediction Spring 2018
 
 # BIO
 
