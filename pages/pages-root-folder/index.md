@@ -35,6 +35,6 @@ in Alibaba, Baidu, Sohu and one startup in ZunClub
 
 # CV
 
-My CV is [Here](http://www.cs.utah.edu/~jcao/public/Jie_CV.pdf)
+My CV is [Here](http://www.cs.utah.edu/~jcao/public/CV_Jie-Cao.pdf)
 
 
