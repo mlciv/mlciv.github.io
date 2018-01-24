@@ -9,6 +9,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
+if (location.protocol != 'https:'){
+   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
     WebFont.load({
       google: {
         families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
@@ -160,48 +163,6 @@ function toggleDiv(element){
           
           
         
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a href="http://localhost:4000/info/">Info</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a href="http://localhost:4000/search/">Search</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a href="http://localhost:4000/contact/">Contact</a></li>
-
-            
-            
-          
-        
         
       </ul>
 
@@ -232,38 +193,20 @@ function toggleDiv(element){
             
 
               <li class="has-dropdown">
-                <a href="http://localhost:4000/blog/">Blog</a>
+                <a href="https://mlciv.com/blog/" target="_blank">Blog</a>
 
                   <ul class="dropdown">
                     
 
                       
 
-                      <li><a href="http://localhost:4000/blog/archive/">Blog Archive</a></li>
+                      <li><a href="https://mlciv.com/blog/archive/" target="_blank">Blog Archive</a></li>
                     
                   </ul>
                   
               </li>
               <li class="divider"></li>
             
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
           
         
         
@@ -473,11 +416,9 @@ function toggleDiv(element){
 
 			<div id="post-nav" class="row">
 				
-				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/blog/2010/08/10/None/">&laquo; LBS餐饮系统和Android餐厅随想</a></div><!-- /.small-4.columns -->
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/blog/2010/08/04/None/">&laquo; XenMon工作机制</a></div><!-- /.small-4.columns -->
 				
 				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/blog/archive/" title="Blog Archive">Archive</a></div><!-- /.small-4.columns -->
-				
-				<div class="small-5 columns text-right"><a class="button small radius next" href="http://localhost:4000/blog/2013/06/23/octopress-plus-github/">Octopress+Github &raquo;</a></div><!-- /.small-4.columns -->
 				
 			</div>
 			</div><!--  /.page-meta -->

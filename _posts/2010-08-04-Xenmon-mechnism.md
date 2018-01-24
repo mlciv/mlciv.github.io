@@ -23,7 +23,7 @@ XenMon是一个支持资源分配和功能配置部件，它可以精确地监�
 
 
 以下为XenMon的架构图：
-![XenMon Architecture]({{ site.urlimg }}{{ post/xenmon.jpeg }})
+![XenMon Architecture]({{ site.urlimg }}{{ "post/xenmon.jpeg" }})
 
 <!-- more -->
   Xenbaked 是一个高度可配置的模块，它能让用户配置多久记录一帧，保存多久的历史记录。
@@ -44,7 +44,7 @@ Xentrace是事件触发器，其机制在之后会介绍。
 
 Xentrace 是以共享内存的方式来进行操作的，内核部分对Xen中的一些系统调用函数都会对这片共享内存进行写入。在用户区，用户通过一些方法得到共享内存内的数据，并对其进行解析并显示，以下是xentrace工作机制的流程图：
 
- ![Xen trace]({{ site.urlimg }}{{ post/xentrace.gif }})
+ ![Xen trace]({{ site.urlimg }}{{ "post/xentrace.gif" }})
 
 三、 t_buf结构：
 

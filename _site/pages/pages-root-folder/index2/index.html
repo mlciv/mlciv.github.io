@@ -9,6 +9,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
+if (location.protocol != 'https:'){
+   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
     WebFont.load({
       google: {
         families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
@@ -160,48 +163,6 @@ function toggleDiv(element){
           
           
         
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a href="http://localhost:4000/info/">Info</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a href="http://localhost:4000/search/">Search</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a href="http://localhost:4000/contact/">Contact</a></li>
-
-            
-            
-          
-        
         
       </ul>
 
@@ -232,38 +193,20 @@ function toggleDiv(element){
             
 
               <li class="has-dropdown">
-                <a href="http://localhost:4000/blog/">Blog</a>
+                <a href="https://mlciv.com/blog/" target="_blank">Blog</a>
 
                   <ul class="dropdown">
                     
 
                       
 
-                      <li><a href="http://localhost:4000/blog/archive/">Blog Archive</a></li>
+                      <li><a href="https://mlciv.com/blog/archive/" target="_blank">Blog Archive</a></li>
                     
                   </ul>
                   
               </li>
               <li class="divider"></li>
             
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
           
         
         
@@ -341,10 +284,10 @@ function toggleDiv(element){
         <div class="medium-6 columns">
             
             
-            <h2><a href="http://localhost:4000/blog/2016/02/20/shortcut-collections/">shortcut collections</a></h2>
+            <h2><a href="http://localhost:4000/blog/2010/12/08/None/">MySQL概览--系统架构和关键数据结构</a></h2>
             <p>
                 
-                <a href="http://localhost:4000/blog/2016/02/20/shortcut-collections/" title="Read shortcut collections"><strong>Read More&nbsp;›</strong></a>
+                <a href="http://localhost:4000/blog/2010/12/08/None/" title="Read MySQL概览--系统架构和关键数据结构"><strong>Read More&nbsp;›</strong></a>
             </p>
             
         </div><!-- /.medium-5.columns -->
@@ -363,11 +306,7 @@ function toggleDiv(element){
   
 
     
-      <li><a href="http://localhost:4000/blog/2015/09/19/note3-aofa-recurrence/"><strong>Note3-AofA: Recurrence</strong></a></li>
-    
-      <li><a href="http://localhost:4000/blog/2015/09/19/note2-aofa/"><strong>Note2-AofA: A scientfic Approach</strong></a></li>
-    
-      <li><a href="http://localhost:4000/blog/2015/09/19/note1-aofa/"><strong>Note1-AofA: From AofA to AC</strong></a></li>
+      <li><a href="http://localhost:4000/blog/2010/08/04/None/"><strong>XenMon工作机制</strong></a></li>
     
       <li class="text-right"><a href="http://localhost:4000/blog/archive/"><strong>More ›</strong></a></li>
 

@@ -9,6 +9,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
+if (location.protocol != 'https:'){
+   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
     WebFont.load({
       google: {
         families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
@@ -160,48 +163,6 @@ function toggleDiv(element){
           
           
         
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a href="http://localhost:4000/info/">Info</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a href="http://localhost:4000/search/">Search</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a href="http://localhost:4000/contact/">Contact</a></li>
-
-            
-            
-          
-        
         
       </ul>
 
@@ -232,38 +193,20 @@ function toggleDiv(element){
             
 
               <li class="has-dropdown">
-                <a href="http://localhost:4000/blog/">Blog</a>
+                <a href="https://mlciv.com/blog/" target="_blank">Blog</a>
 
                   <ul class="dropdown">
                     
 
                       
 
-                      <li><a href="http://localhost:4000/blog/archive/">Blog Archive</a></li>
+                      <li><a href="https://mlciv.com/blog/archive/" target="_blank">Blog Archive</a></li>
                     
                   </ul>
                   
               </li>
               <li class="divider"></li>
             
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
           
         
         
@@ -322,116 +265,8 @@ function toggleDiv(element){
 			
 			
 			<dd class="accordion-navigation">
-			<a href="#panel1"><span class="iconfont"></span> <strong>shortcut collections</strong></a>
+			<a href="#panel1"><span class="iconfont"></span> <strong>MySQL概览--系统架构和关键数据结构</strong></a>
 				<div id="panel1" class="content">
-					
-					<a href="http://localhost:4000/blog/2016/02/20/shortcut-collections/" title="Read shortcut collections"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel2"><span class="iconfont"></span> <strong>Note3-AofA: Recurrence</strong></a>
-				<div id="panel2" class="content">
-					
-					<a href="http://localhost:4000/blog/2015/09/19/note3-aofa-recurrence/" title="Read Note3-AofA: Recurrence"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel3"><span class="iconfont"></span> <strong>Note2-AofA: A scientfic Approach</strong></a>
-				<div id="panel3" class="content">
-					
-					<a href="http://localhost:4000/blog/2015/09/19/note2-aofa/" title="Read Note2-AofA: A scientfic Approach"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel4"><span class="iconfont"></span> <strong>Note1-AofA: From AofA to AC</strong></a>
-				<div id="panel4" class="content">
-					
-					<a href="http://localhost:4000/blog/2015/09/19/note1-aofa/" title="Read Note1-AofA: From AofA to AC"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel5"><span class="iconfont"></span> <strong>hadoop distcp from secure to insecure 0.20.2</strong></a>
-				<div id="panel5" class="content">
-					
-					<a href="http://localhost:4000/blog/2015/02/17/hadoop-distcp-secure2insecure_0.20.2/" title="Read hadoop distcp from secure to insecure 0.20.2"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel6"><span class="iconfont"></span> <strong>Google Analytics for Octopress</strong></a>
-				<div id="panel6" class="content">
-					
-					<a href="http://localhost:4000/blog/2014/04/26/ga-for-octopress/" title="Read Google Analytics for Octopress"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel7"><span class="iconfont"></span> <strong>Octave on Mac</strong></a>
-				<div id="panel7" class="content">
-					
-					<a href="http://localhost:4000/blog/2013/12/14/octave-on-mac/" title="Read Octave on Mac"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel8"><span class="iconfont"></span> <strong>Mavericks CLT</strong></a>
-				<div id="panel8" class="content">
-					
-					<a href="http://localhost:4000/blog/2013/12/11/mavericks-clt/" title="Read Mavericks CLT"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel9"><span class="iconfont"></span> <strong>Raspberry 无线网卡无法使用问题</strong></a>
-				<div id="panel9" class="content">
-					
-					<a href="http://localhost:4000/blog/2013/07/09/raspberry-wifi/" title="Read Raspberry 无线网卡无法使用问题"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel10"><span class="iconfont"></span> <strong>Raspberry-GPIO试用</strong></a>
-				<div id="panel10" class="content">
-					
-					<a href="http://localhost:4000/blog/2013/07/03/raspberry-gpio/" title="Read Raspberry-GPIO试用"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel11"><span class="iconfont"></span> <strong>octopress-custom</strong></a>
-				<div id="panel11" class="content">
-					
-					<a href="http://localhost:4000/blog/2013/07/01/octopress-custom/" title="Read octopress-custom"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel12"><span class="iconfont"></span> <strong>Octopress+Github</strong></a>
-				<div id="panel12" class="content">
-					
-					<a href="http://localhost:4000/blog/2013/06/23/octopress-plus-github/" title="Read Octopress+Github"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel13"><span class="iconfont"></span> <strong>MySQL概览--系统架构和关键数据结构</strong></a>
-				<div id="panel13" class="content">
 					
 					<a href="http://localhost:4000/blog/2010/12/08/None/" title="Read MySQL概览--系统架构和关键数据结构"><strong>Read More&nbsp;›</strong></a><br><br>
 				</div>
@@ -439,46 +274,10 @@ function toggleDiv(element){
 			
 			
 			<dd class="accordion-navigation">
-			<a href="#panel14"><span class="iconfont"></span> <strong>LBS餐饮系统和Android餐厅随想</strong></a>
-				<div id="panel14" class="content">
-					
-					<a href="http://localhost:4000/blog/2010/08/10/None/" title="Read LBS餐饮系统和Android餐厅随想"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel15"><span class="iconfont"></span> <strong>《片上多处理器体系结构》浏览收获</strong></a>
-				<div id="panel15" class="content">
-					
-					<a href="http://localhost:4000/blog/2010/08/06/None/" title="Read 《片上多处理器体系结构》浏览收获"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel16"><span class="iconfont"></span> <strong>XenMon工作机制</strong></a>
-				<div id="panel16" class="content">
+			<a href="#panel2"><span class="iconfont"></span> <strong>XenMon工作机制</strong></a>
+				<div id="panel2" class="content">
 					
 					<a href="http://localhost:4000/blog/2010/08/04/None/" title="Read XenMon工作机制"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel17"><span class="iconfont"></span> <strong>Xenoprof 安装和使用</strong></a>
-				<div id="panel17" class="content">
-					
-					<a href="http://localhost:4000/blog/2010/07/21/None/" title="Read Xenoprof 安装和使用"><strong>Read More&nbsp;›</strong></a><br><br>
-				</div>
-			</dd>
-			
-			
-			<dd class="accordion-navigation">
-			<a href="#panel18"><span class="iconfont"></span> <strong>kernel module编写系统调用--关于sys_call_table</strong></a>
-				<div id="panel18" class="content">
-					
-					<a href="http://localhost:4000/blog/2010/07/19/None/" title="Read kernel module编写系统调用--关于sys_call_table"><strong>Read More&nbsp;›</strong></a><br><br>
 				</div>
 			</dd>
 			
