@@ -11,16 +11,6 @@ permalink: /index.html
 
 # Publications
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Under-Preparing
-* AMR Parsing Paper
-* AMR Alignment Paper
-
-=======
->>>>>>> ddcda6c11e0977acacccc802b96ed88ec1dd3497
-=======
->>>>>>> 144ce0a253e96b22a25fdd953b388eea669b8a20
 ### 2015
 
 {% bibliography --query @*[year=2015] %}
@@ -32,6 +22,8 @@ permalink: /index.html
 # Teaching 
 
 TA for CS 6350 Machine Learning Fall 2016
+
+TA for CS 6355 Structured Prediction Spring 2018
 
 # BIO
 
@@ -45,10 +37,6 @@ in Alibaba, Baidu, Sohu and one startup in ZunClub
 
 # CV
 
-<<<<<<< HEAD
-My CV is [Here](http://www.cs.utah.edu/~jcao/public/Jie_CV.pdf)
-=======
 My CV is [Here](http://www.cs.utah.edu/~jcao/public/CV_Jie-Cao.pdf)
->>>>>>> ddcda6c11e0977acacccc802b96ed88ec1dd3497
 
 
