@@ -1,5 +1,6 @@
 .sass-cache/
 *.p12
 .DS_Store
+_site
 _mlciv_deploy
 _index_deploy
