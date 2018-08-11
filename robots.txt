@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: www.cs.utah.edu/~jcao/sitemap.xml
+Sitemap: https://www.cs.utah.edu/~jcao/sitemap.xml

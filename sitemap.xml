@@ -5,9 +5,9 @@
 
 	
 	<url>
-	<loc>www.cs.utah.edu/~jcao/404.html</loc>
+	<loc>https://www.cs.utah.edu/~jcao/404.html</loc>
 	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -20,26 +20,9 @@
 
 	
 	<url>
-	<loc>www.cs.utah.edu/~jcao/blog/archive/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/blog/archive/</loc>
 	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-	<url>
-	<loc>www.cs.utah.edu/~jcao/atom.xml</loc>
-	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -54,9 +37,26 @@
 
 	
 	<url>
-	<loc>www.cs.utah.edu/~jcao/contact/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/atom.xml</loc>
 	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/contact/</loc>
+	
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -69,24 +69,9 @@
 
 	
 	<url>
-	<loc>www.cs.utah.edu/~jcao/feed.xml</loc>
+	<loc>https://www.cs.utah.edu/~jcao/feed.xml</loc>
 	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>www.cs.utah.edu/~jcao/humans.txt</loc>
-	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -99,24 +84,9 @@
 
 	
 	<url>
-	<loc>www.cs.utah.edu/~jcao/blog/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/humans.txt</loc>
 	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>www.cs.utah.edu/~jcao/</loc>
-	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -129,24 +99,9 @@
 
 	
 	<url>
-	<loc>www.cs.utah.edu/~jcao/pages/pages-root-folder/index2/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/blog/</loc>
 	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>www.cs.utah.edu/~jcao/info/</loc>
-	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -159,43 +114,9 @@
 
 	
 	<url>
-	<loc>www.cs.utah.edu/~jcao/redirect-page/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/</loc>
 	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>www.cs.utah.edu/~jcao/robots.txt</loc>
-	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-
-	
-	<url>
-	<loc>www.cs.utah.edu/~jcao/search/</loc>
-	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -208,9 +129,88 @@
 
 	
 	<url>
-	<loc>www.cs.utah.edu/~jcao/sitemap.xml</loc>
+	<loc>https://www.cs.utah.edu/~jcao/pages/pages-root-folder/index2/</loc>
 	
-		<lastmod>2018-08-11T06:22:09-06:00</lastmod>
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/info/</loc>
+	
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/redirect-page/</loc>
+	
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/robots.txt</loc>
+	
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/search/</loc>
+	
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/sitemap.xml</loc>
+	
+		<lastmod>2018-08-11T06:30:10-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
