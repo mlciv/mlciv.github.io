@@ -14,9 +14,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
   <script>
-if (location.protocol != 'https:'){
-   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
     WebFont.load({
       google: {
         families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
@@ -24,12 +21,11 @@ if (location.protocol != 'https:'){
     });
   </script>
   <script language="JavaScript" type="text/javascript">
-<!--
 function toggleDiv(element){
    if(document.getElementById(element).style.display == 'none')
        document.getElementById(element).style.display = 'block';
     else
-             document.getElementById(element).style.display = 'none';
+       document.getElementById(element).style.display = 'none';
 }
   </script>
 
