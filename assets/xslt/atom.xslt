@@ -24,12 +24,11 @@ if (location.protocol != 'https:'){
     });
   </script>
   <script language="JavaScript" type="text/javascript">
-<!--
 function toggleDiv(element){
    if(document.getElementById(element).style.display == 'none')
        document.getElementById(element).style.display = 'block';
     else
-             document.getElementById(element).style.display = 'none';
+       document.getElementById(element).style.display = 'none';
 }
   </script>
 
@@ -374,7 +373,7 @@ function toggleDiv(element){
             
               
                 <li class="mlnlp" >
-                  <a href="http://nlpml.cs.utah.edu/" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
+                  <a href="http://nlp.cs.utah.edu/" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
                 </li>
             
             </ul>

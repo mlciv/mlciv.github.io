@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://mlciv.com/</id>
 	<title>MLCIV</title>
-	<updated>2018-01-24T03:31:07-07:00</updated>
+	<updated>2018-08-11T11:27:03+00:00</updated>
 
 	<subtitle>In my opinion, machine intelligence can be a future civilization just like our industrial era or information era. I want use this blog to record those history, current and future for machine learning civilization</subtitle>
 
@@ -29,7 +29,7 @@
 			<id>https://mlciv.com/blog/2016/02/20/shortcut-collections/</id>
 			<title>shortcut collections</title>
 			<link href="https://mlciv.com/blog/2016/02/20/shortcut-collections/" rel="alternate" type="text/html" title="shortcut collections" />
-			<updated>2016-02-20T12:09:00-07:00</updated>
+			<updated>2016-02-20T12:09:00+00:00</updated>
 
 			
 				
@@ -95,14 +95,14 @@ Pay attention to leader key, and how manage session, window, pane.&lt;/p&gt;
 			
 			
 
-			<published>2016-02-20T12:09:00-07:00</published>
+			<published>2016-02-20T12:09:00+00:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2015/09/19/note3-aofa-recurrence/</id>
 			<title>Note3-AofA: Recurrence</title>
 			<link href="https://mlciv.com/blog/2015/09/19/note3-aofa-recurrence/" rel="alternate" type="text/html" title="Note3-AofA: Recurrence" />
-			<updated>2015-09-19T16:31:00-06:00</updated>
+			<updated>2015-09-19T16:31:00+00:00</updated>
 
 			
 				
@@ -385,14 +385,14 @@ on the (smaller) unknown part of the solution.&lt;/li&gt;
 			
 			
 
-			<published>2015-09-19T16:31:00-06:00</published>
+			<published>2015-09-19T16:31:00+00:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2015/09/19/note2-aofa/</id>
 			<title>Note2-AofA: A scientfic Approach</title>
 			<link href="https://mlciv.com/blog/2015/09/19/note2-aofa/" rel="alternate" type="text/html" title="Note2-AofA: A scientfic Approach" />
-			<updated>2015-09-19T14:05:00-06:00</updated>
+			<updated>2015-09-19T14:05:00+00:00</updated>
 
 			
 				
@@ -517,14 +517,14 @@ Hypothesis: Running time of Quicksort is ~aN in N.&lt;/p&gt;
 			
 			
 
-			<published>2015-09-19T14:05:00-06:00</published>
+			<published>2015-09-19T14:05:00+00:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2015/09/19/note1-aofa/</id>
 			<title>Note1-AofA: From AofA to AC</title>
 			<link href="https://mlciv.com/blog/2015/09/19/note1-aofa/" rel="alternate" type="text/html" title="Note1-AofA: From AofA to AC" />
-			<updated>2015-09-19T11:33:00-06:00</updated>
+			<updated>2015-09-19T11:33:00+00:00</updated>
 
 			
 				
@@ -696,14 +696,14 @@ New types of implicit GS functional equations are arise. very strong list and gr
 			
 			
 
-			<published>2015-09-19T11:33:00-06:00</published>
+			<published>2015-09-19T11:33:00+00:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2015/02/17/hadoop-distcp-secure2insecure_0.20.2/</id>
 			<title>hadoop distcp from secure to insecure 0.20.2</title>
 			<link href="https://mlciv.com/blog/2015/02/17/hadoop-distcp-secure2insecure_0.20.2/" rel="alternate" type="text/html" title="hadoop distcp from secure to insecure 0.20.2" />
-			<updated>2015-02-17T17:14:00-07:00</updated>
+			<updated>2015-02-17T17:14:00+00:00</updated>
 
 			
 				
@@ -791,14 +791,14 @@ Just run your job as usually.
 			
 			
 
-			<published>2015-02-17T17:14:00-07:00</published>
+			<published>2015-02-17T17:14:00+00:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2014/04/26/ga-for-octopress/</id>
 			<title>Google Analytics for Octopress</title>
 			<link href="https://mlciv.com/blog/2014/04/26/ga-for-octopress/" rel="alternate" type="text/html" title="Google Analytics for Octopress" />
-			<updated>2014-04-26T21:52:00-06:00</updated>
+			<updated>2014-04-26T21:52:00+00:00</updated>
 
 			
 				
@@ -957,14 +957,14 @@ page-view: &amp;lt;/br&amp;gt;
 			
 			
 
-			<published>2014-04-26T21:52:00-06:00</published>
+			<published>2014-04-26T21:52:00+00:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2013/12/14/octave-on-mac/</id>
 			<title>Octave on Mac</title>
 			<link href="https://mlciv.com/blog/2013/12/14/octave-on-mac/" rel="alternate" type="text/html" title="Octave on Mac" />
-			<updated>2013-12-14T19:21:00-07:00</updated>
+			<updated>2013-12-14T19:21:00+00:00</updated>
 
 			
 				
@@ -1080,14 +1080,14 @@ before you use plot() in octave.(And of course you need install X11 first.)&lt;/
 				<category term="Octave" />
 			
 
-			<published>2013-12-14T19:21:00-07:00</published>
+			<published>2013-12-14T19:21:00+00:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2013/12/11/mavericks-clt/</id>
 			<title>Mavericks CLT</title>
 			<link href="https://mlciv.com/blog/2013/12/11/mavericks-clt/" rel="alternate" type="text/html" title="Mavericks CLT" />
-			<updated>2013-12-11T00:17:00-07:00</updated>
+			<updated>2013-12-11T00:17:00+00:00</updated>
 
 			
 				
@@ -1121,14 +1121,14 @@ xcode-select --install
 			
 			
 
-			<published>2013-12-11T00:17:00-07:00</published>
+			<published>2013-12-11T00:17:00+00:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2013/07/09/raspberry-wifi/</id>
 			<title>Raspberry 无线网卡无法使用问题</title>
 			<link href="https://mlciv.com/blog/2013/07/09/raspberry-wifi/" rel="alternate" type="text/html" title="Raspberry 无线网卡无法使用问题" />
-			<updated>2013-07-09T00:25:00-06:00</updated>
+			<updated>2013-07-09T00:25:00+00:00</updated>
 
 			
 				
@@ -1165,14 +1165,14 @@ wlan0网卡的，但是就是获取不到IP地址，而且手动配置也不行�
 				<category term="wifi" />
 			
 
-			<published>2013-07-09T00:25:00-06:00</published>
+			<published>2013-07-09T00:25:00+00:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2013/07/03/raspberry-gpio/</id>
 			<title>Raspberry-GPIO试用</title>
 			<link href="https://mlciv.com/blog/2013/07/03/raspberry-gpio/" rel="alternate" type="text/html" title="Raspberry-GPIO试用" />
-			<updated>2013-07-03T22:14:00-06:00</updated>
+			<updated>2013-07-03T22:14:00+00:00</updated>
 
 			
 				
@@ -1262,7 +1262,7 @@ GPIO.setmode(GPIO.BOARD)
 				<category term="gpio" />
 			
 
-			<published>2013-07-03T22:14:00-06:00</published>
+			<published>2013-07-03T22:14:00+00:00</published>
 		</entry>
 	
 </feed>
