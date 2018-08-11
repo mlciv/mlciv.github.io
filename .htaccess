@@ -13,7 +13,7 @@ ExpiresByType text/x-javascript "access 1 month"
 ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
-SetEnvIf Origin "^(www.cs.utah.edu)$" ORIGIN_SUB_DOMAIN=$1
+SetEnvIf Origin "^(www\.cs\.utah\.edu)$" ORIGIN_SUB_DOMAIN=$1
 Header set Access-Control-Allow-Origin "%{ORIGIN_SUB_DOMAIN}e" env=ORIGIN_SUB_DOMAIN
 Header set Access-Control-Allow-Methods: "*"
 Header set Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept, Authorization"
