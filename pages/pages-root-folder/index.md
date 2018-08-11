@@ -23,6 +23,8 @@ permalink: /index.html
 
 TA for CS 6350 Machine Learning Fall 2016
 
+TA for CS 6355 Structured Prediction Spring 2018
+
 # BIO
 
 Before joining the Natural Language Processing Group in the U, my main interests
@@ -35,6 +37,6 @@ in Alibaba, Baidu, Sohu and one startup in ZunClub
 
 # CV
 
-My CV is [Here](http://www.cs.utah.edu/~jcao/public/Jie_CV.pdf)
+My CV is [Here](http://www.cs.utah.edu/~jcao/public/CV_Jie-Cao.pdf)
 
 

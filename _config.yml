@@ -70,6 +70,8 @@ exclude:
     - LICENSE
     - README.md
     - INSTALL.md
+    - publish_mlciv.sh
+    - publish_index.sh
 
 
 # The language setting is used in /includes/header.html for html-settings
