@@ -2,9 +2,5 @@
 *.p12
 .DS_Store
 _site
-<<<<<<< HEAD
 _mlciv_deploy
 _index_deploy
-=======
-
->>>>>>> 144ce0a253e96b22a25fdd953b388eea669b8a20
