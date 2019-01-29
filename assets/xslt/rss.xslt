@@ -23,7 +23,7 @@
   <script language="JavaScript" type="text/javascript">
 if (window.location.protocol != "https:")
     window.location.protocol = "https";
-
+    
 function toggleDiv(element){
    if(document.getElementById(element).style.display == 'none')
        document.getElementById(element).style.display = 'block';
@@ -374,7 +374,7 @@ function toggleDiv(element){
             
               
                 <li class="mlnlp" >
-                  <a href="http://nlpml.cs.utah.edu/" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
+                  <a href="http://nlp.cs.utah.edu/" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
                 </li>
             
             </ul>

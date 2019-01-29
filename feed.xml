@@ -8,5 +8,221 @@
 		<link>https://www.cs.utah.edu/~jcao/</link>
 		<atom:link href="https://www.cs.utah.edu/~jcao/feed.xml" rel="self" type="application/rss+xml" />
 		
+			<item>
+				<title>MySQL概览--系统架构和关键数据结构</title>
+				<link>https://www.cs.utah.edu/~jcao/blog/2010/12/08/None/</link>
+				<pubDate>Wed, 08 Dec 2010 15:49:04 +0000</pubDate>
+				<description>&lt;p&gt;近期在研究&lt;a href=&quot;https://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL&quot;&gt;&lt;em&gt;HandlerSocket&lt;/em&gt;&lt;/a&gt;的相关源码，其命名也正是因为handler这一重要的数据结构，handlerSocket的简单点说就是越过mysql的SQL层，直接通过handler操作底层的存储引擎，由于减少了SQL Parse，Opentable等消耗，并且直接利用handler通过索引index进行查询和更新操作，因此有较高的性能，近期在公司组内做了一次关于handlerSocket调研的分享，主要包括handler协议解析，handlerSocket关键代码和原理，innoDB关键特性等主题内容，当然mysql的系统架构和关键数据结构也是该次分享的基础内容之一，也因为这次分享，本人很荣幸的拿到starbucks的消费券以资奖励.本文主要讲下理解HandlerSocket原理以及mysql的必须知晓的相关系统架构和关键数据结构。&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;mysql关键模块和流程&quot;&gt;MySQL关键模块和流程&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.cs.utah.edu/~jcao/assets/img/&quot; alt=&quot;Mysql Arthitecture&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上述步骤不多做详述，图片来源于《Understanding MySQL Internals》，详细的各模块功能和描述，请详细查看书籍，这里给出仅仅说明一下mysql大致的系统架构和流程.&lt;/p&gt;
+
+&lt;h1 id=&quot;mysql关键数据结构&quot;&gt;&lt;strong&gt;Mysql关键数据结构&lt;/strong&gt;&lt;/h1&gt;
+
+&lt;h2 id=&quot;thd-线程描述符sqlsql_classh&quot;&gt;•THD 线程描述符(sql/sql_class.h)&lt;/h2&gt;
+
+&lt;p&gt;MySQL Server层 和用户连接的线程对象，包含处理用户请求时需要的相关数据。&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code&gt; 
+    NET net;// 客户连接描述符
+    TABLE\* open_tables  
+    Protocol \ø*protocol; // 当前的协议
+    Protocol_text protocol_text;// 普通协议
+    Protocol_binary protocol_binary; // 二进制协议
+    HASH user_vars; //用户变量的hash值
+    String packet; // 网络IO时所用的缓存
+    String convert_buffer; // 字符集转换所用的缓存
+    struct sockaddr_in remote; //客户端socket地址
+    THR_LOCK_INFO lock_info;// 当前线程的锁信息
+    pthread_mutex_t LOCK_thd_data; //thd的mutex锁，保护THD数据（thd-&amp;gt;query, thd-&amp;gt;query_length）不会被其余线程访问
+    Statement_map stmt_map; //prepared statements和stored routines 会被重复利用
+    LEX \*lex; //语法树描述符
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;其中特别的注意到：&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+    TABLE\* open_tables      
+    TABLE\* handler_tables
+    TABLE\* temporary_tables
+    TABLE\* derived_tables
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;net-网络连接描述sqlmysql_comh&quot;&gt;•NET 网络连接描述（sql/mysql_com.h）&lt;/h2&gt;
+
+&lt;p&gt;该类在HandlerSocket中没有用到&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;pre&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+    Vio *vio;  //底层的网络I/O socket描述符
+    ch\ar *bu\ff,*buff_e\nd,*write_p\* s,*read_pos;    //缓存相关
+    unsigned long remain_in_buf,length, buf_length, where_b;
+    unsigned long max_packet,max_packet_size; //当前值;最大
+    unsigned int pkt_nr,compress_pkt_nr; //当前（未）压缩包的顺序值
+    my_bool compress; //是否压缩
+    unsigned int write_timeout, read_timeout, retry_count; //最大等待时间
+    unsigned int \*return_status;//thd中的服务器状态
+    unsigned char reading_or_writing; //1 代表读, 2 代表写, 0代表无状态 
+    unsigned int last_errno; //返回给客户端的错误号
+    unsigned char error;
+   /\*
+    0：执行成功
+    1：在协议层有逻辑错误
+    2：系统调用或标准库出错
+    3：特例，表示缓存不能装下当前这么大的包
+   \*/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/code&amp;gt;
+&amp;lt;/pre&amp;gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;table-数据库表描述符sqltableh&quot;&gt;•TABLE 数据库表描述符（sql/table.h）&lt;/h2&gt;
+
+&lt;pre&gt;
+&lt;code&gt; 
+    //每一个table的共享结构St_table_share
+    Field \*\*field;//指向数据域的指针
+    KEY \*key_info;//数据库中key的信息
+    TYPELIB  keynames;//通过keyname查找keynum(OPENINDEX)
+    TYPELIB  fieldnames;//通过fieldname找fieldnumber
+    handler \*file;//指向这张表在storage engine中的handler的指针
+    THD \*in_use; //使用这张表的thread号
+    byte \*record[2] ;
+    //每次找到的记录会先写入record[0],如需要修改则将要修改的原记录在record[1]中，利用field.store()会默认将更新的field写入record[0]中，逐一修改,具体见handler分析
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;field-字段描述符sqlfieldh&quot;&gt;•Field 字段描述符（sql/field.h）&lt;/h2&gt;
+
+&lt;pre&gt;
+ &lt;code&gt;   
+    //域描述符，是各种字段的抽象基类
+    uchar \*ptr; // 记录中数据域的位置
+    uchar \*null_ptr; // 记录 null_bit 位置的byte
+    TABLE \*table;// 指向表的指针
+    TABLE \*orig_table;// 指向原表的指针
+    const char \*\*table_name, \*field_name;
+    //数据域是下列key的一部分
+    key_map key_start, part_of_key, part_of_key_not_clustered;
+    key_map part_of_sortkey;
+    //以下操作将要insert\Update的值先设置到field中，这些field会默认填充到table.record[0]
+    int store( const char \*from, uintlength, CHARSET_INFO \*cs)
+    void store_time(TIME \*ltime,timestamp_type t_type) 
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;handler-sql层与storage的接口&quot;&gt;•handler SQL层与Storage的接口&lt;/h2&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+    
+    //可通过table-&amp;gt;file得到，innoDB等存储引擎将会实现handler的子类，以提供具体的write、update操作实现，但是handler中的ha_write_row等已经实现整体的逻辑，如先write_row,再binlog_log_row()
+    int ha_open( const char \*name, int mode, int test_if_locked) //tbname.frm文件
+    int&amp;lt;/span&amp;gt;  ha_index_init(uint idx)   
+    //为下面的操作准备索引初始化,在find操作中使用了，但是在insert中没有使用
+    int&amp;lt;/span&amp;gt; ha_rnd_init(bool scan)  &lt;span style=&quot;color: #008000&quot;&gt;//初始化为随机位置访问，scan决定是否全表扫描
+    int&lt;/span&gt; ha_write_row(uchar *buf);	
+    //先write_row,再binlog_log_row(),binlog写入是在handler中完成的
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;该类也是实现自己的StorageEngine必须实现的,具体的StorageEngine的写法本文不深入研究，有兴趣请查看《Understanding.Mysql.Internals》 和《Expert MySQL》，下面简单列一下InnoDB需要实现的关键接口&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+    virtual int write_row(byte \* buf)			//buf通常是table-&amp;gt;record[0]
+    virtual int update_row
+    (const byte *old_data, byte \* new_data)  	//record[1],record[0]
+    virtual int delete_row( const byte \* buf）  //record[0]
+    virtual int index_read(byte \* buf, const 
+    byte * key,uint key_len, enum ha_rkey_function find_flag);//根据findflag找到第一匹配记录
+    virtual int index_prev(byte \* buf);
+    //根据当前索引的顺序，写入上一个record到buffer中
+    virtual int  index_next(byte \* buf);
+    //根据当前索引的顺序，写入下一个record到buffer中
+    virtual int index_next_same(byte \*buf, const byte \*key, uint keylen);//从当前位置再找一个满足等于key的
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;本文只是有个粗略的介绍，分享下自己阅读代码和书籍的经验，只能对mysql的系统结构有个大致的描述，并且指出mysql源码研究必要的一些基础数据结构。如果读者想要深入研究mysql,请阅读上文中提到的两本书，并且务必请阅读源码。&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.cs.utah.edu/~jcao/blog/2010/12/08/None/</guid>
+			</item>
+		
+			<item>
+				<title>XenMon工作机制</title>
+				<link>https://www.cs.utah.edu/~jcao/blog/2010/08/04/None/</link>
+				<pubDate>Wed, 04 Aug 2010 14:48:04 +0000</pubDate>
+				<description>&lt;p&gt;一、 背景：&lt;/p&gt;
+
+&lt;p&gt;XenMon是一个支持资源分配和功能配置部件，它可以精确地监视和展现分析结果的基础部件，它报告在不同VMs资源利用率，而且还提供一个对Xen的共享内部资源接口和资源安排。&lt;/p&gt;
+
+&lt;p&gt;以下为XenMon的架构图：
+&lt;img src=&quot;https://www.cs.utah.edu/~jcao/assets/img/&quot; alt=&quot;XenMon Architecture&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;Xenbaked 是一个高度可配置的模块，它能让用户配置多久记录一帧，保存多久的历史记录。&lt;/p&gt;
+
+&lt;p&gt;Xenmon frontend 是作为前段应用，它是基于xentrace事件产生器的数据收集收集到的数据进行展示。&lt;/p&gt;
+
+&lt;p&gt;Xentrace是事件触发器，其机制在之后会介绍。&lt;/p&gt;
+
+&lt;p&gt;二、 xentrace机制：&lt;/p&gt;
+
+&lt;p&gt;Xentrace 是以共享内存的方式来进行操作的，内核部分对Xen中的一些系统调用函数都会对这片共享内存进行写入。在用户区，用户通过一些方法得到共享内存内的数据，并对其进行解析并显示，以下是xentrace工作机制的流程图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.cs.utah.edu/~jcao/assets/img/&quot; alt=&quot;Xen trace&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;三、 t_buf结构：&lt;/p&gt;
+
+&lt;p&gt;在xentrace的代码中会经常发现t_buf这个结构体：&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+
+Struct t_buf{
+	unsigned long cons;
+	unsigned long prod; 
+};
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;这个结构提记录的生产者和消费者的位置指针，而且它还是一个环状结构的共享内存，在代码中不难发现生产者和消费者的地址不是无限增大的，它是有一定大小的限制。&lt;/p&gt;
+
+&lt;p&gt;此处讨论的t_buf只是单纯的结构体，而环形缓存的结构大小是由t_buf结构体占用的空间和t_buf中消费者和生产者指针指向的地址data区所占用空间的总和。&lt;/p&gt;
+
+&lt;p&gt;四、 t_rec结构：&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+struct t_rec {
+uint32_t event:28; //事件的宏定义，在处理的时候根据宏定义来处理响应的函数
+uint32_t extra_u32:3; /* # entries in trailing extra_u32[] array */
+uint32_t cycles_included:1; /* u.cycles or u.no_cycles?是否是cycles方式 *
+union {
+struct {
+uint32_t cycles_lo, cycles_hi; /* cycle counter timestamp */
+uint32_t extra_u32[7]; /* event data items */
+} cycles;
+
+struct {
+uint32_t extra_u32[7]; /* event data items */
+} nocycles;
+} u;      
+}
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;t_rec结构是t_buf映射到用户区的内存空间，同样也是一个环状结构的缓存。从t_rec的结构上，可以得到事件类型等信息，然后在对这些事件进行处理。&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.cs.utah.edu/~jcao/blog/2010/08/04/None/</guid>
+			</item>
+		
 	</channel>
 </rss>
