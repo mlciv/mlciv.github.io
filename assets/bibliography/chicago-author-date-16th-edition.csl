@@ -627,7 +627,7 @@
     <layout suffix=".">
       <group delimiter=". ">
         <text macro="title" font-weight="bold"/>
-        <text macro="contributors"/>
+        <text macro="contributors" font-style="italic"/>
         <text macro="date"/>
       </group>
       <text macro="description"/>
