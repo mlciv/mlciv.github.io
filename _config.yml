@@ -270,7 +270,7 @@ scholar:
   bibliography_list_tag: ul
 
   source: _bibliography
-  repository: ./papers
+  repository: ./papers/
   bibliography: references.bib
   bibliography_template: bibliography
 
