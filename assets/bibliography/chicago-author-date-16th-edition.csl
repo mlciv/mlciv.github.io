@@ -626,7 +626,7 @@
     </sort>
     <layout suffix=".">
       <group delimiter=". ">
-        <text macro="title"/>
+        <text macro="title" font-weight="bold"/>
         <text macro="contributors"/>
         <text macro="date"/>
       </group>
