@@ -10,7 +10,7 @@
     </div>
 
     {% if link %}
-    <li><a href="{{link}}">Download</a></li>
+    <li><a href="{{link| prepend: site.baseurl}}">Download</a></li>
     {% endif %}
 
     {% if ppt %}
