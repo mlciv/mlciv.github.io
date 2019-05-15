@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- Pages: 22 links with priority=0.3, changefreq=monthly -->
+<!-- Pages: 19 links with priority=0.3, changefreq=monthly -->
 
 	
 	<url>
-	<loc>http://localhost:4000/404.html</loc>
+	<loc>https://www.cs.utah.edu/~jcao/404.html</loc>
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -20,26 +20,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/blog/archive/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/blog/archive/</loc>
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/atom.xml</loc>
-	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -54,9 +37,26 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/contact/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/atom.xml</loc>
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/contact/</loc>
+	
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -69,24 +69,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/feed.xml</loc>
+	<loc>https://www.cs.utah.edu/~jcao/feed.xml</loc>
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/humans.txt</loc>
-	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -99,24 +84,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/blog/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/humans.txt</loc>
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/</loc>
-	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -129,24 +99,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/pages/pages-root-folder/index2/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/blog/</loc>
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/info/</loc>
-	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -159,43 +114,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/redirect-page/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/</loc>
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/robots.txt</loc>
-	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/search/</loc>
-	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -208,9 +129,54 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/sitemap.xml</loc>
+	<loc>https://www.cs.utah.edu/~jcao/pages/pages-root-folder/index2/</loc>
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/info/</loc>
+	
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/redirect-page/</loc>
+	
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/robots.txt</loc>
+	
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -224,10 +190,12 @@
 	
 
 	
-	<url>
-	<loc>http://localhost:4000/blog/</loc>
+
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+	<url>
+	<loc>https://www.cs.utah.edu/~jcao/search/</loc>
+	
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -240,24 +208,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/blog/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/sitemap.xml</loc>
 	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/</loc>
-	
-		<lastmod>2017-10-09T04:39:03-06:00</lastmod>
+		<lastmod>2019-05-15T00:30:09-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -268,192 +221,14 @@
 	</url>
 	
 
+	
 
-<!-- Posts: 18 links with priority=0.5, changefreq=monthly -->
 
-	
-	<url>
-	<loc>http://localhost:4000/blog/2016/02/20/shortcut-collections/</loc>
-	
-		<lastmod>2016-02-20T12:09:00-07:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
+<!-- Posts: 2 links with priority=0.5, changefreq=monthly -->
 
 	
 	<url>
-	<loc>http://localhost:4000/blog/2015/09/19/note3-aofa-recurrence/</loc>
-	
-		<lastmod>2015-09-19T16:31:00-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2015/09/19/note2-aofa/</loc>
-	
-		<lastmod>2015-09-19T14:05:00-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2015/09/19/note1-aofa/</loc>
-	
-		<lastmod>2015-09-19T11:33:00-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2015/02/17/hadoop-distcp-secure2insecure_0.20.2/</loc>
-	
-		<lastmod>2015-02-17T17:14:00-07:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2014/04/26/ga-for-octopress/</loc>
-	
-		<lastmod>2014-04-26T21:52:00-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2013/12/14/octave-on-mac/</loc>
-	
-		<lastmod>2013-12-14T19:21:00-07:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2013/12/11/mavericks-clt/</loc>
-	
-		<lastmod>2013-12-11T00:17:00-07:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2013/07/09/raspberry-wifi/</loc>
-	
-		<lastmod>2013-07-09T00:25:00-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2013/07/03/raspberry-gpio/</loc>
-	
-		<lastmod>2013-07-03T22:14:00-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2013/07/01/octopress-custom/</loc>
-	
-		<lastmod>2013-07-01T03:45:00-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2013/06/23/octopress-plus-github/</loc>
-	
-		<lastmod>2013-06-23T02:23:00-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2010/12/08/None/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/blog/2010/12/08/None/</loc>
 	
 		<lastmod>2010-12-08T08:49:04-07:00</lastmod>
 	
@@ -468,69 +243,9 @@
 
 	
 	<url>
-	<loc>http://localhost:4000/blog/2010/08/10/None/</loc>
-	
-		<lastmod>2010-08-09T20:49:08-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2010/08/06/None/</loc>
-	
-		<lastmod>2010-08-06T04:35:05-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2010/08/04/None/</loc>
+	<loc>https://www.cs.utah.edu/~jcao/blog/2010/08/04/None/</loc>
 	
 		<lastmod>2010-08-04T08:48:04-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2010/07/21/None/</loc>
-	
-		<lastmod>2010-07-21T09:32:35-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://localhost:4000/blog/2010/07/19/None/</loc>
-	
-		<lastmod>2010-07-19T05:29:52-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
