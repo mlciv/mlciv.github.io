@@ -24,12 +24,14 @@ permalink: /index.html
 {% bibliography --query @*[year=2012] %}
 
 # Teaching 
-- TA for CS 6350 Machine Learning Fall 2016
+- TA for CS 6350 Machine Learning Fall 2018
 - TA for CS 6355 Structured Prediction Spring 2018
+- TA for CS 6350 Machine Learning Fall 2016
 
 # Research Experience
 - [08/2015 - now ] Research Assistant at NLP Lab, Univeristy of Utah, Salt Lake
 City
+- [06/2019 - 09/2019] Applied Scientist Intern at Amazon Lex, Seattle
 - [05/2018 - 08/2018] Research Intern at Wechat AI Lab, Palo Alto
    *  Our dialogue system based Gated Attentive Memory Network ranked top 2 in DSTC7, and accepted by AAAI 2019.
 - [10/2014 - 07/2015] Assistant Researcher at SOHU RDC Lab, Beijing
@@ -49,6 +51,8 @@ Science and Technology, Wuhan
     *  KV Storage, MySQL, Database Replication, Real-time Computing, Distributed Pub/Sub Data Pipeline.
 
 # Prizes & Awards
+- [2018] DSTC7 track1, ranked 2nd for both advising and ubuntu in subtask 5(
+    external knowledge)
 - [2010] VMware Cloud Computing Innovation Cup, Top 50
 - [2009] Google Andriod Innovative Idea Sharing Award
 - [2007] "Computer World" Magazine Scholarship
