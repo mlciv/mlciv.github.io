@@ -51,6 +51,7 @@ Science and Technology, Wuhan
     *  KV Storage, MySQL, Database Replication, Real-time Computing, Distributed Pub/Sub Data Pipeline.
 
 # Prizes & Awards
+- [2019] CoNLL Shared Task, Cross-framework meaning representation parsing, ranked 1st for AMR parsing task.
 - [2018] DSTC7 track1, ranked 2nd for both advising and ubuntu in subtask 5(
     external knowledge)
 - [2010] VMware Cloud Computing Innovation Cup, Top 50
