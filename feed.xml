@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="/assets/css/rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>MLCIV</title>
+		<description>In my opinion, machine intelligence can be a future civilization just like our industrial era or information era. I want use this blog to record those history, current and future for machine learning civilization</description>
+		<link>https://mlciv.com/</link>
+		<atom:link href="https://mlciv.com/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>shortcut collections</title>
+				<link>https://mlciv.com/blog/2016/02/20/shortcut-collections/</link>
+				<pubDate>Sat, 20 Feb 2016 12:09:00 +0000</pubDate>
+				<description>&lt;h1 id=&quot;outline&quot;&gt;Outline&lt;/h1&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    1. Mac shortcut
+    2. Bash shortcut
+    3. Vim shortcut
+    4. IDEA shortcut
+    5. tmux shortcut
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;mac-shortcut&quot;&gt;Mac shortcut&lt;/h1&gt;
+&lt;p&gt;more details: https://support.apple.com/en-us/HT201237&lt;br /&gt;
+The most important shortcut is the “Document shortcuts”&lt;br /&gt;
+What’s more, those shortcut is globally usable in all the application in mac.
+it is recommended that please disable the arrow key, and change “caps lock”
+to “ctrl” key, which is also a style of Apple-II computer, now kept in HHKB
+keyboard or others.&lt;/p&gt;
+
+&lt;h1 id=&quot;bash-shortcut&quot;&gt;Bash shortcut&lt;/h1&gt;
+&lt;p&gt;more details: http://ss64.com/bash/syntax-keyboard.html&lt;br /&gt;
+some alt key will not usable.&lt;br /&gt;
+Most commonly used shortcut is also the document shortcuts in command line.&lt;br /&gt;
+Beside that, the “history” part and “process control” part are all very important.&lt;/p&gt;
+
+&lt;h1 id=&quot;vim-shortcut&quot;&gt;Vim shortcut&lt;/h1&gt;
+&lt;p&gt;more details: http://bullium.com/support/vim.html&lt;br /&gt;
+for vim, there are many cheat sheet online.&lt;br /&gt;
+every one also has one’s own vim configuration file, then their own vim shortcut
+normally, we can support the above Mac short cut in vim.&lt;br /&gt;
+Especailly for the “Home” and “End”&lt;br /&gt;
+For support vim shortcut in other IDEA or applications, we always can find some 
+vim extensions for this purpose. For example, “cVim” for chrome, “ideaVim” for
+IDEA.&lt;/p&gt;
+
+&lt;h1 id=&quot;idea-shortcut&quot;&gt;IDEA shortcut&lt;/h1&gt;
+&lt;p&gt;Beside mac shortcut, vim shortcut can be used in IDEA, there are many not common shortcut (only can used in IDEA) 
+one start point for shortcut for IDEA should be “Command+Shift+A”, which can
+find the shortcut for every actions predefined in IDEA. 
+Hence, extended with ideaVim emulator and this action find shortcut, we can
+quickly learn many keyboardless operation. It is very productive, since it
+combined the advance of using IDEA navigation operations with that of vim editor
+naviation shortcut.&lt;/p&gt;
+
+&lt;h1 id=&quot;tmux-shortcut&quot;&gt;tmux shortcut&lt;/h1&gt;
+&lt;p&gt;tmux is something like screen with better screen and pane management.
+https://gist.github.com/MohamedAlaa/2961058  &lt;br /&gt;
+Pay attention to leader key, and how manage session, window, pane.&lt;/p&gt;
+
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2016/02/20/shortcut-collections/</guid>
+			</item>
+		
+			<item>
+				<title>Note3-AofA: Recurrence</title>
+				<link>https://mlciv.com/blog/2015/09/19/note3-aofa-recurrence/</link>
+				<pubDate>Sat, 19 Sep 2015 16:31:00 +0000</pubDate>
+				<description>&lt;p&gt;The notes will introduce the types of recurrence, and the
+corresponding solution for all these recurrence, including some general
+telescoping methods and Master Theorem etc.&lt;/p&gt;
+
+&lt;h1 id=&quot;telescoping-a-linear-first-order-recurrence&quot;&gt;Telescoping a (linear first-order) recurrence&lt;/h1&gt;
+
+&lt;p&gt;Linear first-order recurrence telescope to a sum.&lt;/p&gt;
+&lt;h2 id=&quot;when-the-coeffients-are-1&quot;&gt;When the coeffients are 1&lt;/h2&gt;
+
+&lt;p&gt;Just telescope it.
+$a_n = a_n+n$ with $a_0=1$&lt;/p&gt;
+
+&lt;h3 id=&quot;elementary-discrete-sums&quot;&gt;Elementary discrete sums&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* geometric series
+* arthimetic series
+* bionmial (upper)
+* bionmial theorem
+* Harmonic numbers
+* vandermonde convolution 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;!-- more--&gt;
+
+&lt;h2 id=&quot;when-the-coffeients-are-not-1&quot;&gt;When the coffeients are not 1&lt;/h2&gt;
+
+&lt;p&gt;Multiply/divid by a summation factor.
+$a_n = 2a_{n-1} + 2^n$ with $a_0=0$
+Divide by $2^n$&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac {a_n}{2^n} = \frac {a_{n-1}}{2^{n-1}} +1&lt;/script&gt;
+
+&lt;h3 id=&quot;why-2n-summation-factor&quot;&gt;why 2^n? summation factor&lt;/h3&gt;
+
+&lt;p&gt;For $a_n =x_na_{n-1}+….$&lt;/p&gt;
+
+&lt;p&gt;=&amp;gt; Divid by $x_n \cdot x_{n-1} \cdot x_{n-2}…..x_1$&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a =(1+1/n)a_{n-1}+2&lt;/script&gt;
+
+&lt;p&gt;Then summation factor:
+&lt;script type=&quot;math/tex&quot;&gt;\frac {n+1}{n} \cdot \frac {n}{n-1}....\frac {2}{1} = n+1&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;therefore,
+&lt;script type=&quot;math/tex&quot;&gt;\frac {a_n}{n+1} = \frac {a_{n-1}}{n}+ \frac {2}{n+1}&lt;/script&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;types-of-recurrences&quot;&gt;Types of recurrences&lt;/h1&gt;
+
+&lt;h2 id=&quot;first-order&quot;&gt;First Order&lt;/h2&gt;
+
+&lt;h3 id=&quot;linear---a_n--na_n-1---1&quot;&gt;linear:   $a_n = na_{n-1} - 1$&lt;/h3&gt;
+&lt;p&gt;summation factor + telescoping
+=&amp;gt; Divid by $x_n \cdot x_{n-1} \cdot x_{n-2}…..x_1$&lt;/p&gt;
+
+&lt;h3 id=&quot;nolinear-a_n--frac-1a_n-1&quot;&gt;nolinear: $a_n = \frac {1}{a_{n-1}}$&lt;/h3&gt;
+&lt;p&gt;no-closed form solution&lt;/p&gt;
+
+&lt;h4 id=&quot;simple-convergence&quot;&gt;Simple Convergence&lt;/h4&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_n = \frac {1}{1+a_{n-1}}, \quard n&gt;0 a_0 = 1&lt;/script&gt;
+
+&lt;h4 id=&quot;quadratic-convergence-and-newtons-method&quot;&gt;Quadratic convergence and Newton’s method&lt;/h4&gt;
+
+&lt;h4 id=&quot;slow-convergence&quot;&gt;Slow convergence&lt;/h4&gt;
+
+&lt;h2 id=&quot;second-order&quot;&gt;Second Order&lt;/h2&gt;
+
+&lt;h3 id=&quot;linear-recurrences-with-constant-coefficients&quot;&gt;Linear recurrences with constant coefficients)&lt;/h3&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_n = a_{n-1}+2a_{n-2}&lt;/script&gt;
+
+&lt;h4 id=&quot;1-gf&quot;&gt;1. GF&lt;/h4&gt;
+&lt;p&gt;1.1 OGF for linear recurrences.&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;a_n = x_{1}a_{n-1}+x_{2}a_{n-2}+...x_{t}a_{n-t}&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+f(z) = g(z) \sum_{0\leq n &lt; t} a_n z^n (mod z^t) %]]&gt;&lt;/script&gt;
+where $g(z) = 1- x_{1}z - x_{2}z^2….x_{t}z^t$
+&lt;script type=&quot;math/tex&quot;&gt;f(z) = u_{0}(z)-u_{1}(z)...u_{t}(z)&lt;/script&gt;, dependens on initial values&lt;/p&gt;
+
+&lt;p&gt;$a_0,a_1,…a_{t-1}$
+&lt;script type=&quot;math/tex&quot;&gt;a(z) = \frac {f(z)}{g(z)}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;for simple OGF, we can lookup the OGF table to get the a(n).
+However, sometimes, the a(z) is complexed expressed by z.&lt;/p&gt;
+
+&lt;p&gt;then we can expand generating functions or find functional equations on generating fucntions, to transform the
+generating function into the coeffient form of l(z)z^N
+Example Solving linear recurrence &lt;script type=&quot;math/tex&quot;&gt;a_n = 5a_{n-1}-8a_{n-2}+4a_{n-3},\quad for \  n \geq 3\  with \  a_0=0,a_1=1,a_2=4&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 1: make recurence valid for all n&lt;/p&gt;
+
+&lt;p&gt;when $a_0=0$, it need no delta.
+when $a_1=1$, it need $\delta_{n1} = 1$, only works when n = 1
+when $a_2=4$, it need $\delta_{n2} = -1$, only works when n = 2
+So &lt;script type=&quot;math/tex&quot;&gt;a_n = 5a_{n-1}-8a_{n-2}+4a_{n-3}+\delta_{n1}+\delta_{n_2}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 2: multiple by $z^n$, and sum on n&lt;/p&gt;
+
+&lt;p&gt;since there will only a z for n = 1, and $-z^2$ for n = 2.&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;A(z) = 5zA(z)-8z^2A(z)+4z^3A(z)+z-z^2&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 3: Solve A(z)&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A(z) = \frac {z-z^2}{1-5z+8z^2-4z^3}&lt;/script&gt;
+
+&lt;p&gt;easy found that in the above formation of $\frac {f(z)}{g(z)}$&lt;/p&gt;
+
+&lt;p&gt;Step 4: Simplify or partial fractions.&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;A(z) = \frac {z(1-z)}{(1-z)(1-2z)^2}&lt;/script&gt;, sometimes, there will be partial
+fractions.&lt;/p&gt;
+
+&lt;p&gt;Step 5: Expand A(Z) to get a_n&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_n = n2^{n-1}&lt;/script&gt;
+
+&lt;p&gt;some other application of generating functions: Probability Generating
+Functions to simplify the caculation for expectation and so on, Bivariate Generating Functions based couting and analysis of cost paramters.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-operate-methodmultiple-roots-xn&quot;&gt;2. Operate Method(Multiple roots $x^n$)&lt;/h4&gt;
+
+&lt;p&gt;We have given a method for finding an exact solution for any linear recurrence.
+The process makes explicit the way in which the full solution is determined by
+the initial conditions. When the coefficients turn out to be zero and/or some
+roots have the same modulus, the result can be somewhat counterintuitive, though
+easily understood in this context&lt;/p&gt;
+
+&lt;h4 id=&quot;3-analytic-combinatorics&quot;&gt;3. Analytic combinatorics&lt;/h4&gt;
+&lt;p&gt;Symbolic methods, see more on Analytic combinatorics.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Step 1: Combinatatorial constructions
+Step 2: Symblic transfer , Get GF equations.
+Step 3: analytic transfer , Get coefficient asymptotic
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;variable-coefficients-a_n--na_n-1-n-1a_n-2--1&quot;&gt;variable coefficients: $a_n = na_{n-1}+ (n-1)a_{n-2} + 1$&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;summation factor 
+&lt;script type=&quot;math/tex&quot;&gt;a_n = na_{n – 1} + n(n – 1)a_{n – 2}&lt;/script&gt;
+=&amp;gt; Divided by n!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Symbolic solution&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;GF and approximation methods&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;nolinear-a_n--a_n-1-a_n-2--sqrt-2a_n-2&quot;&gt;nolinear: $a_n = a_{n-1} a_{n-2} + \sqrt [2]{a_{n-2}}$&lt;/h3&gt;
+
+&lt;h2 id=&quot;higher-order&quot;&gt;Higher Order&lt;/h2&gt;
+
+&lt;p&gt;$a_n = f(a_{n-1},a_{n-2},a_{n-t})$&lt;/p&gt;
+
+&lt;h2 id=&quot;full-history&quot;&gt;Full History&lt;/h2&gt;
+
+&lt;p&gt;$a_n = n+a_{n-1}+a_{n-2}+…a_{1}$&lt;/p&gt;
+
+&lt;h2 id=&quot;divide-and-conquer&quot;&gt;Divide-and-Conquer&lt;/h2&gt;
+
+&lt;p&gt;$a_n = n+a_{\lfloor{n/2}\rfloor}+a_{\lceil{n/2}\rceil}+n$&lt;/p&gt;
+
+&lt;h3 id=&quot;classic-examples&quot;&gt;Classic examples:&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Binary search
+* Mergesort
+* Bather network
+* Karatsuba multiplication
+* Strassen matrix multiplication
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;pattern&quot;&gt;Pattern:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dividing into a parts of size about $N/\beta$&lt;/li&gt;
+  &lt;li&gt;Solving recuresively&lt;/li&gt;
+  &lt;li&gt;Combining solutions with extra cost $\Theta(N^{\gamma}(\log_N)^\delta)$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;a_n = a_{n/\beta+O(1)}+ a_{n/\beta+O(1)}+....a_{n/\beta+O(1)}+ \Theta(n^{\gamma}(\log_N)^\delta&lt;/script&gt;
+with alpha terms for the sum, telescoping, 
+&lt;script type=&quot;math/tex&quot;&gt;{\alpha}^{\log_{\beta}^n} + \Theta (n^{\gamma}(\log_N)^\delta)&lt;/script&gt;
+is given by 
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+a_n = \Theta (n^{\gamma}(\log_N)^\delta) \quad when \quad \gamma &lt; log_{\beta}^{\alpha} %]]&gt;&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;a_n = \Theta (n^{\gamma}(\log_N)^{\delta+1}) \quad when \quad \gamma = log_{\beta}^{\alpha}&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;a_n = \Theta (n^{\log_{\beta}^{\alpha}} \quad when \quad \gamma &gt; log_{\beta}^{\alpha}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;More about Master Theorem,
+“A Master Theorem for Discrete Divide and Conquer Recurrences”, SODA 2011&lt;/p&gt;
+
+&lt;h2 id=&quot;methods-for-solving-recurrence&quot;&gt;Methods for solving recurrence&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-change-of-variable&quot;&gt;1. Change of Variable&lt;/h3&gt;
+&lt;h3 id=&quot;2-repertorie&quot;&gt;2. Repertorie&lt;/h3&gt;
+
+&lt;p&gt;Another path to exact solutions in some cases is the so-called repertoire
+method, where we use known functions to find a family of solutions similar to
+the one sought, which can be combined to give the answer. This method primarily
+applies to linear recurrences, involving the following steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Relax the recurrence by adding an extra functional term.&lt;/li&gt;
+  &lt;li&gt;Substitute known functions into the recurrence to derive identities similar to
+the recurrence.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Take linear combinations of such identities to derive an equation identical to
+the recurrence.&lt;/p&gt;
+
+    &lt;p&gt;The success of this method depends on being able to find a set of independent
+solutions, and on properly handling initial conditions. Intuition or knowledge
+about the form of the solution can be useful in determining the repertoire. The
+classic example of the use of this method is in the analysis of an equivalence
+algorithm by Knuth and Schönhage&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-bootstrapping&quot;&gt;3. Bootstrapping&lt;/h3&gt;
+
+&lt;p&gt;Often we are able to guess the approximate value of the solution to a
+recurrence. Then, the recurrence itself can be used to place constraints on the
+estimate that can be used to give a more accurate estimate. Informally, this
+method involves the following steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use the recurrence to calculate numerical values.&lt;/li&gt;
+  &lt;li&gt;Guess the approximate form of the solution.&lt;/li&gt;
+  &lt;li&gt;Substitute the approximate solution back into the recurrence.&lt;/li&gt;
+  &lt;li&gt;Prove tighter bounds on the solution, based on the guessed solution and the substitution.
+For illustrative purposes, suppose that we apply this method to the Fibonacci
+recurrence:
+&lt;script type=&quot;math/tex&quot;&gt;a_n = a_{n – 1} + a_{n – 2}&lt;/script&gt; 
+for n &amp;gt; 1 with a0 = 0 and a1 = 1.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;First, we note that an is increasing. Therefore, $ a_{n – 1} &amp;gt; a_{n – 2} and a_n &amp;gt; 2a_{n–2}$
+Iterating this inequality implies that an &amp;gt; 2^{n/2}, so we know that an has at 
+least an exponential rate of growth. On the other hand, $a_{n – 2} &amp;lt; a_{n –1}$ 
+implies that $ a_n &amp;lt; 2a_{n – 1}, or (iterating) a_n &amp;lt; 2^n $. Thus we have proved upper
+and lower exponentially growing bounds on an and we can feel justified in “guessing” a solution of the form $a_n \sim c0{\alpha}^n$, where $\sqrt[2]{2} &amp;lt;\alpha &amp;lt; 2$  From the recurrence,
+we can conclude that a must satisfy $a^2 – a – 1 = 0$
+Having determined the value a, we can bootstrap and go back to the
+recurrence and the initial values to find the appropriate coefficients.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-perturbation&quot;&gt;4. Perturbation&lt;/h3&gt;
+
+&lt;p&gt;Another path to an approximate solution to a recurrence is to solve a simpler
+related recurrence. This is a general approach to solving recurrences that
+consists of first studying simplified recurrences obtained by extracting what
+seems to be dominant parts, then solving the simplified recurrence, and finally
+comparing solutions of the original recurrence to those of the simplified
+recurrence. This technique is akin to a class of methods familiar in numerical
+analysis, perturbation methods. Informally, this method involves the following
+steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Modify the recurrence slightly to find a known recurrence.&lt;/li&gt;
+  &lt;li&gt;Change variables to pull out the known bounds and transform into a recurrence
+on the (smaller) unknown part of the solution.&lt;/li&gt;
+  &lt;li&gt;Bound the unknown “error” term.&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2015/09/19/note3-aofa-recurrence/</guid>
+			</item>
+		
+			<item>
+				<title>Note2-AofA: A scientfic Approach</title>
+				<link>https://mlciv.com/blog/2015/09/19/note2-aofa/</link>
+				<pubDate>Sat, 19 Sep 2015 14:05:00 +0000</pubDate>
+				<description>&lt;h1 id=&quot;a-scientfic-approach&quot;&gt;A scientfic Approach&lt;/h1&gt;
+
+&lt;p&gt;The scientfic method: O-notation, not at all useful for predicting performance&lt;/p&gt;
+
+&lt;p&gt;Scientific method calls for tilde-notion. Running time is ~aN^c, an effective
+path to predicting performance&lt;/p&gt;
+
+&lt;p&gt;Common error: Thinking that O-notaion is useful for predicting performance&lt;/p&gt;
+
+&lt;h2 id=&quot;galactic-algorithms&quot;&gt;Galactic algorithms:&lt;/h2&gt;
+
+&lt;p&gt;R.J.Lipton: A galactic is one that will  never be used.
+An effect would never be noticed in this galaxy.
+75% SODA,95% STOC/FOCS are galctic
+&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Analyze the algorithm by
+    &lt;ul&gt;
+      &lt;li&gt;idenfiying anabstractr operation in the inner loop&lt;/li&gt;
+      &lt;li&gt;Develop a realistic model for input to the program.&lt;/li&gt;
+      &lt;li&gt;Analyze the frequeny of execution $C_n$ of op for input size N&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Hypothsieze that the cost is ~ $aC_n$ where a is a constant&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Validate the hypothesis by
+    &lt;ul&gt;
+      &lt;li&gt;Developing generator for input according to model.&lt;/li&gt;
+      &lt;li&gt;Calculate a by running the program for large input.&lt;/li&gt;
+      &lt;li&gt;Run the program for larger input check the analysis&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Validate the model by testing in application contexts.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Refine and repeat as necessary.&lt;/p&gt;
+
+&lt;p&gt;Tilde Notation.&lt;/p&gt;
+
+&lt;h3 id=&quot;empirical&quot;&gt;Empirical:&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Run algorithm to solve real algorithm
+* Measure running time and/or count operations Challenge: need good implementation
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;mathematical&quot;&gt;Mathematical:&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Develop mathematical model.
+* Analyze algorithm within model Challenge: need good model. need to the math
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;scientific&quot;&gt;Scientific:&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Run algorithm to solve real problem
+* Check for agreement with model. Challenge: need all of the above.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;drawbacks&quot;&gt;Drawbacks:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Model may not be realistic.
+    &lt;ul&gt;
+      &lt;li&gt;A challenge in any scientific discipline&lt;/li&gt;
+      &lt;li&gt;Advantage in CS: we can randomize to make the model apply.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Math may be too difficult
+    &lt;ul&gt;
+      &lt;li&gt;A challenge in any scientific (c.f statistical physics)&lt;/li&gt;
+      &lt;li&gt;A “calculus” for AofA is the motivation for this course!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Experiments may be too difficult.
+    &lt;ul&gt;
+      &lt;li&gt;Not compared to other scientific disciplines.&lt;/li&gt;
+      &lt;li&gt;Can’t implement? Why analyze?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;symmetry:&lt;/p&gt;
+
+&lt;p&gt;$\sum_{1 \leq k\leq N} {C_{k-1}+C_{N-k}}$&lt;/p&gt;
+
+&lt;p&gt;both sums are $\sum_{1 \leq k \leq 2} C_{k-1}$&lt;/p&gt;
+
+&lt;p&gt;Quicksort compares: limiting distribution is not “normal”
+“Approximating the Limiting Quicksort Distributution”&lt;/p&gt;
+
+&lt;p&gt;Easy Method to Predict
+Hypothesis: Running time of Quicksort is ~aN in N.&lt;/p&gt;
+
+&lt;p&gt;Experiment.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Run for input size N. Observe running time.
+* Could solve for a.
+* Predict time for 10N to increase by a factor ..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Validate-refine-analyze cycle&lt;/p&gt;
+
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2015/09/19/note2-aofa/</guid>
+			</item>
+		
+			<item>
+				<title>Note1-AofA: From AofA to AC</title>
+				<link>https://mlciv.com/blog/2015/09/19/note1-aofa/</link>
+				<pubDate>Sat, 19 Sep 2015 11:33:00 +0000</pubDate>
+				<description>&lt;p&gt;This is an introduce lecture on Analysis of Algorithms. I will show the history
+and progress having made in the past, from Knuth’s scientific method, to Theory
+of Algorithm, and then to the current Analytic Combinatorial. We can get a
+general picture from this lecture. &lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;#Introduction&lt;/p&gt;
+
+&lt;p&gt;Classic AofA Steps:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Develop recurrence relation&lt;/li&gt;
+  &lt;li&gt;Derive GF equation&lt;/li&gt;
+  &lt;li&gt;Extract coefficients&lt;/li&gt;
+  &lt;li&gt;Asymptotics:Develop approximation&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;context&quot;&gt;Context&lt;/h1&gt;
+
+&lt;h2 id=&quot;mathematics-need&quot;&gt;Mathematics need&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Recurrence&lt;/li&gt;
+  &lt;li&gt;Genretating Function&lt;/li&gt;
+  &lt;li&gt;Asymptotics&lt;/li&gt;
+  &lt;li&gt;Trees&lt;/li&gt;
+  &lt;li&gt;Permutations&lt;/li&gt;
+  &lt;li&gt;Strings and Tries&lt;/li&gt;
+  &lt;li&gt;Words and Maps&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;ultimate-goal-automatic-analysis&quot;&gt;Ultimate Goal: Automatic Analysis&lt;/h2&gt;
+
+&lt;p&gt;Analysis of Algorithm(1995) -&amp;gt; INRIA tech reports -&amp;gt; Analytic Combinatorics
+In principle, classical methods can provide&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* full detials.
+* full and accurate asymptotic estimates
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In practice, it is ofter possible to&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* generalize specialized derivations
+* skip details and move directly to accurate asymptotics
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;knuth-the-art-of-computer-programming&quot;&gt;Knuth: The Art of Computer Programming&lt;/h2&gt;
+&lt;p&gt;To analyze an algorithm:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Develop a good implementation and a realistic input mode
+* Determine the caose and execution frequency of each operation.
+* Calculate the total running time
+* Run experiments to validate model and analysis  Beni: 
+
+* Scientific foundation for AofA.
+* Can predict performance and compare algorithms
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Drawbacks:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Model may be unrealistic.
+* Excessive detail likely in the analysis
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;theory-of-algorithms-ahu-1970clrs&quot;&gt;Theory of Algorithms (AHU 1970,CLRS)&lt;/h2&gt;
+&lt;p&gt;To address Knuth drawbacks:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Analyze worst-case cost [takes model out of the picture]
+* Use O-notation for upper bound [takes detail out of analysis]
+* Classify algorithms by these costs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Beni:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Enable a new Age of Algorithm Design
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Drawbacks:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Analysis is often unsuitable for scientific studies (often overlooked)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;analytic-combinatorics&quot;&gt;Analytic combinatorics&lt;/h2&gt;
+&lt;p&gt;can provide a basis for scitenfic studies.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* A calculus for developing models.
+* Universal laws that encompass the detail in the analysis
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Quantitative study of large combinatorial structures.
+    Generating fuctions are the central object of study&lt;/p&gt;
+
+&lt;p&gt;AC Basic process:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Defin a combinatorial construction that precisely sepcifies the structure.
+2. Use a symbolic transfer theorem to derive a GF equation.
+3. Use an analytic transfer theorem to extract coefficient asymptotics
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;combinatorial-constructions&quot;&gt;Combinatorial constructions:&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Algeraic formular built from natural combinatorial operators
+* Operands are atoms or other combinatorial constructsions
+* Two cases: atoms are unlabelled or labelled (all different)i ### Generating functions:
+* controverial for some time. no particular meaning
+symbolic meyhods: OGFs,EGFs,MGFs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;extract-coefficients-asymptotics&quot;&gt;Extract coefficients asymptotics&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;analytic transfer theorems based on GF as complex function.
+Complex Asympotics: Singularity Analysis, Saddle Pointi [Asmptotiv
+Counting,Moments of paramenters]
+=&amp;gt; Random Structures: Multivarite Asymptotics, Singularity
+Perturbation.[limit laws,Large Deviations]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;combinatorial-structures&quot;&gt;combinatorial structures:&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;unlabelled universe:
+    trees,strings,languages, compostitions.partitions, intergers.
+labelled universe:
+    permutations,cycles,words,mappings,urns,cayley trees
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;universal-laws&quot;&gt;Universal laws&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;of sweeping generarlity are on hallmark of analytic combinatorics
+Example: Context-free constructions
+Grobner basis eleminations
+Drmota-Lalley-wood theorem
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;analytic-combinatorics-at-the-next-level&quot;&gt;Analytic combinatorics at the next level&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Combinatorial parameters are handled with MGFS, often leadning to limit
+laws.
+Complicated singualrity strucuture leads to oscillatory behavior (like RS/PF
+        formula in common).
+GFs with no singularties require saddle-points asymptotics.
+&quot;If you can specify it, you can generate a random structure&quot;.
+Analytic transfer understanding transformations form one combinatrorial
+struture to another.
+New types of implicit GS functional equations are arise. very strong list and growing
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;applications-of-analytic-combinatorics&quot;&gt;Applications of analytic combinatorics&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* patterns in random strings
+* polynomials over finite fields
+* hashing
+* data compression
+* geometric search
+* combinatorial chemistry
+* arithmetic alogrithms
+* planr maps and graphs
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2015/09/19/note1-aofa/</guid>
+			</item>
+		
+			<item>
+				<title>hadoop distcp from secure to insecure 0.20.2</title>
+				<link>https://mlciv.com/blog/2015/02/17/hadoop-distcp-secure2insecure_0.20.2/</link>
+				<pubDate>Tue, 17 Feb 2015 17:14:00 +0000</pubDate>
+				<description>&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+
+&lt;p&gt;When secure hadoop 0.20.2 want to access insecure hadoop 0.20.2, espeically for using distcp on hdfs,
+  the job (distcp) will try to get token for both source and destination FileSystem.
+  However, the insecure hadoop will return null token for disabled security option, which
+  let secure hadoop client(DFSClient) throw NPE and job failed. Hence, we need to upgrade
+  hadoop client code about getDelegationToken to work around this case. &lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;solution&quot;&gt;Solution&lt;/h1&gt;
+
+&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
+
+&lt;p&gt;For null token received in DFSClient#getDelegationToken, not print it with stringifyToken&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code&gt;
+      // For insecure, result will be null, and throwing NPE by stringifyToken
+      if(result != null){
+        LOG.info(&quot;Created &quot; + stringifyToken(result));
+      }else{
+        // for null token, handled by DistributedFileSystem for creating an dummy token.
+        LOG.info(&quot;Created null token!&quot;);
+      }
+  &lt;/code&gt;
+  &lt;/pre&gt;
+
+&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
+
+&lt;p&gt;For null token received in DistributedFileSystem#getDelegationToken, return a new dummy Token&lt;/p&gt;
+&lt;pre&gt;
+   &lt;code&gt;
+   result = new Token&lt;DelegationTokenIdentifier&gt;(identifier,password,kind,service);
+   &lt;code&gt;
+   &amp;lt;/pre&amp;gt;
+   
+
+## Step 3 
+
+Build new hadoop-core and deploy
+   &lt;pre&gt;
+      1. ant
+      2. scp build/hadoop-core-0.20.2-cdh3u1.jar xxxx@xxxxx:/yourpath/
+   &lt;/pre&gt;
+
+## Step 4
+
+Set CLASSPATH using this new hadoop client jar.
+
+   1. Only local support, let hadoop search HADOOP_CLASSPATH first for class loading.
+   &lt;pre&gt;
+       export HADOOP_CLASSPATH=/yourpath/hadoop-core-0.20.2-cdh3u1.jar
+       export HADOOP_USER_CLASSPATH_FIRST=true
+   &lt;/pre&gt;
+
+   2. For every node in secure cluster using this new jar.
+   In most case, the job will get all required token, and set it into its Credential, which will make
+   any other nodes in this cluster share this token.  So usually there is no need for every node upgrades this new client,
+   which will also pollute the secure cluster. Please add the following code into the code of your hadoop job:
+   &lt;pre&gt;
+        job.getConfiguration().set(&quot;mapreduce.job.user.classpath.first&quot;, &quot;true&quot;);
+   &lt;/pre&gt;
+
+
+## Step 5
+Just run your job as usually.
+
+
+&lt;/code&gt;&lt;/DelegationTokenIdentifier&gt;&lt;/code&gt;&lt;/pre&gt;
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2015/02/17/hadoop-distcp-secure2insecure_0.20.2/</guid>
+			</item>
+		
+			<item>
+				<title>Google Analytics for Octopress</title>
+				<link>https://mlciv.com/blog/2014/04/26/ga-for-octopress/</link>
+				<pubDate>Sat, 26 Apr 2014 21:52:00 +0000</pubDate>
+				<description>&lt;p&gt;Using Octopress as a blog framework is a funny experience, and how to display
+some blog stats such as pv is another interesting and challenge task for octopress post are only
+static html pages which means you cannot easily record the count by githubpages.&lt;/p&gt;
+
+&lt;p&gt;Google Analytics Service(GA) is a nature choice for web site analysis and there is
+already an Octopress plugin called jekyll-ga, which can sort blog posts by 
+certain metrics of GA and another improved plugin called octopress-page-view. After trying these plugins, I jogged down some understandings and steps for how to
+using GA for Octopress as following:&lt;/p&gt;
+
+&lt;!-- more --&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;1-what-is-google-analytics&quot;&gt;1. What is Google Analytics&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;p&gt;Do you know what people do when they visit your website or web app? Or how much
+the site contributes to your bottom line? Google Analytics keeps track and makes
+it easy for you to learn precisely what’s happening. Google Analytics shows you
+how to track different market segments and analyze conversion rates, and reveals
+advanced techniques such as marketing-campaign tracking, a valuable feature that
+most people overlook.&lt;/p&gt;
+
+&lt;p&gt;Accessing https://www.google.com/intl/zh/analytics/ and Using it is the best way to taste GA.
+An expert and hands-on book for GA can endow you a systematic view. The link on Amazon is the
+following.
+http://www.amazon.cn/mn/detailApp/ref=asc_df_0596158009956339/?asin=0596158009&amp;amp;tag=douban-23&amp;amp;creative=2384&amp;amp;creativeASIN=0596158009&amp;amp;linkCode=df0&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;2-how-to-track-your-site-with-google-analytics&quot;&gt;2. How to track your site with Google Analytics&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;The above reference can offer your more details about GA. Here I just list some
+sensible cognition for understanding how Google Analytics works and how to set
+up GA service for your site.&lt;/p&gt;
+
+&lt;h2 id=&quot;tracking-id&quot;&gt;Tracking ID&lt;/h2&gt;
+
+&lt;p&gt;When you login to the GA console web page https://www.google.com/analytics/web/, you will asked to create a new project to tracking your site.
+First, a tracking ID and a segment of code will be generated.
+The tracking ID is the unique ID for your site, and it has the following funtions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Notify the GA service when your site being accessed
+The generated code need to emebeded into your page template, so that the script will be called to notify GA with the tracking ID when someone is viewing your page. This just like the script is telling the GA,”Hello GA,someone in Japan is using the Chrome to view your client’s (TrackingID) page, please note down this.” 
+ So when GA receive this notice, it will record this viewing behavior in some database, and there comes a data design problem? How to organize the data?&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;TrackingID is the tableID
+You can imagine there is a data table used for these tracking record, and so a unique tracking ID is mapped into a unqiue table. Simplely speaking, the record will stored into a table called “TrackingID” and the data in this table will be analyzed and generated into a report including some graph displaying in the GA console. Some times you also need to fectch the GA data for other purposes using Google Analytics API  but not only appretiate the generated report in the GA console.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;google-analytic-api&quot;&gt;Google Analytic API&lt;/h2&gt;
+&lt;p&gt;With the generated trakcing ID, a table is created and tracking records are filled in. Then how to get these data is a coming issue the site analyzer will concern about.
+Of course, the greate google offer the Google Analytic API. More details about how to program with the API can be found here. 
+https://developers.google.com/analytics/devguides/reporting/&lt;/p&gt;
+
+&lt;p&gt;More significantly, the lovely google offer a Google Analytic API service in the Google Developers Console: https://console.developers.google.com/project
+You can create a project and active the GA API service. The project is a proxy for the following funtions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Authorize the clients who can send GA API request&lt;br /&gt;
+The user should create a new client key in this GA API proxy and grant permissions for newly client. 
+The generated client key contains &lt;strong&gt;a GA service account&lt;/strong&gt; which should also be granted previleges in the GA console and &lt;strong&gt;a private certificate&lt;/strong&gt; required by the client.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Forward the request to GA and return the response data to clients
+Now the client use the authorized GA service account and the private key to send request. The GA API service will forward the request from the client to the GA server to fectch ths data with tracking ID.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;3-get-pageview-data-for-octopress&quot;&gt;3. Get PageView Data For Octopress&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;step-1-installation&quot;&gt;Step 1. Installation&lt;/h2&gt;
+&lt;p&gt;see more. https://github.com/developmentseed/jekyll-ga&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2-set-up-a-service-account-for-the-ga-api&quot;&gt;Step 2. Set up a service account for the GA API&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Turn on the Analytics API and accept the terms of service
+Go to API Access on the left sidebar menu, create a new oauth 2.0 client ID, give your project a name, and click next.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Select Application type: Service account, and click Create client ID&lt;/li&gt;
+  &lt;li&gt;Note the private key’s password. It will probably be notasecret unless Google changes something. You’ll need to enter this value in your configuration settings.&lt;/li&gt;
+  &lt;li&gt;Download the private key. Save this file because you can only download it once. Copy it to the root of your Jekyll repository. Safety tip: To protect this file, add its file name to your .gitignore file and to the exclude list in your _config.yml file&lt;/li&gt;
+  &lt;li&gt;Note the Email address for the Service account. You’ll need this for your configuration settings and in the next step.&lt;/li&gt;
+  &lt;li&gt;Log into Google Analytics and add the service account email address as a user of your Google Analytics profile: From a report page, Admin &amp;gt; User Management &amp;gt; Add permission for &amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;step-3-configure-page-view-plugin&quot;&gt;Step 3. Configure Page-View Plugin&lt;/h2&gt;
+&lt;p&gt;see more. http://jhshi.me/2013/11/10/page-view-plugin-for-octopress/&lt;/p&gt;
+&lt;p&gt;
+&lt;code&gt;
+#octopress-page-view &amp;lt;/br&amp;gt;
+page-view: &amp;lt;/br&amp;gt;
+  service_account_email:    #XXXXXX@developer.gserviceaccount.com &amp;lt;/br&amp;gt;
+  key_file: privatekey.p12  #service account private key file &amp;lt;/br&amp;gt;
+  key_file: privatekey.p12  #service account private key file &amp;lt;/br&amp;gt;
+  key_secret: notasecret    #service account private key's password &amp;lt;/br&amp;gt;
+  profileID:                #ga:XXXXXXXX &amp;lt;/br&amp;gt;
+  start: 3 years ago        #Beginning of report &amp;lt;/br&amp;gt;
+  end: now                  #End of report&amp;lt;/br&amp;gt;
+  metric: ga:pageviews      #Metric code &amp;lt;/br&amp;gt;
+  segment: 			         #All visits optional &amp;lt;/br&amp;gt;
+  filters:                  #optional &amp;lt;/br&amp;gt;
+&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p&gt;service_account_email, key_file, and key_secret come from the Google API console when you set up your service account.&lt;/p&gt;
+
+&lt;p&gt;profileID is the specific report profile from which you want to pull data. Find it by going to the report page in Google Analytics. Look at the URL. It will look something like https://www.google.com/analytics/web/?hl=en&amp;amp;pli=1#report/visitors-overview/###########p######/. The number after the p at the end of the URL is your profileID.&lt;/p&gt;
+
+&lt;p&gt;The start and end indicate the time range of data you want to query. They are parsed using Ruby’s Chronic gem, so you can include relative or absolute dates, such as now, yesterday, last month, 2 weeks ago. See Chronic’s documentation for more options.&lt;/p&gt;
+
+&lt;p&gt;The metric value is what you want to measure from your Google Analytics data. Usually this will be ga:pageviews or ga:visits, but it can be any metric available in Google Analytics. Specify only one. See the Google Analytics Query Explorer to experiment with different metrics. (Your dimension should always be ga:pagePath)&lt;/p&gt;
+
+&lt;p&gt;The segment and filters keys are optional parameters for your query. See the Google Analytics Query Explorer for a description of how to use them, or just leave them out.&lt;/p&gt;
+
+&lt;p&gt;The sort key can be true or false. If true, your posts will be sorted first by your Google Analytics metic, then chronologically as is the default. If false or not specified, your posts will sort as usual.&lt;/p&gt;
+
+&lt;p&gt;see more api usage. https://developers.google.com/analytics/devguides/reporting/&lt;/p&gt;
+
+&lt;h2 id=&quot;step-4-fetch-data-and-generate-pages&quot;&gt;Step 4. Fetch Data and Generate Pages&lt;/h2&gt;
+&lt;p&gt;As we all known, the github page only support the static pages, which means the page view count can only be generated at local and write into the generated html.&lt;/p&gt;
+
+&lt;p&gt;So &lt;code&gt; rake generate&lt;/code&gt; will invoke this fechtin process in the pageview.rb written in ruby. You can read the code and add some debug code such as &lt;code&gt;p results&lt;/code&gt; to print the request and the result in the console and to check whether the api request is right.&lt;/p&gt;
+
+&lt;p&gt;Here are some ways to check the rightness:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;GA API console(https://console.developers.google.com/project) will show the request and the count of the error&lt;/li&gt;
+  &lt;li&gt;Your debug code or some threw out excpetion info&lt;/li&gt;
+  &lt;li&gt;watch your arguments and check in https://developers.google.com/analytics/devguides/reporting/&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2014/04/26/ga-for-octopress/</guid>
+			</item>
+		
+			<item>
+				<title>Octave on Mac</title>
+				<link>https://mlciv.com/blog/2013/12/14/octave-on-mac/</link>
+				<pubDate>Sat, 14 Dec 2013 19:21:00 +0000</pubDate>
+				<description>&lt;p&gt;For learning the &lt;a href=&quot;https://class.coursera.org/ml-004/lecture/index&quot;&gt;online machine learning course on coursera&lt;/a&gt;, which use Octave for programming exercise, I need a Octave development enviroment on my MBP. But when I use &lt;code&gt;brew install octave&lt;/code&gt;, I got a lot of errors, especially on Mac OS 10.9. After many times retry, eventually I sucesseed to install it, so I will depict my process on handle these problems occured in the tough installing process.&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+brew doctor
+brew update
+brew search octave
+brew tap homebrew/science
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h1 id=&quot;0before-using-brew&quot;&gt;0.Before using brew&lt;/h1&gt;
+&lt;p&gt;Before using brew, I have tried to download the octave pkg on its official site. But this drag-and-drop version pkg is always crashed on my Mac OS 10.9. So maybe installed by compling source through homebrew is good idea. And then you will find you will get the following compiler not found error as following:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+configure: error: no acceptable C compiler found in
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;For handling the error above, you should update your xcode and install the Command Line Tool. In the Mac OS 10.9, you need use &lt;code&gt;xcode-select --install&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;1gfortran&quot;&gt;1.gfortran&lt;/h1&gt;
+&lt;p&gt;By using &lt;code&gt;brew install gfortran&lt;/code&gt;, you can succeed to installed it, but when &lt;code&gt;brew install octave&lt;/code&gt; you will get the following error:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+Undefined symbols for architecture x86_64:
+&quot;_append_history&quot;, referenced from:
+_octave_append_history in liboctave_la-oct-rl-hist.o
+(maybe you meant: _octave_append_history)
+&quot;_history_list&quot;, referenced from:
+_octave_history_list in liboctave_la-oct-rl-hist.o
+(maybe you meant: _octave_history_list)
+&quot;_read_history_range&quot;, referenced from:
+_octave_read_history_range in liboctave_la-oct-rl-hist.o
+(maybe you meant: _octave_read_history_range)
+&quot;_rl_basic_quote_characters&quot;, referenced from:
+...
+...
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;And I managed to solve this problem by installing a GCC compiler from the high performance computing website:
+&lt;code&gt;
+http://hpc.sourceforge.net/
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you can try &lt;code&gt;brew install octave&lt;/code&gt; again. Then maybe you will get the following error again.&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+configure: error: A BLAS library was detected but found incompatible with
+your Fortran 77 compiler settings
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;For this you should use another octave link as following:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+brew install https://raw.github.com/Homebrew/homebrew-science/3c3fe3baaf926437f750f65456769c124d6be8e1/octave.rb --env=std
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;To here, every things seems ok. It will take several minutes to compile the whole octave.&lt;/p&gt;
+
+&lt;h1 id=&quot;3-link-octave-to-usrlocal&quot;&gt;3. Link octave to /usr/local/&lt;/h1&gt;
+&lt;p&gt;Please pay attention that for gcc-4.8-bin.tar.gz the unziped destination fold is /usr/local. you need sudo, bu after that you will get every fold in /usr/local has a wrong pessmion, and when you use try &lt;code&gt;brew install octave&lt;/code&gt; you will encouter the following error:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+The formula built, but is not symlinked into /usr/local
+Error: Permission denied - /usr/local/
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;So for permission issue, you can do 
+&lt;code&gt;
+sudo chown -R yourname:admin /usr/local/
+&lt;/code&gt;
+and linke the octave again.
+To here, you already succeed a half and you can run octave in the the terminal now.&lt;/p&gt;
+
+&lt;h1 id=&quot;4-gnuplot&quot;&gt;4. gnuplot&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;brew install gnuplot&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Try run octave again, you will get this:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+gnuplot&amp;gt; set terminal aqua enhanced title &quot;Figure 1&quot; size 560 420  font
+&quot;*,6&quot;
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;For handling this error, you can type &lt;code&gt; setenv(&quot;GNUTERM&quot;, &quot;X11&quot;)&lt;/code&gt;
+before you use plot() in octave.(And of course you need install X11 first.)&lt;/p&gt;
+
+&lt;p&gt;Wish this passage can hlep you!&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2013/12/14/octave-on-mac/</guid>
+			</item>
+		
+			<item>
+				<title>Mavericks CLT</title>
+				<link>https://mlciv.com/blog/2013/12/11/mavericks-clt/</link>
+				<pubDate>Wed, 11 Dec 2013 00:17:00 +0000</pubDate>
+				<description>&lt;p&gt;After the Apple Inc. make the Mavericks free, I upgrade my os of MBP into Mac OS X
+Mavericks.But I found that some basic header files such as “stdio.h” are gone and some
+tools can not be build normally.&lt;/p&gt;
+
+&lt;p&gt;So the problem is the Command Line Tools which has not be installed right, .
+For the early version of xcode. you can install the CLT by find it in the
+xcode-&amp;gt;preferences-&amp;gt;download. But for Mavericks, there is no more CLT in the
+download list. And the following is the right method to install.&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+xcode-select --install
+&lt;/code&gt;
+&lt;/pre&gt;
+
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2013/12/11/mavericks-clt/</guid>
+			</item>
+		
+			<item>
+				<title>Raspberry 无线网卡无法使用问题</title>
+				<link>https://mlciv.com/blog/2013/07/09/raspberry-wifi/</link>
+				<pubDate>Tue, 09 Jul 2013 00:25:00 +0000</pubDate>
+				<description>&lt;p&gt;最近入手了Raspberry Pi玩下，一起也买了推荐的免驱的EDUP N8508GS, 买回来用了几天，
+实测确实免驱，不用自己折腾驱动了，刚开始使用的时候是将无线网卡接在HUB上的，使用
+没有什么问题，但是用了几天，突然wifi突然不能自动获取到IP了，设置静态的IP也不能访
+问网关，于是我试着重新切换到其他的系统，NOOBS确实是个入门尝鲜的好工具，可以很方
+便的安装各种raspberry pi的系统进行尝试，我依次尝试了raspbmc，raspbian,Pidora都不
+行。。。&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;后来发现，我将EDUP wifi网卡直接插在Raspberry的USB上，而不经过USB HUB,发现就可以
+了，目前还不清楚具体的是什么问题，看启动过程，插在hub上的时候，其实也是识别出了
+wlan0网卡的，但是就是获取不到IP地址，而且手动配置也不行了，怀疑是电压或者hub本身
+的问题导致不能正常工作，同样有这样的问题，还有rapoo的键鼠套装。具体原因未知，遇
+到此类USB设备不好用的，可以试下直接连在Raspberry Pi的USB上试试，不经过USB HUB.&lt;/p&gt;
+
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2013/07/09/raspberry-wifi/</guid>
+			</item>
+		
+			<item>
+				<title>Raspberry-GPIO试用</title>
+				<link>https://mlciv.com/blog/2013/07/03/raspberry-gpio/</link>
+				<pubDate>Wed, 03 Jul 2013 22:14:00 +0000</pubDate>
+				<description>&lt;h1 id=&quot;raspberry-pi-gpio-试用&quot;&gt;Raspberry pi GPIO 试用&lt;/h1&gt;
+
+&lt;p&gt;最近入手了Raspberry Pi,安装了Raspxbmc系统 一个很漂亮的多媒体系统，在树莓派的论坛
+和博客上也看到了用Raspberry Pi制作fm收音机的帖子，比较简单，只需要一根杜邦线和一
+个调频的收音机即可。然后github上也有python版本的收音机的代码，因此可以很容易的实
+践和研究，这篇介绍下Raspberry Pi GPIO和RPI.GPIO控制LED灯测试.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;raspberry-pi-gpio&quot;&gt;Raspberry Pi GPIO&lt;/h2&gt;
+&lt;h3 id=&quot;0-gpio-简介&quot;&gt;0. GPIO 简介&lt;/h3&gt;
+&lt;p&gt;树莓的两个特性就是OS+GPIO控制，General Purpose Input Output （通用输入/输出）简
+称为GPIO，或总线扩展器，利用工业标准I2C、SMBus或SPI接口简化了I/O口的扩展。当微控
+制器或芯片组没有足够的I/O端口，或当系统需要采用远端串行通信或控制时，GPIO产品能
+够提供额外的控制和监视功能。因此利用GPIO口可以控制各种连接到Raspberry pi 上的LED
+或者无线电发射器等等电子器件，从而达到将二进制的程序输出为电位的高低，达到控制的
+目的。具体每个引脚的作用笔者写时并不完全清楚，请参考附录中的相关资料，在此不一一
+赘述。&lt;/p&gt;
+&lt;h3 id=&quot;1-python操作树莓派gpio的必要准备&quot;&gt;1. Python操作树莓派GPIO的必要准备&lt;/h3&gt;
+&lt;p&gt;GPIO有很多语言提供的方便的类库接口，这里我介绍的python相关的操作。&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+sudo apt-get install python-setuptools
+sudo easy_install -U distribute
+sudo apt-get install python-dev
+sudo easy_install RPi.GPIO
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;完成上述操作之后，可以简单实现一个对LED灯的控制，检测对输出的控制。&lt;/p&gt;
+
+&lt;h3 id=&quot;2-了解gpio编号-使用rpigpio-控制led灯闪烁&quot;&gt;2. 了解GPIO编号 使用RPi.GPIO 控制LED灯闪烁&lt;/h3&gt;
+&lt;p&gt;LED灯的一端接地，一端接上能控制高低电压输出的口，就可以控制LED灯的闪烁了。很多教
+程中还强调尽可能在LED上还连上一定大小的电阻作为保护，仅是测试用就可以不用加电
+阻了。
+这里的规范请参考附录中的&lt;a href=&quot;ttp://pan.baidu.com/share/link?shareid=3603724891&amp;amp;uk=3559354163&quot;&gt;Rasspberry Pi GPIO 编号规范
+&lt;/a&gt; 其中接地端连
+接Ground可选择BOARD编号为6的接口，而控制高低信号的，可以选择BOARD编号为11的
+GPIO17接口。具体的代码如下：&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BOARD)
+# need to set up every channel which are using as an input or an output
+    GPIO.setup(11, GPIO.OUT)
+
+    while True:
+        print &quot;set output low&quot;
+            GPIO.output(11, GPIO.LOW)
+        time.sleep(1)
+        print &quot;set output high&quot;
+            GPIO.output(11, GPIO.HIGH)
+        time.sleep(1)
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;接好线后，运行上述python代码就可以看到LED等的闪烁效果了&lt;/p&gt;
+
+&lt;h2 id=&quot;gpio-附录&quot;&gt;GPIO 附录&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/share/link?shareid=3603724891&amp;amp;uk=3559354163&quot;&gt;Rasspberry Pi GPIO 编号规范&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.wutianqi.com/?p=3629&quot;&gt;使用GPIO控制发光二极管&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<guid isPermaLink="true">https://mlciv.com/blog/2013/07/03/raspberry-gpio/</guid>
+			</item>
+		
+	</channel>
+</rss>
