@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'unicode_utils', require: false unless RUBY_VERSION >= '2.4'
+gem 'jekyll', ">= 3.6.3"
 gem 'jekyll-paginate'
 gem 'chronic'
 gem 'google-api-client', '~> 0.7.1'
