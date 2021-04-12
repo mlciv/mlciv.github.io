@@ -263,7 +263,7 @@ page-view:
 # https://github.com/inukshuk/jekyll-scholar
 #
 scholar:
-  style: ./assets/bibliography/chicago-author-date-16th-edition.csl
+  style: ./assets/bibliography/association-for-computational-linguistics.csl
   locale: en
 
   sort_by: year

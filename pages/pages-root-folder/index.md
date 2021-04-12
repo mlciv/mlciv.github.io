@@ -11,6 +11,11 @@ permalink: /index.html
 
 # Publications
 
+### 2021
+
+{% bibliography --query @*[year=2021] %}
+
+
 ### 2019
 
 {% bibliography --query @*[year=2019] %}
