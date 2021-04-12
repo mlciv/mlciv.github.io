@@ -193,7 +193,7 @@
       <choose>
         <!-- corresponds to "article" in bibtex -->
         <if type="article-journal">
-          <text variable="title" prefix=" " suffix="."/>
+          <text variable="title" prefix=" " suffix="." font-weight="bold"/>
           <group prefix=" " suffix=".">
             <text variable="container-title" font-style="italic"/>
             <text variable="volume" prefix=", "/>
@@ -204,7 +204,7 @@
         </if>
         <!-- corresponds to "proceedings", "manual", "book", and "periodical" in bibtex -->
         <else-if type="book">
-          <text variable="title" prefix=" " suffix="." font-style="italic"/>
+          <text variable="title" prefix=" " suffix="." font-style="italic" font-weight="bold"/>
           <group delimiter=", " suffix=".">
             <text macro="volume-and-collection-title"/>
           </group>
@@ -217,7 +217,7 @@
         </else-if>
         <!-- corresponds to "inbook" and "incollection" in bibtex -->
         <else-if type="chapter">
-          <text variable="title" prefix=" " suffix="."/>
+          <text variable="title" prefix=" " suffix="." font-weight="bold"/>
           <text term="in" text-case="capitalize-first" prefix=" " suffix=" "/>
           <group delimiter=", " suffix=".">
             <text macro="editor"/>
@@ -241,7 +241,7 @@
         </else-if>
         <!-- corresponds to "booklet" in bibtex -->
         <else-if type="pamphlet">
-          <text variable="title" prefix=" " suffix="."/>
+          <text variable="title" prefix=" " suffix="." font-weight="bold"/>
           <group delimiter=", " prefix=" " suffix=".">
             <text variable="publisher-place"/>
             <text macro="month"/>
@@ -249,7 +249,7 @@
         </else-if>
         <!-- corresponds to "inproceedings" and "conference" in bibtex -->
         <else-if type="paper-conference">
-          <text variable="title" prefix=" " suffix=". "/>
+          <text variable="title" prefix=" " suffix=". " font-weight="bold"/>
           <text term="in" text-case="capitalize-first" suffix=" "/>
           <group suffix="." delimiter=", ">
             <text macro="editor"/>
@@ -287,7 +287,7 @@
         </else-if>
         <!-- corresponds to "phdthesis" and "masterthesis" in bibtex -->
         <else-if type="thesis">
-          <text variable="title" prefix=" " suffix="." font-style="italic"/>
+          <text variable="title" prefix=" " suffix="." font-style="italic" font-weight="bold"/>
           <group delimiter=", " prefix=" " suffix=".">
             <!-- If you want to output text other than "Ph.D thesis", specify the "genre" field to an appropriate value like "Master's thesis".-->
             <text macro="thesis-type"/>
@@ -298,7 +298,7 @@
         </else-if>
         <!-- misc. -->
         <else>
-          <text variable="title" prefix=" " suffix="."/>
+          <text variable="title" prefix=" " suffix="." font-weight="bold"/>
           <text macro="month" prefix=" " suffix="."/>
         </else>
       </choose>
