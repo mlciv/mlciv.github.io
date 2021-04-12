@@ -34,11 +34,13 @@ permalink: /index.html
 - TA for CS 6350 Machine Learning Fall 2016
 
 # Research Experience
-- [08/2015 - now ] Research Assistant at NLP Lab, Univeristy of Utah, Salt Lake
-City
+- [08/2015 - now ] Research Assistant at NLP Lab, Univeristy of Utah, Salt Lake City
+- [06/2020 - 12/2020] Applied Scientist Intern at Amazon Lex, Remote
+   *  Our paper on schema-guided dialog got accepted by NAACL 2021.
 - [06/2019 - 09/2019] Applied Scientist Intern at Amazon Lex, Seattle
+   *  In MRP 2019 shared task, Our system on cross-framework meaning representation parsing ranked 1st inAMR parsing task, 5th in UCCA, 6th and 7th in PSD and DM tasks.
 - [05/2018 - 08/2018] Research Intern at Wechat AI Lab, Palo Alto
-   *  Our dialogue system based Gated Attentive Memory Network ranked top 2 in DSTC7, and accepted by AAAI 2019.
+   *  Our dialogue system based Gated Attentive Memory Network ranked top 2 in DSTC7, and got accepted by AAAI 2019.
 - [10/2014 - 07/2015] Assistant Researcher at SOHU RDC Lab, Beijing
    *  I worked on data-center scale distributed system, especially on distributed data migration, security, distributed machine learning.
 - [09/2008 - 03/2012] Research Assistant at CGCL Lab, Huazhong University of
