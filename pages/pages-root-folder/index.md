@@ -11,22 +11,13 @@ permalink: /index.html
 
 # Publications
 
-### 2021
-
+{% bibliography %}
+<!--
 {% bibliography --query @*[year=2021] %}
-
-
-### 2019
-
 {% bibliography --query @*[year=2019] %}
-
-### 2015
-
 {% bibliography --query @*[year=2015] %}
-
-### 2012
-
 {% bibliography --query @*[year=2012] %}
+-->
 
 # Teaching 
 - TA for CS 6350 Machine Learning Fall 2018
