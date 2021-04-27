@@ -13,8 +13,12 @@
     <li><a href="{{ link | prepend: site.url }}">Download</a></li>
     {% endif %}
 
-    {% if ppt %}
-    <li><a href="{{ppt}}">Slides</a></li>
+    {% if links['slides.pdf'] %}
+    <li><a href="{{ links['slides.pdf'] | prepend: site.url }}">Slides</a></li>
+    {% endif %}
+
+    {% if links['poster.pdf'] %}
+    <li><a href="{{ links['poster.pdf'] | prepend: site.url }}">Poster</a></li>
     {% endif %}
   </ul>
 </div>
