@@ -171,24 +171,11 @@
   </citation>
   <bibliography et-al-min="20" et-al-use-first="19">
     <sort>
+      <key variable="title"/>
       <key macro="author-or-editor"/>
       <key macro="year-date"/>
-      <key variable="title"/>
     </sort>
     <layout>
-      <!-- author -->
-      <choose>
-        <if type="book">
-          <text macro="author-or-editor" suffix="."/>
-        </if>
-        <else>
-          <text macro="author" suffix="."/>
-        </else>
-      </choose>
-      <!-- year -->
-      <date variable="issued" prefix=" " suffix=".">
-        <date-part name="year"/>
-      </date>
       <!-- title and other information -->
       <choose>
         <!-- corresponds to "article" in bibtex -->
@@ -302,7 +289,20 @@
           <text macro="month" prefix=" " suffix="."/>
         </else>
       </choose>
-      <!-- note -->
+      <!-- author -->
+      <choose>
+        <if type="book">
+          <text macro="author-or-editor" suffix="."/>
+        </if>
+        <else>
+          <text macro="author" suffix="."/>
+        </else>
+      </choose>
+      <!-- year -->
+      <date variable="issued" prefix=" " suffix=".">
+        <date-part name="year"/>
+      </date>
+           <!-- note -->
       <text variable="note" prefix=" " suffix="."/>
     </layout>
   </bibliography>
