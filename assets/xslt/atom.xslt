@@ -162,12 +162,6 @@ function toggleDiv(element){
           
           
         
-
-              
-
-          
-          
-        
         
       </ul>
 
@@ -185,32 +179,6 @@ function toggleDiv(element){
               <li class="divider"></li>
 
             
-            
-          
-        
-
-              
-
-          
-          
-
-            
-            
-
-              <li class="has-dropdown">
-                <a href="https://mlciv.com/blog/" target="_blank">Blog</a>
-
-                  <ul class="dropdown">
-                    
-
-                      
-
-                      <li><a href="https://mlciv.com/blog/archive/" target="_blank">Blog Archive</a></li>
-                    
-                  </ul>
-                  
-              </li>
-              <li class="divider"></li>
             
           
         
@@ -373,7 +341,7 @@ function toggleDiv(element){
             
               
                 <li class="mlnlp" >
-                  <a href="http://nlp.cs.utah.edu/" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
+                  <a href="http://nlp.cs.utah.edu/test" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
                 </li>
             
             </ul>
