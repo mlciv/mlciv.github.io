@@ -9,6 +9,10 @@ header: no
 permalink: /index.html
 ---
 
+# News
+- 03/2021: "A Comparative Study on Schema-Guided Dialogue State Tracking" is accepted to NAACL'2021.
+- 12/2020: [Talk about 'Task-oriented Conversational Semantic Parsing'](https://www.slideshare.net/secret/F1xr8QG0wpwCjn) on EMNLP'2020 Watch Party@Amazon Lex
+
 # Publications
 
 {% bibliography %}
@@ -19,24 +23,16 @@ permalink: /index.html
 {% bibliography --query @*[year=2012] %}
 -->
 
-# Teaching 
-- TA for CS 6350 Machine Learning Fall 2018
-- TA for CS 6355 Structured Prediction Spring 2018
-- TA for CS 6350 Machine Learning Fall 2016
-
 # Research Experience
-- [08/2015 - now ] Research Assistant at NLP Lab, Univeristy of Utah, Salt Lake City
-- [06/2020 - 12/2020] Applied Scientist Intern at Amazon Lex, Remote
+- [08/2015 - now ] Research Assistant at **Utah NLP Lab, Univeristy of Utah**, Salt Lake City
+- [06/2020 - 12/2020] Applied Scientist Intern at **AWS AI, Amazon Lex**, Remote
    *  Our paper on schema-guided dialog got accepted by NAACL 2021.
-- [06/2019 - 09/2019] Applied Scientist Intern at Amazon Lex, Seattle
-   *  In MRP 2019 shared task, Our system on cross-framework meaning representation parsing ranked 1st inAMR parsing task, 5th in UCCA, 6th and 7th in PSD and DM tasks.
-- [05/2018 - 08/2018] Research Intern at Wechat AI Lab, Palo Alto
-   *  Our dialogue system based Gated Attentive Memory Network ranked top 2 in DSTC7, and got accepted by AAAI 2019.
-- [10/2014 - 07/2015] Assistant Researcher at SOHU RDC Lab, Beijing
-   *  I worked on data-center scale distributed system, especially on distributed data migration, security, distributed machine learning.
-- [09/2008 - 03/2012] Research Assistant at CGCL Lab, Huazhong University of
-Science and Technology, Wuhan
-   *  I worked closely with Prof Xia Xie and Haijin. My research interest are widely around Xen and Xen-ARM virtualization, distributed computing, especially on equipped R language with large scale distributed statistical supports, especially on JVM-based open-sourse data infrastructures, such as Hadoop, Spark.
+- [06/2019 - 09/2019] Applied Scientist Intern at **AWS AI, Amazon Lex**, Seattle
+   *  In CoNLL shared task MRP 2019, our system on cross-framework meaning representation parsing ranked 1st in AMR parsing task, 5th in UCCA, 6th and 7th in PSD and DM tasks. [Spotlight Talk](https://www.youtube.com/watch?v=5ZMZSfl_Ng0)
+- [05/2018 - 08/2018] Research Intern at **[Tecent, WechatAI](https://ai.weixin.qq.com/)**, Palo Alto
+   *  Our dialogue system based Gated Attentive Memory Network ranked Top 2 in DSTC7, and got accepted by AAAI 2019 DSTC7 workshop.
+- [09/2008 - 03/2012] Research Assistant at **[CGCL Lab, Huazhong University of Science and Technology](http://grid.hust.edu.cn/)**, Wuhan
+   *  I worked closely with Prof. Xia Xie and Prof. Hai Jin. My research interests are widely around Xen, Xen-ARM virtualization, and distributed computing. We study equipping R language with JVM-based large scale distributed statistical infrastructure, such as Hadoop, Spark.
 
 # Work Experience
 - [10/2014 - 07/2015] Assistant Researcher at SOHU RDC Lab, Beijing
@@ -48,17 +44,29 @@ Science and Technology, Wuhan
 - [08/2010 - 05/2011] Software Engineer Intern, Alibaba, Hangzhou
     *  KV Storage, MySQL, Database Replication, Real-time Computing, Distributed Pub/Sub Data Pipeline.
 
-# Prizes & Awards
+# Teaching & Mentoring
+- 2019-2020, U of Utah, Mentoring [Tarun Sunkaraneni](https://tarunsunkaraneni.github.io/), Bachlor Thesis on ['Transformer-based Observers in Psychotherapy'](https://www.cs.utah.edu/docs/techreports/2020/pdf/UUCS-20-011.pdf)
+- Fall 2018, U of Utah, TA for CS 6350 Machine Learning
+- Spring 2019, U of Utah, TA for CS 6355 Structured Prediction
+- Fall 2016, U of Utah, TA for CS 6350 Machine Learning
+- 2007-2008, HUST, Leader for Algorithm & Game Team in a student innovation organization, [Unique Studio](https://hustunique.com/)
+
+
+# Academic Services
+- PC Member / Reviewers for ACL'20,21, EACL'20, EMNLP'20, NAACL'21, CoNLL'19, COLING'20, AAAI'19,20, [MRP'2019](http://mrp.nlpl.eu/2019/), etc.
+
+# Honors and Awards
 - [2019] CoNLL Shared Task, Cross-framework meaning representation parsing, ranked 1st for AMR parsing task.
-- [2018] DSTC7 track1, ranked 2nd for both advising and ubuntu in subtask 5(
-    external knowledge)
+- [2018] DSTC7 track1, ranked 2nd for both advising and ubuntu in subtask 5(with external knowledge)
+- [2015] Our system ['Talking Geckos'](https://www.slideshare.net/jiessiecao/talking-geckos-question-and-answering) winned 1st in a question-answering competition during Fall 2015 NLP class.
 - [2010] VMware Cloud Computing Innovation Cup, Top 50
 - [2009] Google Andriod Innovative Idea Sharing Award
-- [2007] "Computer World" Magazine Scholarship
+- [2007] "Computer World" Magazine Scholarship (50 students awarded in China)
 - [2007] Microsoft ImagineCup
     *  Algorithm Challenge, Top 50 
-    *  Visual Gaming Contest, Top 2 in China, 18 th world final.
+    *  Visual Gaming Contest(Project Hoshimi), Top 2 in China, 18th in world final.
 - [2006] HUST ACM Programming Contest, Top 3
+
 
 # CV
 

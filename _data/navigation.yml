@@ -16,13 +16,13 @@
   #  - title: "Dropdown Menu 3"
   #    url: "#"
   #
-- title: Blog
-  url: "https://mlciv.com/blog/"
-  side: left
-  dropdown:
-  - title: "Blog Archive"
-    url: "https://mlciv.com/blog/archive/"
-
+  #- title: Blog
+  #  url: "https://mlciv.com/blog/"
+  #  side: left
+  #  dropdown:
+  #  - title: "Blog Archive"
+  #    url: "https://mlciv.com/blog/archive/"
+  #
 #
 #   Navigation to the right › side: right
 #
