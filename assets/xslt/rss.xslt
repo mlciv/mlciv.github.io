@@ -342,7 +342,7 @@ function toggleDiv(element){
             
               
                 <li class="mlnlp" >
-                  <a href="http://nlp.cs.utah.edu/" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
+                  <a href="http://nlp.cs.utah.edu/test" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
                 </li>
             
             </ul>
@@ -368,8 +368,6 @@ function toggleDiv(element){
               <li><a href="http://twitter.com/ijiessie" target="_blank" class="icon-twitter" title=""></a></li>
             
               <li><a href="https://www.linkedin.com/in/jiessie/" target="_blank" class="icon-linkedin" title=""></a></li>
-            
-              <li><a href="https://www.slideshare.net/jiessiecao/" target="_blank" class="fab fa-slideshare" title=""></a></li>
             
               <li><a href="mailto:jcao at cs dot utah dot edu" target="_blank" class="icon-mail" title=""></a></li>
             
