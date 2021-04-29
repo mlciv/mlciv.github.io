@@ -35,13 +35,13 @@ permalink: /index.html
    *  I worked closely with Prof. Xia Xie and Prof. Hai Jin. My research interests are widely around Xen, Xen-ARM virtualization, and distributed computing. We study equipping R language with JVM-based large scale distributed statistical infrastructure, such as Hadoop, Spark.
 
 # Work Experience
-- [10/2014 - 07/2015] Assistant Researcher at SOHU RDC Lab, Beijing
+- [10/2014 - 07/2015] Assistant Researcher, **SOHU RDC Lab**, Beijing
     *  Hadoop, Spark, Data migration, Data security, Distributed machine learning 
-- [07/2013 - 06/2014] Senior Software Engineer, ZUN CLUB (Startup), Beijing
+- [07/2013 - 06/2014] Senior Software Engineer, **ZUN CLUB (Startup)**, Beijing
     *  Heterogeneous data intergration, Hotel recommendation system.
-- [03/2012 - 06/2013] Software Engineer, Baidu, Beijing
+- [03/2012 - 06/2013] Software Engineer, **Baidu**, Beijing
     *  Voice Assistant, Mobile Search, Speed optimization, Mobile Anti-Attack
-- [08/2010 - 05/2011] Software Engineer Intern, Alibaba, Hangzhou
+- [08/2010 - 05/2011] Software Engineer Intern, **Alibaba**, Hangzhou
     *  KV Storage, MySQL, Database Replication, Real-time Computing, Distributed Pub/Sub Data Pipeline.
 
 # Teaching & Mentoring
