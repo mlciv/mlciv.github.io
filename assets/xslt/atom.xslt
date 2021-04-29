@@ -163,12 +163,6 @@ function toggleDiv(element){
           
           
         
-
-              
-
-          
-          
-        
         
       </ul>
 
@@ -186,32 +180,6 @@ function toggleDiv(element){
               <li class="divider"></li>
 
             
-            
-          
-        
-
-              
-
-          
-          
-
-            
-            
-
-              <li class="has-dropdown">
-                <a href="https://mlciv.com/blog/" target="_blank">Blog</a>
-
-                  <ul class="dropdown">
-                    
-
-                      
-
-                      <li><a href="https://mlciv.com/blog/archive/" target="_blank">Blog Archive</a></li>
-                    
-                  </ul>
-                  
-              </li>
-              <li class="divider"></li>
             
           
         
@@ -400,6 +368,8 @@ function toggleDiv(element){
               <li><a href="http://twitter.com/ijiessie" target="_blank" class="icon-twitter" title=""></a></li>
             
               <li><a href="https://www.linkedin.com/in/jiessie/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="https://www.slideshare.net/jiessiecao/" target="_blank" class="fab fa-slideshare" title=""></a></li>
             
               <li><a href="mailto:jcao at cs dot utah dot edu" target="_blank" class="icon-mail" title=""></a></li>
             
