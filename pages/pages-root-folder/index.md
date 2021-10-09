@@ -28,7 +28,7 @@ permalink: /index.html
 - [06/2020 - 12/2020] Applied Scientist Intern at **AWS AI, Amazon Lex**, Remote
    *  Our paper on schema-guided dialog got accepted by NAACL 2021.
 - [06/2019 - 09/2019] Applied Scientist Intern at **AWS AI, Amazon Lex**, Seattle
-   *  In CoNLL shared task MRP 2019, our system on cross-framework meaning representation parsing ranked 1st in AMR parsing task, 5th in UCCA, 6th and 7th in PSD and DM tasks. [Spotlight Talk](https://www.youtube.com/watch?v=5ZMZSfl_Ng0)
+   *  In CoNLL shared task MRP 2019, over 16 teams, our system on cross-framework meaning representation parsing ranked 1st in AMR parsing task, 5th in UCCA, 6th and 7th in PSD and DM tasks. [Spotlight Talk](https://www.youtube.com/watch?v=5ZMZSfl_Ng0)
 - [05/2018 - 08/2018] Research Intern at **[Tecent, WechatAI](https://ai.weixin.qq.com/)**, Palo Alto
    *  Our dialogue system based Gated Attentive Memory Network ranked Top 2 in DSTC7, and got accepted by AAAI 2019 DSTC7 workshop.
 - [09/2008 - 03/2012] Research Assistant at **[CGCL Lab, Huazhong University of Science and Technology](http://grid.hust.edu.cn/)**, Wuhan
@@ -53,10 +53,10 @@ permalink: /index.html
 
 
 # Academic Services
-- PC Member / Reviewers for ACL'20,21, EACL'20, EMNLP'20, NAACL'21, CoNLL'19, COLING'20, AAAI'19,20, [MRP'2019](http://mrp.nlpl.eu/2019/), etc.
+- PC Member / Reviewers for ACL, EMNLP, NAACL, EACL, CoNLL, COLING, AAAI, [MRP'2019](http://mrp.nlpl.eu/2019/), etc.
 
 # Honors and Awards
-- [2019] CoNLL Shared Task, Cross-framework meaning representation parsing, ranked 1st for AMR parsing task.
+- [2019] CoNLL Shared Task, Cross-framework meaning representation parsing, ranked 1st(over 16 teams) for AMR parsing task.
 - [2018] DSTC7 track1, ranked 2nd for both advising and ubuntu in subtask 5(with external knowledge)
 - [2015] Our system ['Talking Geckos'](https://www.slideshare.net/jiessiecao/talking-geckos-question-and-answering) winned 1st in a question-answering competition during Fall 2015 NLP class.
 - [2010] VMware Cloud Computing Innovation Cup, Top 50
@@ -68,8 +68,6 @@ permalink: /index.html
 - [2006] HUST ACM Programming Contest, Top 3
 
 
-# CV
-
-My CV is [Here](http://www.cs.utah.edu/~jcao/public/CV_Jie-Cao.pdf)
+# [Curriculum Vitae](http://www.cs.utah.edu/~jcao/public/CV_Jie-Cao.pdf)
 
 
