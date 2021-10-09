@@ -21,6 +21,7 @@
     });
   </script>
   <script language="JavaScript" type="text/javascript">
+
 if (window.location.protocol != "https:")
     window.location.protocol = "https";
     
