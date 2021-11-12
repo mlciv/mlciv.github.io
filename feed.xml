@@ -4,7 +4,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>MLCIV</title>
-		<description>Keep a student mindset, and actively learn for/with/from machines</description>
+		<description>Keep a student mindset, and actively learn the next thing for/with/from machines</description>
 		<link>https://www.cs.utah.edu/~jcao/</link>
 		<atom:link href="https://www.cs.utah.edu/~jcao/feed.xml" rel="self" type="application/rss+xml" />
 		
