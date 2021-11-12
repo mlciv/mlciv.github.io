@@ -4,7 +4,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>MLCIV</title>
-		<description>In my opinion, machine intelligence can be a future civilization just like our industrial era or information era. I want use this blog to record those history, current and future for machine learning civilization</description>
+		<description>Keep a student mindset, and learn for/with/from machines. -- machine learning civilization</description>
 		<link>https://mlciv.com/</link>
 		<atom:link href="https://mlciv.com/feed.xml" rel="self" type="application/rss+xml" />
 		
