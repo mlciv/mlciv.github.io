@@ -39,7 +39,7 @@ function toggleDiv(element){
 
   
 	
-	<meta name="description" content="In my opinion, machine intelligence can be a future civilization just like our industrial era or information era. I want use this blog to record those history, current and future for machine learning civilization" />
+	<meta name="description" content="Keep a student mindset, and actively learn for/with/from machines" />
 
 	
 
@@ -122,7 +122,7 @@ function toggleDiv(element){
 	<meta property="og:locale" content="en_EN" />
 	
 	<meta property="og:title" content="Atom Feed (Styled)" />
-	<meta property="og:description" content="In my opinion, machine intelligence can be a future civilization just like our industrial era or information era. I want use this blog to record those history, current and future for machine learning civilization" />
+	<meta property="og:description" content="Keep a student mindset, and actively learn for/with/from machines" />
 	<meta property="og:url" content="https://www.cs.utah.edu/~jcao//assets/xslt/atom.xslt" />
 	<meta property="og:site_name" content="MLCIV" />
 	
@@ -273,7 +273,7 @@ function toggleDiv(element){
             <h5 class="shadow-black">About This Site</h5>
 
             <p class="shadow-black">
-              In my opinion, machine intelligence can be a future civilization just like our industrial era or information era. I want use this blog to record those history, current and future for machine learning civilization
+              Keep a student mindset, and actively learn for/with/from machines
               <a href="https://www.cs.utah.edu/~jcao/info/">More ›</a>
             </p>
           </div><!-- /.large-6.columns -->
