@@ -13,6 +13,11 @@
   class: icon-linkedin
   title: ""
 
+- name: Google Scholar
+  url: https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en
+  class: icon-archive
+  title: ""
+
 - name: Email
   url: mailto:jcao at cs dot utah dot edu
   class: icon-mail

@@ -53,8 +53,8 @@ permalink: /index.html
 - 2007-2008, HUST, Leader for Algorithm & Game Team in a student innovation organization, [Unique Studio](https://hustunique.com/)
 
 
-# Academic Services
-- PC Member / Reviewers for ACL, EMNLP, NAACL, EACL, CoNLL, COLING, AAAI, [MRP'2019](http://mrp.nlpl.eu/2019/), etc.
+# Academic Service
+- PC Member / Reviewers for [MRP'2019](http://mrp.nlpl.eu/2019/), ACL'20-22, EMNLP'20-22, NAACL'21, EACL'21, COLING'20, AAAI'19-22, ACL Rolling Review'21-22
 
 # Honors and Awards
 - [2019] CoNLL Shared Task, Cross-framework meaning representation parsing, ranked 1st(over 16 teams) for AMR parsing task.
