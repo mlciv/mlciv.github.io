@@ -10,7 +10,7 @@ permalink: /index.html
 ---
 
 # News
-- 05/2022: Guest Lecturer on CS 501 Seminar @ University of Idaho:Contemporary Issues at University of Idaho, ‘Inductive Biases in Deep Linguistic Structured Prediction’
+- 05/2022: Guest Lecturer @ University of Idaho on CS 501 Seminar: Contemporary Issues, ‘Inductive Biases in Deep Linguistic Structured Prediction’
 - 11/2021: Applying contrastive self-supervised learning for database query plans. "Database Workload Characterization with Query Plan Encoders" is accepted to VLDB'2022.
 - 03/2021: "A Comparative Study on Schema-Guided Dialogue State Tracking" is accepted to NAACL'2021.
 - 12/2020: [Talk about 'Task-oriented Conversational Semantic Parsing'](https://www.slideshare.net/secret/F1xr8QG0wpwCjn) on EMNLP'2020 Watch Party@Amazon Lex
