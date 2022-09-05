@@ -1,7 +1,17 @@
 - menu_name: "Related Links"
 
 - name: "Utah NLP Group"
-  url: "http://nlp.cs.utah.edu/test"
+  url: "http://nlp.cs.utah.edu"
   class: "mlnlp"
   title: "Utah NLP Group"
+
+- name: "iSAT"
+  url: "https://www.colorado.edu/research/ai-institute/"
+  class: "iSAT"
+  title: "iSAT"
+
+- name: "CLEAR"
+  url: "https://www.colorado.edu/lab/clear/"
+  class: "CLEAR"
+  title: "CLEAR"
 
