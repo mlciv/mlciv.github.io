@@ -332,6 +332,10 @@ function toggleDiv(element){
               
             
               
+            
+              
+            
+              
             <ul class="no-bullet shadow-black">
             
               
@@ -341,7 +345,17 @@ function toggleDiv(element){
             
               
                 <li class="mlnlp" >
-                  <a href="http://nlp.cs.utah.edu/test" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
+                  <a href="http://nlp.cs.utah.edu" target="_blank"  title="Utah NLP Group">Utah NLP Group</a>
+                </li>
+            
+              
+                <li class="iSAT" >
+                  <a href="https://www.colorado.edu/research/ai-institute/" target="_blank"  title="iSAT">iSAT</a>
+                </li>
+            
+              
+                <li class="CLEAR" >
+                  <a href="https://www.colorado.edu/lab/clear/" target="_blank"  title="CLEAR">CLEAR</a>
                 </li>
             
             </ul>
