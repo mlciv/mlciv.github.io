@@ -60,7 +60,7 @@ permalink: /index.html
 
 
 # Academic Service
-- PC Member / Reviewers for [MRP'2019](http://mrp.nlpl.eu/2019/), ACL'20-22, EMNLP'20-22, NAACL'21, EACL'21, COLING'20, AAAI'19-22, ACL Rolling Review'21-22
+- PC Member / Reviewers for [MRP'2019](http://mrp.nlpl.eu/2019/), ACL'20-23, EMNLP'20-22, NAACL'21, EACL'21, COLING'(20,22), AAAI'19-23, ACL Rolling Review'21-23, AIED'23
 
 # Honors and Awards
 - [2019] CoNLL Shared Task, Cross-framework meaning representation parsing, ranked 1st(over 16 teams) for AMR parsing task.
