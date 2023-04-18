@@ -10,6 +10,9 @@ permalink: /index.html
 ---
 
 # News
+- 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
+Errors in Small Group Classroom Discourse" got accepted to UMAP'23.
+- 03/2023: \#FirstGrant My research proposal on small-group discussion got awarded by iSAT Trainee Grant.
 - 02/2023: Our paper on AI agent for Jigsaw Classrooms got accepted on [AIAIC'23](https://aichildinteraction.github.io/).
 - 12/2022: Our paper on Dependency Dialog Act got accepted on [IWSDS'23](https://sites.google.com/view/iwsds2023/home).
 - 08/2022: I joined [NSF AI Institute for Student-AI Teaming(iSAT)](https://www.colorado.edu/research/ai-institute/) as a post-doctoral researcher.
@@ -30,7 +33,7 @@ permalink: /index.html
 -->
 
 # Research Experience
-- [08/2022 - Now ] Postdoctoral Research Associate at [NSF AI Institute for Student-AI Teaming(iSAT)](https://www.colorado.edu/research/ai-institute/), CU Boulder.
+- [09/2022 - Now ] Postdoctoral Research Associate at [NSF AI Institute for Student-AI Teaming(iSAT)](https://www.colorado.edu/research/ai-institute/), CU Boulder.
 - [08/2015 - 08/2022] Research Assistant at **Utah NLP Lab, Univeristy of Utah**, Salt Lake City
 - [06/2020 - 12/2020] Applied Scientist Intern at **AWS AI, Amazon Lex**, Remote
    *  Our paper on schema-guided dialog got accepted by NAACL 2021.
@@ -63,6 +66,7 @@ permalink: /index.html
 - PC Member / Reviewers for [MRP'2019](http://mrp.nlpl.eu/2019/), ACL'20-23, EMNLP'20-22, NAACL'21, EACL'21, COLING'(20,22), AAAI'19-23, ACL Rolling Review'21-23, AIED'23
 
 # Honors and Awards
+- [2023] iSAT Trainee Grant 2023
 - [2019] CoNLL Shared Task, Cross-framework meaning representation parsing, ranked 1st(over 16 teams) for AMR parsing task.
 - [2018] DSTC7 track1, ranked 2nd for both advising and ubuntu in subtask 5(with external knowledge)
 - [2015] Our system ['Talking Geckos'](https://www.slideshare.net/jiessiecao/talking-geckos-question-and-answering) winned 1st in a question-answering competition during Fall 2015 NLP class.
