@@ -17,10 +17,6 @@ Errors in Small Group Classroom Discourse" got accepted to UMAP'23.
 - 12/2022: Our paper on Dependency Dialog Act got accepted on [IWSDS'23](https://sites.google.com/view/iwsds2023/home).
 - 08/2022: I joined [NSF AI Institute for Student-AI Teaming (iSAT)](https://www.colorado.edu/research/ai-institute/) as a post-doctoral researcher.
 - 06/2022: New preprint on [visual analysis of neural network pruning](https://arxiv.org/abs/2206.07918?context=cs.LG).
-- 05/2022: Guest Lecturer @ University of Idaho on CS 501 Seminar: Contemporary Issues, ‘Inductive Biases in Deep Linguistic Structured Prediction’.
-- 11/2021: Applying contrastive self-supervised learning for database query plans. "Database Workload Characterization with Query Plan Encoders" is accepted to VLDB'2022.
-- 03/2021: "A Comparative Study on Schema-Guided Dialogue State Tracking" is accepted to NAACL'2021.
-- 12/2020: [Talk about 'Task-oriented Conversational Semantic Parsing'](https://www.slideshare.net/secret/F1xr8QG0wpwCjn) on EMNLP'2020 Watch Party@Amazon Lex.
 
 # Publications
 
