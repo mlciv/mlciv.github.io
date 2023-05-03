@@ -10,6 +10,7 @@ permalink: /index.html
 ---
 
 # News
+- 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to ACL'23.
 - 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
 Errors in Small Group Classroom Discourse" got accepted to UMAP'23.
 - 03/2023: \#FirstGrant My research proposal on small-group discussion got awarded by iSAT Trainee Grant.
