@@ -10,6 +10,7 @@ permalink: /index.html
 ---
 
 # News
+- 05/2023: A paper accepted to BEA workshop @ACL'23.
 - 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to ACL'23.
 - 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
 Errors in Small Group Classroom Discourse" got accepted to UMAP'23.
