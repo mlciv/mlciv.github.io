@@ -61,7 +61,7 @@ Errors in Small Group Classroom Discourse" got accepted to UMAP'23.
 
 
 # Academic Service
-- PC Member / Reviewers for [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA'23](https://aclanthology.org/venues/bea/), [NLP4ConvAI'23](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), ACL'20-23, EMNLP'20-22, NAACL'21, EACL'21, COLING'(20,22), AAAI'19-23, ACL Rolling Review'21-23, AIED'23
+- PC Member / Reviewers for [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA'23](https://aclanthology.org/venues/bea/), [NLP4ConvAI'23](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023), ACL'20-23, EMNLP'20-22, NAACL'21, EACL'21, COLING'(20,22), AAAI'19-23, ACL Rolling Review'21-23, AIED'23
 
 # Honors and Awards
 - [2023] iSAT Trainee Grant 2023
