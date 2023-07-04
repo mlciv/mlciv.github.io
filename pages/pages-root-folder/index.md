@@ -10,10 +10,11 @@ permalink: /index.html
 ---
 
 # News
-- 05/2023: A paper accepted to BEA workshop @ACL'23.
-- 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to ACL'23.
+- 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
+- 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to [ACL'23](https://2023.aclweb.org/calls/main_conference/)
 - 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
-Errors in Small Group Classroom Discourse" got accepted to UMAP'23.
+Errors in Small Group Classroom Discourse" got accepted to
+[UMAP'23](https://www.um.org/umap2023/).
 - 03/2023: \#FirstGrant My research proposal on small-group discussion got awarded by iSAT Trainee Grant.
 - 02/2023: Our paper on AI agent for Jigsaw Classrooms got accepted on [AIAIC'23](https://aichildinteraction.github.io/).
 - 12/2022: Our paper on Dependency Dialog Act got accepted on [IWSDS'23](https://sites.google.com/view/iwsds2023/home).
