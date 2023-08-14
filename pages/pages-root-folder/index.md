@@ -79,6 +79,6 @@ Errors in Small Group Classroom Discourse" got accepted to
 - [2006] HUST ACM Programming Contest, Top 3
 
 
-# [Curriculum Vitae](http://www.cs.utah.edu/~jcao/public/CV_Jie-Cao.pdf)
+# [Curriculum Vitae](public/CV_Jie-Cao.pdf)
 
 
