@@ -384,7 +384,7 @@ function toggleDiv(element){
             
               <li><a href="https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en" target="_blank" class="icon-archive" title=""></a></li>
             
-              <li><a href="mailto:jcao at cs dot utah dot edu" target="_blank" class="icon-mail" title=""></a></li>
+              <li><a href="mailto:jiecao at colorado dot edu" target="_blank" class="icon-mail" title=""></a></li>
             
             </ul>
           </section>
