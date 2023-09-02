@@ -10,6 +10,7 @@ permalink: /index.html
 ---
 
 # News
+- 08/2023: In Fall 2023, I am co-teaching NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
 - 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to [ACL'23](https://2023.aclweb.org/calls/main_conference/)
 - 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
@@ -55,6 +56,7 @@ Errors in Small Group Classroom Discourse" got accepted to
     *  KV Storage, MySQL, Database Replication, Real-time Computing, Distributed Pub/Sub Data Pipeline.
 
 # Teaching & Mentoring
+- Fall 2023, U of Colorado Boulder, Instructor, co-teaching ([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin.
 - 2019-2020, U of Utah, Mentoring [Tarun Sunkaraneni](https://tarunsunkaraneni.github.io/), Bachlor Thesis on ['Transformer-based Observers in Psychotherapy'](https://www.cs.utah.edu/docs/techreports/2020/pdf/UUCS-20-011.pdf)
 - Fall 2018, U of Utah, TA for CS 6350 Machine Learning
 - Spring 2019, U of Utah, TA for CS 6355 Structured Prediction
