@@ -378,7 +378,7 @@ function toggleDiv(element){
             
               <li><a href="http://github.com/mlciv" target="_blank" class="icon-github" title=""></a></li>
             
-              <li><a href="http://twitter.com/ijiessie" target="_blank" class="icon-twitter" title=""></a></li>
+              <li><a href="http://twitter.com/mlciv_jc" target="_blank" class="icon-twitter" title=""></a></li>
             
               <li><a href="https://www.linkedin.com/in/jiessie/" target="_blank" class="icon-linkedin" title=""></a></li>
             
