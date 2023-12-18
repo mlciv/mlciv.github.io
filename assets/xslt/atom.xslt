@@ -382,7 +382,7 @@ function toggleDiv(element){
             
               <li><a href="https://www.linkedin.com/in/jiessie/" target="_blank" class="icon-linkedin" title=""></a></li>
             
-              <li><a href="https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en" target="_blank" class="icon-google-scholar" title=""></a></li>
+              <li><a href="https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en" target="_blank" class="ai-google-scholar" title=""></a></li>
             
               <li><a href="mailto:jiecao at colorado dot edu" target="_blank" class="icon-mail" title=""></a></li>
             
