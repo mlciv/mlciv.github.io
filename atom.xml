@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://mlciv.com/</id>
 	<title>MLCIV</title>
-	<updated>2023-11-22T21:21:13+00:00</updated>
+	<updated>2023-12-18T00:45:43+00:00</updated>
 
 	<subtitle>Keep a student mindset, and actively learn the next thing for/with/from machines.</subtitle>
 
@@ -144,21 +144,20 @@ $a_n = a_n+n$ with $a_0=1$&lt;/p&gt;
 $a_n = 2a_{n-1} + 2^n$ with $a_0=0$
 Divide by $2^n$&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac {a_n}{2^n} = \frac {a_{n-1}}{2^{n-1}} +1&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac {a\_n}{2^n} = \frac {a\_{n-1}}{2^{n-1}} +1&lt;/script&gt;
 
 &lt;h3 id=&quot;why-2n-summation-factor&quot;&gt;why 2^n? summation factor&lt;/h3&gt;
 
 &lt;p&gt;For $a_n =x_na_{n-1}+….$&lt;/p&gt;
 
-&lt;p&gt;=&amp;gt; Divid by $x_n \cdot x_{n-1} \cdot x_{n-2}…..x_1$&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a =(1+1/n)a_{n-1}+2&lt;/script&gt;
+&lt;p&gt;=&amp;gt; Divid by $x_n \cdot x_{n-1} \cdot x_{n-2}…..x_1$
+&lt;script type=&quot;math/tex&quot;&gt;a =(1+1/n)a\_{n-1}+2&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Then summation factor:
 &lt;script type=&quot;math/tex&quot;&gt;\frac {n+1}{n} \cdot \frac {n}{n-1}....\frac {2}{1} = n+1&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;therefore,
-&lt;script type=&quot;math/tex&quot;&gt;\frac {a_n}{n+1} = \frac {a_{n-1}}{n}+ \frac {2}{n+1}&lt;/script&gt;&lt;/p&gt;
+&lt;script type=&quot;math/tex&quot;&gt;\frac {a\_n}{n+1} = \frac {a\_{n-1}}{n}+ \frac {2}{n+1}&lt;/script&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;types-of-recurrences&quot;&gt;Types of recurrences&lt;/h1&gt;
 
@@ -173,7 +172,7 @@ Divide by $2^n$&lt;/p&gt;
 
 &lt;h4 id=&quot;simple-convergence&quot;&gt;Simple Convergence&lt;/h4&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_n = \frac {1}{1+a_{n-1}}, \quard n&gt;0 a_0 = 1&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a\_n = \frac {1}{1+a\_{n-1}}, \quard n\&gt;0 a\_0 = 1&lt;/script&gt;
 
 &lt;h4 id=&quot;quadratic-convergence-and-newtons-method&quot;&gt;Quadratic convergence and Newton’s method&lt;/h4&gt;
 
@@ -183,16 +182,16 @@ Divide by $2^n$&lt;/p&gt;
 
 &lt;h3 id=&quot;linear-recurrences-with-constant-coefficients&quot;&gt;Linear recurrences with constant coefficients)&lt;/h3&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_n = a_{n-1}+2a_{n-2}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a\_n = a_{n-1}+2a_{n-2}&lt;/script&gt;
 
 &lt;h4 id=&quot;1-gf&quot;&gt;1. GF&lt;/h4&gt;
 &lt;p&gt;1.1 OGF for linear recurrences.&lt;/p&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;a_n = x_{1}a_{n-1}+x_{2}a_{n-2}+...x_{t}a_{n-t}&lt;/script&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;a\_n = x_{1}a_{n-1}+x_{2}a_{n-2}+...x_{t}a_{n-t}&lt;/script&gt;
 &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-f(z) = g(z) \sum_{0\leq n &lt; t} a_n z^n (mod z^t) %]]&gt;&lt;/script&gt;
+f(z) = g(z) \sum\_{0\leq n \&lt; t} a\_n z^n (mod z^t) %]]&gt;&lt;/script&gt;
 where $g(z) = 1- x_{1}z - x_{2}z^2….x_{t}z^t$
-&lt;script type=&quot;math/tex&quot;&gt;f(z) = u_{0}(z)-u_{1}(z)...u_{t}(z)&lt;/script&gt;, dependens on initial values&lt;/p&gt;
+&lt;script type=&quot;math/tex&quot;&gt;f(z) = u_{0}(z)-u_{1}(z)...u\_{t}(z)&lt;/script&gt;, dependens on initial values&lt;/p&gt;
 
 &lt;p&gt;$a_0,a_1,…a_{t-1}$
 &lt;script type=&quot;math/tex&quot;&gt;a(z) = \frac {f(z)}{g(z)}&lt;/script&gt;&lt;/p&gt;
@@ -202,14 +201,14 @@ However, sometimes, the a(z) is complexed expressed by z.&lt;/p&gt;
 
 &lt;p&gt;then we can expand generating functions or find functional equations on generating fucntions, to transform the
 generating function into the coeffient form of l(z)z^N
-Example Solving linear recurrence &lt;script type=&quot;math/tex&quot;&gt;a_n = 5a_{n-1}-8a_{n-2}+4a_{n-3},\quad for \  n \geq 3\  with \  a_0=0,a_1=1,a_2=4&lt;/script&gt;&lt;/p&gt;
+Example Solving linear recurrence &lt;script type=&quot;math/tex&quot;&gt;a\_n = 5a_{n-1}-8a_{n-2}+4a\_{n-3},\quad for \  n \geq 3\  with \  a\_0=0,a\_1=1,a\_2=4&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Step 1: make recurence valid for all n&lt;/p&gt;
 
 &lt;p&gt;when $a_0=0$, it need no delta.
 when $a_1=1$, it need $\delta_{n1} = 1$, only works when n = 1
 when $a_2=4$, it need $\delta_{n2} = -1$, only works when n = 2
-So &lt;script type=&quot;math/tex&quot;&gt;a_n = 5a_{n-1}-8a_{n-2}+4a_{n-3}+\delta_{n1}+\delta_{n_2}&lt;/script&gt;&lt;/p&gt;
+So &lt;script type=&quot;math/tex&quot;&gt;a\_n = 5a_{n-1}-8a_{n-2}+4a_{n-3}+\delta_{n1}+\delta\_{n\_2}&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;Step 2: multiple by $z^n$, and sum on n&lt;/p&gt;
 
@@ -229,7 +228,7 @@ fractions.&lt;/p&gt;
 
 &lt;p&gt;Step 5: Expand A(Z) to get a_n&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a_n = n2^{n-1}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a\_n = n2^{n-1}&lt;/script&gt;
 
 &lt;p&gt;some other application of generating functions: Probability Generating
 Functions to simplify the caculation for expectation and so on, Bivariate Generating Functions based couting and analysis of cost paramters.&lt;/p&gt;
@@ -254,8 +253,8 @@ Step 3: analytic transfer , Get coefficient asymptotic
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;summation factor 
-&lt;script type=&quot;math/tex&quot;&gt;a_n = na_{n – 1} + n(n – 1)a_{n – 2}&lt;/script&gt;
+    &lt;p&gt;summation factor
+&lt;script type=&quot;math/tex&quot;&gt;a\_n = na_{n – 1} + n(n – 1)a_{n – 2}&lt;/script&gt;
 =&amp;gt; Divided by n!&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -295,14 +294,14 @@ Step 3: analytic transfer , Get coefficient asymptotic
   &lt;li&gt;Combining solutions with extra cost $\Theta(N^{\gamma}(\log_N)^\delta)$&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;a_n = a_{n/\beta+O(1)}+ a_{n/\beta+O(1)}+....a_{n/\beta+O(1)}+ \Theta(n^{\gamma}(\log_N)^\delta&lt;/script&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;a\_n = a_{n/\beta+O(1)}+ a_{n/\beta+O(1)}+....a\_{n/\beta+O(1)}+ \Theta(n^{\gamma}(\log\_N)^\delta&lt;/script&gt;
 with alpha terms for the sum, telescoping, 
-&lt;script type=&quot;math/tex&quot;&gt;{\alpha}^{\log_{\beta}^n} + \Theta (n^{\gamma}(\log_N)^\delta)&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;{\alpha}^{\log\_{\beta}^n} + \Theta (n^{\gamma}(\log\_N)^\delta)&lt;/script&gt;
 is given by 
 &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-a_n = \Theta (n^{\gamma}(\log_N)^\delta) \quad when \quad \gamma &lt; log_{\beta}^{\alpha} %]]&gt;&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;a_n = \Theta (n^{\gamma}(\log_N)^{\delta+1}) \quad when \quad \gamma = log_{\beta}^{\alpha}&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;a_n = \Theta (n^{\log_{\beta}^{\alpha}} \quad when \quad \gamma &gt; log_{\beta}^{\alpha}&lt;/script&gt;&lt;/p&gt;
+a\_n = \Theta (n^{\gamma}(\log\_N)^\delta) \quad when \quad \gamma \&lt; log\_{\beta}^{\alpha} %]]&gt;&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;a\_n = \Theta (n^{\gamma}(\log\_N)^{\delta+1}) \quad when \quad \gamma = log\_{\beta}^{\alpha}&lt;/script&gt;
+&lt;script type=&quot;math/tex&quot;&gt;a\_n = \Theta (n^{\log_{\beta}^{\alpha}} \quad when \quad \gamma \&gt; log_{\beta}^{\alpha}&lt;/script&gt;&lt;/p&gt;
 
 &lt;p&gt;More about Master Theorem,
 “A Master Theorem for Discrete Divide and Conquer Recurrences”, SODA 2011&lt;/p&gt;
@@ -347,7 +346,7 @@ method involves the following steps:&lt;/p&gt;
   &lt;li&gt;Prove tighter bounds on the solution, based on the guessed solution and the substitution.
 For illustrative purposes, suppose that we apply this method to the Fibonacci
 recurrence:
-&lt;script type=&quot;math/tex&quot;&gt;a_n = a_{n – 1} + a_{n – 2}&lt;/script&gt; 
+&lt;script type=&quot;math/tex&quot;&gt;a\_n = a_{n – 1} + a_{n – 2}&lt;/script&gt; 
 for n &amp;gt; 1 with a0 = 0 and a1 = 1.&lt;/li&gt;
 &lt;/ul&gt;
 
