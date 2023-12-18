@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "17c7c49467f5dd9e7f749f56f3dcaaf3cba0e858e8a29684d49528f09fc52bde",
-    "current": "17c7c49467f5dd9e7f749f56f3dcaaf3cba0e858e8a29684d49528f09fc52bde"
+    "previous": "c01a07f254dbb287500724323d82909dc97906798127f4efa2c911c5cbbd8761",
+    "current": "c01a07f254dbb287500724323d82909dc97906798127f4efa2c911c5cbbd8761"
   },
   "fonts": [
     "./iconfont.ttf",
@@ -853,7 +853,7 @@
     }
   },
   "options": {
-    "autowidth": false,
+    "autowidth": true,
     "config": "fontcustom.yml",
     "copyright": "",
     "css3": false,
