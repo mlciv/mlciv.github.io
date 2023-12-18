@@ -1,18 +1,87 @@
 {
   "checksum": {
-    "previous": "c5cdc0a58b7277d1f320a4ad50aa8ae2ad47fa6ed879c164db1cfb75439bd1d9",
-    "current": "c5cdc0a58b7277d1f320a4ad50aa8ae2ad47fa6ed879c164db1cfb75439bd1d9"
+    "previous": "767ca5d070dae7f73a0d1d1aeb04cad8f43e4aded531d81113734cc868520df0",
+    "current": "767ca5d070dae7f73a0d1d1aeb04cad8f43e4aded531d81113734cc868520df0"
   },
   "fonts": [
     "./iconfont.ttf",
     "./iconfont.svg",
     "./iconfont.woff",
-    "./iconfont.eot"
+    "./iconfont.eot",
+    "./iconfont.woff2"
   ],
   "glyphs": {
+    "academia": {
+      "codepoint": 61750,
+      "source": "svg-files-for-custom-font/academia.svg"
+    },
+    "academia-square": {
+      "codepoint": 61751,
+      "source": "svg-files-for-custom-font/academia-square.svg"
+    },
+    "acclaim": {
+      "codepoint": 61752,
+      "source": "svg-files-for-custom-font/acclaim.svg"
+    },
+    "acclaim-square": {
+      "codepoint": 61753,
+      "source": "svg-files-for-custom-font/acclaim-square.svg"
+    },
+    "acm": {
+      "codepoint": 61754,
+      "source": "svg-files-for-custom-font/acm.svg"
+    },
+    "acm-square": {
+      "codepoint": 61755,
+      "source": "svg-files-for-custom-font/acm-square.svg"
+    },
+    "acmdl": {
+      "codepoint": 61756,
+      "source": "svg-files-for-custom-font/acmdl.svg"
+    },
+    "acmdl-square": {
+      "codepoint": 61757,
+      "source": "svg-files-for-custom-font/acmdl-square.svg"
+    },
+    "ads": {
+      "codepoint": 61758,
+      "source": "svg-files-for-custom-font/ads.svg"
+    },
+    "ads-square": {
+      "codepoint": 61759,
+      "source": "svg-files-for-custom-font/ads-square.svg"
+    },
+    "africarxiv": {
+      "codepoint": 61760,
+      "source": "svg-files-for-custom-font/africarxiv.svg"
+    },
+    "africarxiv-square": {
+      "codepoint": 61761,
+      "source": "svg-files-for-custom-font/africarxiv-square.svg"
+    },
     "archive": {
       "codepoint": 61696,
       "source": "svg-files-for-custom-font/archive.svg"
+    },
+    "archive-square": {
+      "codepoint": 61762,
+      "source": "svg-files-for-custom-font/archive-square.svg"
+    },
+    "arxiv": {
+      "codepoint": 61763,
+      "source": "svg-files-for-custom-font/arxiv.svg"
+    },
+    "arxiv-square": {
+      "codepoint": 61764,
+      "source": "svg-files-for-custom-font/arxiv-square.svg"
+    },
+    "biorxiv": {
+      "codepoint": 61765,
+      "source": "svg-files-for-custom-font/biorxiv.svg"
+    },
+    "biorxiv-square": {
+      "codepoint": 61766,
+      "source": "svg-files-for-custom-font/biorxiv-square.svg"
     },
     "browser": {
       "codepoint": 61697,
@@ -25,6 +94,14 @@
     "camera": {
       "codepoint": 61698,
       "source": "svg-files-for-custom-font/camera.svg"
+    },
+    "ceur": {
+      "codepoint": 61767,
+      "source": "svg-files-for-custom-font/ceur.svg"
+    },
+    "ceur-square": {
+      "codepoint": 61768,
+      "source": "svg-files-for-custom-font/ceur-square.svg"
     },
     "chat": {
       "codepoint": 61699,
@@ -50,6 +127,14 @@
       "codepoint": 61704,
       "source": "svg-files-for-custom-font/chevron-up.svg"
     },
+    "ciencia-vitae": {
+      "codepoint": 61769,
+      "source": "svg-files-for-custom-font/ciencia-vitae.svg"
+    },
+    "ciencia-vitae-square": {
+      "codepoint": 61770,
+      "source": "svg-files-for-custom-font/ciencia-vitae-square.svg"
+    },
     "circle-with-cross": {
       "codepoint": 61705,
       "source": "svg-files-for-custom-font/circle-with-cross.svg"
@@ -61,6 +146,22 @@
     "circle-with-plus": {
       "codepoint": 61707,
       "source": "svg-files-for-custom-font/circle-with-plus.svg"
+    },
+    "clarivate": {
+      "codepoint": 61771,
+      "source": "svg-files-for-custom-font/clarivate.svg"
+    },
+    "clarivate-square": {
+      "codepoint": 61772,
+      "source": "svg-files-for-custom-font/clarivate-square.svg"
+    },
+    "closed-access": {
+      "codepoint": 61773,
+      "source": "svg-files-for-custom-font/closed-access.svg"
+    },
+    "closed-access-square": {
+      "codepoint": 61774,
+      "source": "svg-files-for-custom-font/closed-access-square.svg"
     },
     "cloud": {
       "codepoint": 61708,
@@ -74,13 +175,101 @@
       "codepoint": 61710,
       "source": "svg-files-for-custom-font/cog.svg"
     },
+    "conversation": {
+      "codepoint": 61775,
+      "source": "svg-files-for-custom-font/conversation.svg"
+    },
+    "conversation-square": {
+      "codepoint": 61776,
+      "source": "svg-files-for-custom-font/conversation-square.svg"
+    },
+    "coursera": {
+      "codepoint": 61777,
+      "source": "svg-files-for-custom-font/coursera.svg"
+    },
+    "coursera-square": {
+      "codepoint": 61778,
+      "source": "svg-files-for-custom-font/coursera-square.svg"
+    },
+    "crossref": {
+      "codepoint": 61779,
+      "source": "svg-files-for-custom-font/crossref.svg"
+    },
+    "crossref-square": {
+      "codepoint": 61780,
+      "source": "svg-files-for-custom-font/crossref-square.svg"
+    },
+    "cv": {
+      "codepoint": 61781,
+      "source": "svg-files-for-custom-font/cv.svg"
+    },
+    "cv-square": {
+      "codepoint": 61782,
+      "source": "svg-files-for-custom-font/cv-square.svg"
+    },
+    "datacite": {
+      "codepoint": 61783,
+      "source": "svg-files-for-custom-font/datacite.svg"
+    },
+    "datacite-square": {
+      "codepoint": 61784,
+      "source": "svg-files-for-custom-font/datacite-square.svg"
+    },
+    "dataverse": {
+      "codepoint": 61785,
+      "source": "svg-files-for-custom-font/dataverse.svg"
+    },
+    "dataverse-square": {
+      "codepoint": 61786,
+      "source": "svg-files-for-custom-font/dataverse-square.svg"
+    },
+    "dblp": {
+      "codepoint": 61787,
+      "source": "svg-files-for-custom-font/dblp.svg"
+    },
+    "dblp-square": {
+      "codepoint": 61788,
+      "source": "svg-files-for-custom-font/dblp-square.svg"
+    },
+    "depsy": {
+      "codepoint": 61789,
+      "source": "svg-files-for-custom-font/depsy.svg"
+    },
+    "depsy-square": {
+      "codepoint": 61790,
+      "source": "svg-files-for-custom-font/depsy-square.svg"
+    },
+    "doi": {
+      "codepoint": 61791,
+      "source": "svg-files-for-custom-font/doi.svg"
+    },
+    "doi-square": {
+      "codepoint": 61792,
+      "source": "svg-files-for-custom-font/doi-square.svg"
+    },
     "dropbox": {
       "codepoint": 61711,
       "source": "svg-files-for-custom-font/dropbox.svg"
     },
+    "dryad": {
+      "codepoint": 61793,
+      "source": "svg-files-for-custom-font/dryad.svg"
+    },
+    "dryad-square": {
+      "codepoint": 61794,
+      "source": "svg-files-for-custom-font/dryad-square.svg"
+    },
     "edit": {
       "codepoint": 61712,
       "source": "svg-files-for-custom-font/edit.svg"
+    },
+    "elsevier": {
+      "codepoint": 61795,
+      "source": "svg-files-for-custom-font/elsevier.svg"
+    },
+    "elsevier-square": {
+      "codepoint": 61796,
+      "source": "svg-files-for-custom-font/elsevier-square.svg"
     },
     "export": {
       "codepoint": 61713,
@@ -98,6 +287,14 @@
       "codepoint": 61716,
       "source": "svg-files-for-custom-font/feather.svg"
     },
+    "figshare": {
+      "codepoint": 61797,
+      "source": "svg-files-for-custom-font/figshare.svg"
+    },
+    "figshare-square": {
+      "codepoint": 61798,
+      "source": "svg-files-for-custom-font/figshare-square.svg"
+    },
     "github": {
       "codepoint": 61717,
       "source": "svg-files-for-custom-font/github.svg"
@@ -105,6 +302,22 @@
     "globe": {
       "codepoint": 61718,
       "source": "svg-files-for-custom-font/globe.svg"
+    },
+    "google-scholar": {
+      "codepoint": 61799,
+      "source": "svg-files-for-custom-font/google-scholar.svg"
+    },
+    "google-scholar-square": {
+      "codepoint": 61800,
+      "source": "svg-files-for-custom-font/google-scholar-square.svg"
+    },
+    "hal": {
+      "codepoint": 61801,
+      "source": "svg-files-for-custom-font/hal.svg"
+    },
+    "hal-square": {
+      "codepoint": 61802,
+      "source": "svg-files-for-custom-font/hal-square.svg"
     },
     "heart": {
       "codepoint": 61719,
@@ -118,13 +331,101 @@
       "codepoint": 61721,
       "source": "svg-files-for-custom-font/home.svg"
     },
+    "hypothesis": {
+      "codepoint": 61803,
+      "source": "svg-files-for-custom-font/hypothesis.svg"
+    },
+    "hypothesis-square": {
+      "codepoint": 61804,
+      "source": "svg-files-for-custom-font/hypothesis-square.svg"
+    },
+    "ideas-repec": {
+      "codepoint": 61805,
+      "source": "svg-files-for-custom-font/ideas-repec.svg"
+    },
+    "ideas-repec-square": {
+      "codepoint": 61806,
+      "source": "svg-files-for-custom-font/ideas-repec-square.svg"
+    },
+    "ieee": {
+      "codepoint": 61807,
+      "source": "svg-files-for-custom-font/ieee.svg"
+    },
+    "ieee-square": {
+      "codepoint": 61808,
+      "source": "svg-files-for-custom-font/ieee-square.svg"
+    },
+    "impactstory": {
+      "codepoint": 61809,
+      "source": "svg-files-for-custom-font/impactstory.svg"
+    },
+    "impactstory-square": {
+      "codepoint": 61810,
+      "source": "svg-files-for-custom-font/impactstory-square.svg"
+    },
+    "inaturalist": {
+      "codepoint": 61811,
+      "source": "svg-files-for-custom-font/inaturalist.svg"
+    },
+    "inaturalist-square": {
+      "codepoint": 61812,
+      "source": "svg-files-for-custom-font/inaturalist-square.svg"
+    },
+    "inpn": {
+      "codepoint": 61813,
+      "source": "svg-files-for-custom-font/inpn.svg"
+    },
+    "inpn-square": {
+      "codepoint": 61814,
+      "source": "svg-files-for-custom-font/inpn-square.svg"
+    },
+    "inspire": {
+      "codepoint": 61815,
+      "source": "svg-files-for-custom-font/inspire.svg"
+    },
+    "inspire-square": {
+      "codepoint": 61816,
+      "source": "svg-files-for-custom-font/inspire-square.svg"
+    },
     "instagram": {
       "codepoint": 61722,
       "source": "svg-files-for-custom-font/instagram.svg"
     },
+    "isidore": {
+      "codepoint": 61817,
+      "source": "svg-files-for-custom-font/isidore.svg"
+    },
+    "isidore-square": {
+      "codepoint": 61818,
+      "source": "svg-files-for-custom-font/isidore-square.svg"
+    },
+    "isni": {
+      "codepoint": 61819,
+      "source": "svg-files-for-custom-font/isni.svg"
+    },
+    "isni-square": {
+      "codepoint": 61820,
+      "source": "svg-files-for-custom-font/isni-square.svg"
+    },
+    "jstor": {
+      "codepoint": 61821,
+      "source": "svg-files-for-custom-font/jstor.svg"
+    },
+    "jstor-square": {
+      "codepoint": 61822,
+      "source": "svg-files-for-custom-font/jstor-square.svg"
+    },
     "lab-flask": {
       "codepoint": 61723,
       "source": "svg-files-for-custom-font/lab-flask.svg"
+    },
+    "lattes": {
+      "codepoint": 61823,
+      "source": "svg-files-for-custom-font/lattes.svg"
+    },
+    "lattes-square": {
+      "codepoint": 61824,
+      "source": "svg-files-for-custom-font/lattes-square.svg"
     },
     "leaf": {
       "codepoint": 61724,
@@ -138,6 +439,22 @@
       "codepoint": 61726,
       "source": "svg-files-for-custom-font/mail.svg"
     },
+    "mathoverflow": {
+      "codepoint": 61825,
+      "source": "svg-files-for-custom-font/mathoverflow.svg"
+    },
+    "mathoverflow-square": {
+      "codepoint": 61826,
+      "source": "svg-files-for-custom-font/mathoverflow-square.svg"
+    },
+    "mendeley": {
+      "codepoint": 61827,
+      "source": "svg-files-for-custom-font/mendeley.svg"
+    },
+    "mendeley-square": {
+      "codepoint": 61828,
+      "source": "svg-files-for-custom-font/mendeley-square.svg"
+    },
     "message": {
       "codepoint": 61727,
       "source": "svg-files-for-custom-font/message.svg"
@@ -146,33 +463,313 @@
       "codepoint": 61728,
       "source": "svg-files-for-custom-font/mic.svg"
     },
+    "moodle": {
+      "codepoint": 61829,
+      "source": "svg-files-for-custom-font/moodle.svg"
+    },
+    "moodle-square": {
+      "codepoint": 61830,
+      "source": "svg-files-for-custom-font/moodle-square.svg"
+    },
+    "mtmt": {
+      "codepoint": 61831,
+      "source": "svg-files-for-custom-font/mtmt.svg"
+    },
+    "mtmt-square": {
+      "codepoint": 61832,
+      "source": "svg-files-for-custom-font/mtmt-square.svg"
+    },
+    "nakala": {
+      "codepoint": 61833,
+      "source": "svg-files-for-custom-font/nakala.svg"
+    },
+    "nakala-square": {
+      "codepoint": 61834,
+      "source": "svg-files-for-custom-font/nakala-square.svg"
+    },
     "network": {
       "codepoint": 61729,
       "source": "svg-files-for-custom-font/network.svg"
+    },
+    "obp": {
+      "codepoint": 61835,
+      "source": "svg-files-for-custom-font/obp.svg"
+    },
+    "obp-square": {
+      "codepoint": 61836,
+      "source": "svg-files-for-custom-font/obp-square.svg"
+    },
+    "open-access": {
+      "codepoint": 61837,
+      "source": "svg-files-for-custom-font/open-access.svg"
+    },
+    "open-access-square": {
+      "codepoint": 61838,
+      "source": "svg-files-for-custom-font/open-access-square.svg"
+    },
+    "open-data": {
+      "codepoint": 61839,
+      "source": "svg-files-for-custom-font/open-data.svg"
+    },
+    "open-data-square": {
+      "codepoint": 61840,
+      "source": "svg-files-for-custom-font/open-data-square.svg"
+    },
+    "open-materials": {
+      "codepoint": 61841,
+      "source": "svg-files-for-custom-font/open-materials.svg"
+    },
+    "open-materials-square": {
+      "codepoint": 61842,
+      "source": "svg-files-for-custom-font/open-materials-square.svg"
+    },
+    "openedition": {
+      "codepoint": 61843,
+      "source": "svg-files-for-custom-font/openedition.svg"
+    },
+    "openedition-square": {
+      "codepoint": 61844,
+      "source": "svg-files-for-custom-font/openedition-square.svg"
+    },
+    "orcid": {
+      "codepoint": 61845,
+      "source": "svg-files-for-custom-font/orcid.svg"
+    },
+    "orcid-square": {
+      "codepoint": 61846,
+      "source": "svg-files-for-custom-font/orcid-square.svg"
+    },
+    "osf": {
+      "codepoint": 61847,
+      "source": "svg-files-for-custom-font/osf.svg"
+    },
+    "osf-square": {
+      "codepoint": 61848,
+      "source": "svg-files-for-custom-font/osf-square.svg"
+    },
+    "overleaf": {
+      "codepoint": 61849,
+      "source": "svg-files-for-custom-font/overleaf.svg"
+    },
+    "overleaf-square": {
+      "codepoint": 61850,
+      "source": "svg-files-for-custom-font/overleaf-square.svg"
     },
     "paper-plane": {
       "codepoint": 61730,
       "source": "svg-files-for-custom-font/paper-plane.svg"
     },
+    "philpapers": {
+      "codepoint": 61851,
+      "source": "svg-files-for-custom-font/philpapers.svg"
+    },
+    "philpapers-square": {
+      "codepoint": 61852,
+      "source": "svg-files-for-custom-font/philpapers-square.svg"
+    },
+    "piazza": {
+      "codepoint": 61853,
+      "source": "svg-files-for-custom-font/piazza.svg"
+    },
+    "piazza-square": {
+      "codepoint": 61854,
+      "source": "svg-files-for-custom-font/piazza-square.svg"
+    },
     "pinterest": {
       "codepoint": 61731,
       "source": "svg-files-for-custom-font/pinterest.svg"
+    },
+    "preregistered": {
+      "codepoint": 61855,
+      "source": "svg-files-for-custom-font/preregistered.svg"
+    },
+    "preregistered-de": {
+      "codepoint": 61856,
+      "source": "svg-files-for-custom-font/preregistered-de.svg"
+    },
+    "preregistered-de-plus": {
+      "codepoint": 61857,
+      "source": "svg-files-for-custom-font/preregistered-de-plus.svg"
+    },
+    "preregistered-de-plus-square": {
+      "codepoint": 61858,
+      "source": "svg-files-for-custom-font/preregistered-de-plus-square.svg"
+    },
+    "preregistered-de-square": {
+      "codepoint": 61859,
+      "source": "svg-files-for-custom-font/preregistered-de-square.svg"
+    },
+    "preregistered-de-tc": {
+      "codepoint": 61860,
+      "source": "svg-files-for-custom-font/preregistered-de-tc.svg"
+    },
+    "preregistered-de-tc-plus": {
+      "codepoint": 61861,
+      "source": "svg-files-for-custom-font/preregistered-de-tc-plus.svg"
+    },
+    "preregistered-de-tc-plus-square": {
+      "codepoint": 61862,
+      "source": "svg-files-for-custom-font/preregistered-de-tc-plus-square.svg"
+    },
+    "preregistered-de-tc-square": {
+      "codepoint": 61863,
+      "source": "svg-files-for-custom-font/preregistered-de-tc-square.svg"
+    },
+    "preregistered-square": {
+      "codepoint": 61864,
+      "source": "svg-files-for-custom-font/preregistered-square.svg"
+    },
+    "preregistered-tc": {
+      "codepoint": 61865,
+      "source": "svg-files-for-custom-font/preregistered-tc.svg"
+    },
+    "preregistered-tc-plus": {
+      "codepoint": 61866,
+      "source": "svg-files-for-custom-font/preregistered-tc-plus.svg"
+    },
+    "preregistered-tc-plus-square": {
+      "codepoint": 61867,
+      "source": "svg-files-for-custom-font/preregistered-tc-plus-square.svg"
+    },
+    "preregistered-tc-square": {
+      "codepoint": 61868,
+      "source": "svg-files-for-custom-font/preregistered-tc-square.svg"
     },
     "price-tag": {
       "codepoint": 61732,
       "source": "svg-files-for-custom-font/price-tag.svg"
     },
+    "protocols": {
+      "codepoint": 61869,
+      "source": "svg-files-for-custom-font/protocols.svg"
+    },
+    "protocols-square": {
+      "codepoint": 61870,
+      "source": "svg-files-for-custom-font/protocols-square.svg"
+    },
+    "psyarxiv": {
+      "codepoint": 61871,
+      "source": "svg-files-for-custom-font/psyarxiv.svg"
+    },
+    "psyarxiv-square": {
+      "codepoint": 61872,
+      "source": "svg-files-for-custom-font/psyarxiv-square.svg"
+    },
+    "publons": {
+      "codepoint": 61873,
+      "source": "svg-files-for-custom-font/publons.svg"
+    },
+    "publons-square": {
+      "codepoint": 61874,
+      "source": "svg-files-for-custom-font/publons-square.svg"
+    },
+    "pubmed": {
+      "codepoint": 61875,
+      "source": "svg-files-for-custom-font/pubmed.svg"
+    },
+    "pubmed-square": {
+      "codepoint": 61876,
+      "source": "svg-files-for-custom-font/pubmed-square.svg"
+    },
+    "pubpeer": {
+      "codepoint": 61877,
+      "source": "svg-files-for-custom-font/pubpeer.svg"
+    },
+    "pubpeer-square": {
+      "codepoint": 61878,
+      "source": "svg-files-for-custom-font/pubpeer-square.svg"
+    },
+    "researcherid": {
+      "codepoint": 61879,
+      "source": "svg-files-for-custom-font/researcherid.svg"
+    },
+    "researcherid-square": {
+      "codepoint": 61880,
+      "source": "svg-files-for-custom-font/researcherid-square.svg"
+    },
+    "researchgate": {
+      "codepoint": 61881,
+      "source": "svg-files-for-custom-font/researchgate.svg"
+    },
+    "researchgate-square": {
+      "codepoint": 61882,
+      "source": "svg-files-for-custom-font/researchgate-square.svg"
+    },
     "rocket": {
       "codepoint": 61733,
       "source": "svg-files-for-custom-font/rocket.svg"
+    },
+    "ror": {
+      "codepoint": 61883,
+      "source": "svg-files-for-custom-font/ror.svg"
+    },
+    "ror-square": {
+      "codepoint": 61884,
+      "source": "svg-files-for-custom-font/ror-square.svg"
     },
     "rss": {
       "codepoint": 61734,
       "source": "svg-files-for-custom-font/rss.svg"
     },
+    "sci-hub": {
+      "codepoint": 61885,
+      "source": "svg-files-for-custom-font/sci-hub.svg"
+    },
+    "sci-hub-square": {
+      "codepoint": 61886,
+      "source": "svg-files-for-custom-font/sci-hub-square.svg"
+    },
+    "scirate": {
+      "codepoint": 61887,
+      "source": "svg-files-for-custom-font/scirate.svg"
+    },
+    "scirate-square": {
+      "codepoint": 61888,
+      "source": "svg-files-for-custom-font/scirate-square.svg"
+    },
+    "scopus": {
+      "codepoint": 61889,
+      "source": "svg-files-for-custom-font/scopus.svg"
+    },
+    "scopus-square": {
+      "codepoint": 61890,
+      "source": "svg-files-for-custom-font/scopus-square.svg"
+    },
+    "semantic-scholar": {
+      "codepoint": 61891,
+      "source": "svg-files-for-custom-font/semantic-scholar.svg"
+    },
+    "semantic-scholar-square": {
+      "codepoint": 61892,
+      "source": "svg-files-for-custom-font/semantic-scholar-square.svg"
+    },
     "soundcloud": {
       "codepoint": 61735,
       "source": "svg-files-for-custom-font/soundcloud.svg"
+    },
+    "springer": {
+      "codepoint": 61893,
+      "source": "svg-files-for-custom-font/springer.svg"
+    },
+    "springer-square": {
+      "codepoint": 61894,
+      "source": "svg-files-for-custom-font/springer-square.svg"
+    },
+    "ssrn": {
+      "codepoint": 61895,
+      "source": "svg-files-for-custom-font/ssrn.svg"
+    },
+    "ssrn-square": {
+      "codepoint": 61896,
+      "source": "svg-files-for-custom-font/ssrn-square.svg"
+    },
+    "stackoverflow": {
+      "codepoint": 61897,
+      "source": "svg-files-for-custom-font/stackoverflow.svg"
+    },
+    "stackoverflow-square": {
+      "codepoint": 61898,
+      "source": "svg-files-for-custom-font/stackoverflow-square.svg"
     },
     "star": {
       "codepoint": 61736,
@@ -206,6 +803,14 @@
       "codepoint": 61742,
       "source": "svg-files-for-custom-font/upload-to-cloud.svg"
     },
+    "viaf": {
+      "codepoint": 61899,
+      "source": "svg-files-for-custom-font/viaf.svg"
+    },
+    "viaf-square": {
+      "codepoint": 61900,
+      "source": "svg-files-for-custom-font/viaf-square.svg"
+    },
     "video": {
       "codepoint": 61743,
       "source": "svg-files-for-custom-font/video.svg"
@@ -218,6 +823,14 @@
       "codepoint": 61745,
       "source": "svg-files-for-custom-font/warning.svg"
     },
+    "wiley": {
+      "codepoint": 61901,
+      "source": "svg-files-for-custom-font/wiley.svg"
+    },
+    "wiley-square": {
+      "codepoint": 61902,
+      "source": "svg-files-for-custom-font/wiley-square.svg"
+    },
     "xing": {
       "codepoint": 61749,
       "source": "svg-files-for-custom-font/xing.svg"
@@ -225,13 +838,27 @@
     "youtube": {
       "codepoint": 61746,
       "source": "svg-files-for-custom-font/youtube.svg"
+    },
+    "zenodo": {
+      "codepoint": 61903,
+      "source": "svg-files-for-custom-font/zenodo.svg"
+    },
+    "zotero": {
+      "codepoint": 61904,
+      "source": "svg-files-for-custom-font/zotero.svg"
+    },
+    "zotero-square": {
+      "codepoint": 61905,
+      "source": "svg-files-for-custom-font/zotero-square.svg"
     }
   },
   "options": {
     "autowidth": false,
     "config": "fontcustom.yml",
+    "copyright": "",
+    "css3": false,
     "css_selector": ".icon-{{glyph}}",
-    "debug": false,
+    "debug": true,
     "font_ascent": 448,
     "font_descent": 64,
     "font_design_size": 20,
