@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "767ca5d070dae7f73a0d1d1aeb04cad8f43e4aded531d81113734cc868520df0",
-    "current": "767ca5d070dae7f73a0d1d1aeb04cad8f43e4aded531d81113734cc868520df0"
+    "previous": "17c7c49467f5dd9e7f749f56f3dcaaf3cba0e858e8a29684d49528f09fc52bde",
+    "current": "17c7c49467f5dd9e7f749f56f3dcaaf3cba0e858e8a29684d49528f09fc52bde"
   },
   "fonts": [
     "./iconfont.ttf",
@@ -858,7 +858,7 @@
     "copyright": "",
     "css3": false,
     "css_selector": ".icon-{{glyph}}",
-    "debug": true,
+    "debug": false,
     "font_ascent": 448,
     "font_descent": 64,
     "font_design_size": 20,
