@@ -74,7 +74,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 - [2015] Our system ['Talking Geckos'](https://www.slideshare.net/jiessiecao/talking-geckos-question-and-answering) winned 1st in a question-answering competition during Fall 2015 NLP class.
 - [2010] VMware Cloud Computing Innovation Cup, Top 50
 - [2009] Google Andriod Innovative Idea Sharing Award
-- [2007] "Computer World" Magazine Scholarship (50 students awarded in China)
+- [2007] "Computer World" Magazine Scholarship (50 students per year in China)
 - [2007] Microsoft ImagineCup
     *  Algorithm Challenge, Top 50 
     *  Visual Gaming Contest(Project Hoshimi), Top 2 in China, 18th in world final.
