@@ -23,9 +23,9 @@ header : no
        processing and machine learning. I study methods for predicting structured representations of natural language text, e.g. Semantic Parsing, Dialogue System.
        </p>
 
-    <section id="profile-right" class="small-12 medium-6 columns social-icons">
-            <ul class="inline-list">
-            {% for social_item in site.data.socialmedia %}
+    <section id="profile-right" class="medium-6 large-5 columns social-icons">
+            <ul class="inline-list" style="font-size: 28px !important;">
+            {% for social_item in site.data.socialmedia limit:4 %}
               <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
             {% endfor %}
             </ul>

@@ -3,19 +3,19 @@
   class: icon-google-scholar
   title: ""
 
-- name: DBLP
-  url: https://dblp.org/pid/39/6191-10.html
-  class: icon-dblp
-  title: ""
-
 - name: Semantic Scholar
   url: https://www.semanticscholar.org/author/Jie-Cao/
   class: icon-semantic-scholar
   title: ""
 
-- name: ORCID
-  url: https://orcid.org/0000-0001-8268-954X
-  class: icon-orcid
+- name: Resume
+  url: public/CV_Jie-Cao.pdf
+  class: icon-cv
+  title: ""
+
+- name: Email
+  url: mailto:jiecao at colorado dot edu
+  class: icon-mail
   title: ""
 
 - name: ResearchGate
@@ -23,10 +23,16 @@
   class: icon-researchgate
   title: ""
 
-- name: Email
-  url: mailto:jiecao at colorado dot edu
-  class: icon-mail
+- name: DBLP
+  url: https://dblp.org/pid/39/6191-10.html
+  class: icon-dblp
   title: ""
+
+- name: ORCID
+  url: https://orcid.org/0000-0001-8268-954X
+  class: icon-orcid
+  title: ""
+
 
 #
 #- name: GitHub
