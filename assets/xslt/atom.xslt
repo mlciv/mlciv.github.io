@@ -378,17 +378,17 @@ function toggleDiv(element){
             
               <li><a href="https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en" target="_blank" class="icon-google-scholar" title=""></a></li>
             
-              <li><a href="https://dblp.org/pid/39/6191-10.html" target="_blank" class="icon-dblp" title=""></a></li>
-            
               <li><a href="https://www.semanticscholar.org/author/Jie-Cao/" target="_blank" class="icon-semantic-scholar" title=""></a></li>
-            
-              <li><a href="https://orcid.org/0000-0001-8268-954X" target="_blank" class="icon-orcid" title=""></a></li>
-            
-              <li><a href="https://www.researchgate.net/profile/Jie-Cao-7" target="_blank" class="icon-researchgate" title=""></a></li>
             
               <li><a href="public/CV_Jie-Cao.pdf" target="_blank" class="icon-cv" title=""></a></li>
             
               <li><a href="mailto:jiecao at colorado dot edu" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.researchgate.net/profile/Jie-Cao-7" target="_blank" class="icon-researchgate" title=""></a></li>
+            
+              <li><a href="https://dblp.org/pid/39/6191-10.html" target="_blank" class="icon-dblp" title=""></a></li>
+            
+              <li><a href="https://orcid.org/0000-0001-8268-954X" target="_blank" class="icon-orcid" title=""></a></li>
             
             </ul>
           </section>
