@@ -15,7 +15,7 @@
 
 - name: Google Scholar
   url: https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en
-  class: ai-google-scholar
+  class: icon-google-scholar
   title: ""
 
 - name: Email
