@@ -152,7 +152,7 @@ function toggleDiv(element){
       <h1><a href="https://mlciv.com" class="icon-tree"> Jie Cao | Dialogue, NLP, ML</a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
     <section class="top-bar-section">
 
