@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/css" href="/assets/css/rss.css" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>MLCIV, Jie Cao&apos;s Personal Website</title>
+		<title>Jie Cao | Dialogue, NLP, ML | mlciv</title>
 		<description>Jie Cao&apos;s Personal Website.</description>
 		<link>https://mlciv.com/</link>
 		<atom:link href="https://mlciv.com/feed.xml" rel="self" type="application/rss+xml" />
