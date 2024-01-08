@@ -38,7 +38,7 @@ function toggleDiv(element){
 
   
 	
-	<meta name="description" content="Keep a student mindset, and actively learn the next thing for/with/from machines." />
+	<meta name="description" content="Jie Cao&#39;s Personal Website." />
 
 	
 
@@ -121,9 +121,9 @@ function toggleDiv(element){
 	<meta property="og:locale" content="en_EN" />
 	
 	<meta property="og:title" content="Atom Feed (Styled)" />
-	<meta property="og:description" content="Keep a student mindset, and actively learn the next thing for/with/from machines." />
+	<meta property="og:description" content="Jie Cao&#39;s Personal Website." />
 	<meta property="og:url" content="https://mlciv.com//assets/xslt/atom.xslt" />
-	<meta property="og:site_name" content="MLCIV" />
+	<meta property="og:site_name" content="MLCIV, Jie Cao's Personal Website" />
 	
 
 	
@@ -147,7 +147,7 @@ function toggleDiv(element){
   <nav class="top-bar" role="navigation" data-topbar>
     <ul class="title-area">
       <li class="name">
-      <h1 class="show-for-small-only"><a href="https://mlciv.com" class="icon-tree"> MLCIV</a></h1>
+      <h1 class="show-for-small-only"><a href="https://mlciv.com" class="icon-tree"> MLCIV, Jie Cao's Personal Website</a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
@@ -193,8 +193,8 @@ function toggleDiv(element){
 <div id="masthead-no-image-header">
 	<div class="row">
 		<div class="small-12 columns">
-			<a id="logo" href="https://mlciv.com" title="MLCIV – Machine Learning Civilization">
-				<img src="https://mlciv.com/assets/img/logo.png" alt="MLCIV – Machine Learning Civilization">
+			<a id="logo" href="https://mlciv.com" title="MLCIV, Jie Cao's Personal Website – Machine Learning Civilization">
+				<img src="https://mlciv.com/assets/img/logo.png" alt="MLCIV, Jie Cao's Personal Website – Machine Learning Civilization">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
@@ -271,7 +271,7 @@ function toggleDiv(element){
             <h5 class="shadow-black">About This Site</h5>
 
             <p class="shadow-black">
-              Keep a student mindset, and actively learn the next thing for/with/from machines.
+              Jie Cao's Personal Website.
               <a href="https://mlciv.com/info/">More ›</a>
             </p>
           </div><!-- /.large-6.columns -->
