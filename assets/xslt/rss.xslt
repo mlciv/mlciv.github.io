@@ -123,7 +123,7 @@ function toggleDiv(element){
 	<meta property="og:title" content="RSS Feed (Styled)" />
 	<meta property="og:description" content="Jie Cao&#39;s Personal Website." />
 	<meta property="og:url" content="https://mlciv.com//assets/xslt/rss.xslt" />
-	<meta property="og:site_name" content="Jie Cao | Dialogue, NLP, ML | mlciv" />
+	<meta property="og:site_name" content="Jie Cao | Dialogue, NLP, ML" />
 	
 
 	
@@ -147,7 +147,9 @@ function toggleDiv(element){
   <nav class="top-bar" role="navigation" data-topbar>
     <ul class="title-area">
       <li class="name">
-      <h1 class="show-for-small-only"><a href="https://mlciv.com" class="icon-tree"> Jie Cao | Dialogue, NLP, ML | mlciv</a></h1>
+<!-- <h1 class="show-for-small-only"><a href="https://mlciv.com" class="icon-tree"> Jie Cao | Dialogue, NLP, ML</a></h1>
+-->
+      <h1><a href="https://mlciv.com" class="icon-tree"> Jie Cao | Dialogue, NLP, ML</a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Navigation</span></a></li>
@@ -155,6 +157,18 @@ function toggleDiv(element){
     <section class="top-bar-section">
 
       <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
         
 
               
@@ -182,6 +196,36 @@ function toggleDiv(element){
             
           
         
+
+              
+
+          
+          
+
+            
+            
+              <li><a href="https://mlciv.com/publications/">Publications</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a href="https://mlciv.com/teaching/">Teaching</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
         
       </ul>
     </section>
@@ -193,8 +237,8 @@ function toggleDiv(element){
 <div id="masthead-no-image-header">
 	<div class="row">
 		<div class="small-12 columns">
-			<a id="logo" href="https://mlciv.com" title="Jie Cao | Dialogue, NLP, ML | mlciv – Machine Learning Civilization">
-				<img src="https://mlciv.com/assets/img/logo.png" alt="Jie Cao | Dialogue, NLP, ML | mlciv – Machine Learning Civilization">
+			<a id="logo" href="https://mlciv.com" title="Jie Cao | Dialogue, NLP, ML – Machine Learning Civilization">
+				<img src="https://mlciv.com/assets/img/logo.png" alt="Jie Cao | Dialogue, NLP, ML – Machine Learning Civilization">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
