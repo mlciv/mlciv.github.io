@@ -71,6 +71,7 @@ exclude:
     - INSTALL.md
     - publish_mlciv.sh
     - publish_index.sh
+    - ssl
 
 
 # The language setting is used in /includes/header.html for html-settings
