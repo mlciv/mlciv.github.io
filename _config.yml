@@ -275,7 +275,7 @@ scholar:
   repository: ./papers
   bibliography: references
 # bibliography_template: selected_papers
-  bibliography_template: bibliograhy
+  bibliography_template: bibliography
 
   replace_strings: true
 
