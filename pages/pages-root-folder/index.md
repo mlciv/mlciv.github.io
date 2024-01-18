@@ -23,7 +23,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 - 08/2022: I joined [NSF AI Institute for Student-AI Teaming (iSAT)](https://www.colorado.edu/research/ai-institute/) as a post-doctoral researcher.
 - 06/2022: New preprint on [visual analysis of neural network pruning](https://arxiv.org/abs/2206.07918?context=cs.LG).
 
-# Publications
+# Selected Publications
 
 {% bibliography %}
 <!--
@@ -57,7 +57,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 
 # Teaching & Mentoring
 - Fall 2023, U of Colorado Boulder, Instructor, co-teaching ([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin.
-- 2019-2020, U of Utah, Mentoring [Tarun Sunkaraneni](https://tarunsunkaraneni.github.io/), Bachlor Thesis on ['Transformer-based Observers in Psychotherapy'](https://www.cs.utah.edu/docs/techreports/2020/pdf/UUCS-20-011.pdf)
+- 2019-2020, U of Utah, Mentoring [Tarun Sunkaraneni](https://tsunny007.github.io/), Bachlor Thesis on ['Transformer-based Observers in Psychotherapy'](https://www.cs.utah.edu/docs/techreports/2020/pdf/UUCS-20-011.pdf)
 - Fall 2018, U of Utah, TA for CS 6350 Machine Learning
 - Spring 2019, U of Utah, TA for CS 6355 Structured Prediction
 - Fall 2016, U of Utah, TA for CS 6350 Machine Learning

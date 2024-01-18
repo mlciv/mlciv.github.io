@@ -1,0 +1,35 @@
+---
+---
+
+<div>
+<div>
+{{ reference | replace_first: 'Jie Cao', '<b>Jie Cao</b>' }}
+
+<div id="{{key}}-materials">
+  <ul>
+    <li><a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">BibTeX</a></li>
+    <div id="{{key}}-bibtex" style="display:none;">
+    <pre class="collapse">{{entry.bibtex}}</pre>
+    </div>
+
+    {% if link %}
+    <li><a href="{{ link | prepend: site.url }}">Paper</a></li>
+    {% endif %}
+
+    {% if links['slides.pdf'] %}
+    <li><a href="{{ links['slides.pdf'] | prepend: site.url }}">Slides</a></li>
+    {% endif %}
+
+    {% if links['poster.pdf'] %}
+    <li><a href="{{ links['poster.pdf'] | prepend: site.url }}">Poster</a></li>
+    {% endif %}
+  </ul>
+</div>
+</div>
+<!-- image span -->
+<div>
+    {% if links['thumb.jpg'] %}
+    <img src="{{ links['thumb.png'] | prepend: site.url }}", alt="Peekaboo" title="Peakaboo">
+    {% endif %}
+</div>
+</div>
