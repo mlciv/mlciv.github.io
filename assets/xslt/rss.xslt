@@ -424,7 +424,7 @@ function toggleDiv(element){
             
               <li><a href="https://www.semanticscholar.org/author/Jie-Cao/144089400" target="_blank" class="icon-semantic-scholar" title=""></a></li>
             
-              <li><a href="public/CV_Jie-Cao.pdf" target="_blank" class="icon-cv" title=""></a></li>
+              <li><a href="/public/CV_Jie-Cao.pdf" target="_blank" class="icon-cv" title=""></a></li>
             
               <li><a href="mailto:jiecao at colorado dot edu" target="_blank" class="icon-mail" title=""></a></li>
             
