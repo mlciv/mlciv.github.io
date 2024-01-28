@@ -10,7 +10,7 @@ permalink: /index.html
 ---
 
 # News
-- 08/2023: In Fall 2023, I am co-teaching NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin.
+- 08/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin. I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
 - 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to [ACL'23](https://2023.aclweb.org/calls/main_conference/)
 - 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
