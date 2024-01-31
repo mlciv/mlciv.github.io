@@ -10,13 +10,14 @@ permalink: /index.html
 ---
 
 # News
-- 08/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin. I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
+- 11/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin. I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
+- 05/2023: We present our demo on slack-based dialogue synthesis in NSF Visit to iSAT.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
 - 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to [ACL'23](https://2023.aclweb.org/calls/main_conference/)
 - 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
 Errors in Small Group Classroom Discourse" got accepted to
 [UMAP'23](https://www.um.org/umap2023/).
-- 03/2023: \#FirstGrant My research proposal on small-group discussion got awarded by iSAT Trainee Grant.
+- 03/2023: \#FirstGrant My research proposal on conversational simulation on small-group discussion got awarded by iSAT Trainee Grant.
 - 02/2023: Our paper on AI agent for Jigsaw Classrooms got accepted on [AIAIC'23](https://aichildinteraction.github.io/).
 - 12/2022: Our paper on Dependency Dialog Act got accepted on [IWSDS'23](https://sites.google.com/view/iwsds2023/home).
 - 12/2022: Invited Talk on Database Workload Characterization work at Microsoft's Gray Systems Lab. [Slides](https://www.debjyotipaul.in/assets/pub/query_encoder_vldb22_slides.pdf).
@@ -57,7 +58,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 
 # Teaching & Mentoring
 - Fall 2023, U of Colorado Boulder, Instructor, co-teaching ([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin.
-- 2019-2020, U of Utah, Mentoring [Tarun Sunkaraneni](https://tsunny007.github.io/), Bachlor Thesis on ['Transformer-based Observers in Psychotherapy'](https://www.cs.utah.edu/docs/techreports/2020/pdf/UUCS-20-011.pdf)
+- 2019-2020, U of Utah, Mentoring [Tarun Sunkaraneni](https://tsunny007.github.io/), Bachelor Thesis on ['Transformer-based Observers in Psychotherapy'](https://www.cs.utah.edu/docs/techreports/2020/pdf/UUCS-20-011.pdf)
 - Fall 2018, U of Utah, TA for CS 6350 Machine Learning
 - Spring 2019, U of Utah, TA for CS 6355 Structured Prediction
 - Fall 2016, U of Utah, TA for CS 6350 Machine Learning
@@ -68,7 +69,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 - PC Member / Reviewers for [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA'23](https://aclanthology.org/venues/bea/), [NLP4ConvAI'23](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023), ACL'20-23, EMNLP'20-23, NAACL'21, EACL'21,24, COLING'(20,22,24), AAAI'19-24, ACL Rolling Review'21-23, AIED'23, EDM'24
 
 # Honors and Awards
-- [2023] iSAT Trainee Grant 2023
+- [2023] iSAT Trainee Grant 2023 on Conversational Simulation on Small-group Discussion. 
 - [2019] CoNLL Shared Task, Cross-framework meaning representation parsing, ranked 1st(over 16 teams) for AMR parsing task.
 - [2018] DSTC7 track1, ranked 2nd for both advising and ubuntu in subtask 5(with external knowledge)
 - [2015] Our system ['Talking Geckos'](https://www.slideshare.net/jiessiecao/talking-geckos-question-and-answering) winned 1st in a question-answering competition during Fall 2015 NLP class.
