@@ -29,7 +29,7 @@ desired level of control. My research focues on addressing the challenges:
           [BEA'23](https://aclanthology.org/2023.bea-1.47/)).
 - **Learning with Inductive Biases.** Beyond the expensive supervised data in many domains~(e.g.,
           psychotherapy, teaching, tutoring, small-group collaboration), we investigate learning with domain-specific knowledges as inductive biases, such as graph-based parsing via anchoring analysis([CoNLL'19](https://aclanthology.org/K19-2013)),
-      database workload characterization via self-supervised learning([VLDB'22](https://dl.acm.org/doi/10.14778/3503585.3503600),
+      database workload characterization via self-supervised learning([VLDB'22](https://dl.acm.org/doi/10.14778/3503585.3503600)),
       zero-shot dialogue state tracking via description-driven
       learning and supplementary pretraining([NAACL'21](https://aclanthology.org/2021.naacl-main.62/)).
 - **Deployment in Real-world Scenarios.** Unexpected,
