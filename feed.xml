@@ -11,7 +11,7 @@
 			<item>
 				<title>shortcut collections</title>
 				<link>https://mlciv.com/blog/2016/02/20/shortcut-collections/</link>
-				<pubDate>Sat, 20 Feb 2016 12:09:00 -0700</pubDate>
+				<pubDate>Sat, 20 Feb 2016 12:09:00 -0600</pubDate>
 				<description>&lt;h1 id=&quot;outline&quot;&gt;Outline&lt;/h1&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    1. Mac shortcut
     2. Bash shortcut
@@ -65,7 +65,7 @@ Pay attention to leader key, and how manage session, window, pane.&lt;/p&gt;
 			<item>
 				<title>Note3-AofA: Recurrence</title>
 				<link>https://mlciv.com/blog/2015/09/19/note3-aofa-recurrence/</link>
-				<pubDate>Sat, 19 Sep 2015 16:31:00 -0600</pubDate>
+				<pubDate>Sat, 19 Sep 2015 16:31:00 -0500</pubDate>
 				<description>&lt;p&gt;The notes will introduce the types of recurrence, and the
 corresponding solution for all these recurrence, including some general
 telescoping methods and Master Theorem etc.&lt;/p&gt;
@@ -333,7 +333,7 @@ on the (smaller) unknown part of the solution.&lt;/li&gt;
 			<item>
 				<title>Note2-AofA: A scientfic Approach</title>
 				<link>https://mlciv.com/blog/2015/09/19/note2-aofa/</link>
-				<pubDate>Sat, 19 Sep 2015 14:05:00 -0600</pubDate>
+				<pubDate>Sat, 19 Sep 2015 14:05:00 -0500</pubDate>
 				<description>&lt;h1 id=&quot;a-scientfic-approach&quot;&gt;A scientfic Approach&lt;/h1&gt;
 
 &lt;p&gt;The scientfic method: O-notation, not at all useful for predicting performance&lt;/p&gt;
@@ -446,7 +446,7 @@ Hypothesis: Running time of Quicksort is ~aN in N.&lt;/p&gt;
 			<item>
 				<title>Note1-AofA: From AofA to AC</title>
 				<link>https://mlciv.com/blog/2015/09/19/note1-aofa/</link>
-				<pubDate>Sat, 19 Sep 2015 11:33:00 -0600</pubDate>
+				<pubDate>Sat, 19 Sep 2015 11:33:00 -0500</pubDate>
 				<description>&lt;p&gt;This is an introduce lecture on Analysis of Algorithms. I will show the history
 and progress having made in the past, from Knuth’s scientific method, to Theory
 of Algorithm, and then to the current Analytic Combinatorial. We can get a
@@ -606,7 +606,7 @@ New types of implicit GS functional equations are arise. very strong list and gr
 			<item>
 				<title>hadoop distcp from secure to insecure 0.20.2</title>
 				<link>https://mlciv.com/blog/2015/02/17/hadoop-distcp-secure2insecure_0.20.2/</link>
-				<pubDate>Tue, 17 Feb 2015 17:14:00 -0700</pubDate>
+				<pubDate>Tue, 17 Feb 2015 17:14:00 -0600</pubDate>
 				<description>&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
 
 &lt;p&gt;When secure hadoop 0.20.2 want to access insecure hadoop 0.20.2, espeically for using distcp on hdfs,
@@ -682,7 +682,7 @@ Just run your job as usually.
 			<item>
 				<title>Google Analytics for Octopress</title>
 				<link>https://mlciv.com/blog/2014/04/26/ga-for-octopress/</link>
-				<pubDate>Sat, 26 Apr 2014 21:52:00 -0600</pubDate>
+				<pubDate>Sat, 26 Apr 2014 21:52:00 -0500</pubDate>
 				<description>&lt;p&gt;Using Octopress as a blog framework is a funny experience, and how to display
 some blog stats such as pv is another interesting and challenge task for octopress post are only
 static html pages which means you cannot easily record the count by githubpages.&lt;/p&gt;
@@ -829,7 +829,7 @@ page-view: &amp;lt;/br&amp;gt;
 			<item>
 				<title>Octave on Mac</title>
 				<link>https://mlciv.com/blog/2013/12/14/octave-on-mac/</link>
-				<pubDate>Sat, 14 Dec 2013 19:21:00 -0700</pubDate>
+				<pubDate>Sat, 14 Dec 2013 19:21:00 -0600</pubDate>
 				<description>&lt;p&gt;For learning the &lt;a href=&quot;https://class.coursera.org/ml-004/lecture/index&quot;&gt;online machine learning course on coursera&lt;/a&gt;, which use Octave for programming exercise, I need a Octave development enviroment on my MBP. But when I use &lt;code&gt;brew install octave&lt;/code&gt;, I got a lot of errors, especially on Mac OS 10.9. After many times retry, eventually I sucesseed to install it, so I will depict my process on handle these problems occured in the tough installing process.&lt;/p&gt;
 &lt;pre&gt;
 &lt;code&gt;
@@ -929,7 +929,7 @@ before you use plot() in octave.(And of course you need install X11 first.)&lt;/
 			<item>
 				<title>Mavericks CLT</title>
 				<link>https://mlciv.com/blog/2013/12/11/mavericks-clt/</link>
-				<pubDate>Wed, 11 Dec 2013 00:17:00 -0700</pubDate>
+				<pubDate>Wed, 11 Dec 2013 00:17:00 -0600</pubDate>
 				<description>&lt;p&gt;After the Apple Inc. make the Mavericks free, I upgrade my os of MBP into Mac OS X
 Mavericks.But I found that some basic header files such as “stdio.h” are gone and some
 tools can not be build normally.&lt;/p&gt;
@@ -951,7 +951,7 @@ xcode-select --install
 			<item>
 				<title>Raspberry 无线网卡无法使用问题</title>
 				<link>https://mlciv.com/blog/2013/07/09/raspberry-wifi/</link>
-				<pubDate>Tue, 09 Jul 2013 00:25:00 -0600</pubDate>
+				<pubDate>Tue, 09 Jul 2013 00:25:00 -0500</pubDate>
 				<description>&lt;p&gt;最近入手了Raspberry Pi玩下，一起也买了推荐的免驱的EDUP N8508GS, 买回来用了几天，
 实测确实免驱，不用自己折腾驱动了，刚开始使用的时候是将无线网卡接在HUB上的，使用
 没有什么问题，但是用了几天，突然wifi突然不能自动获取到IP了，设置静态的IP也不能访
@@ -972,7 +972,7 @@ wlan0网卡的，但是就是获取不到IP地址，而且手动配置也不行�
 			<item>
 				<title>Raspberry-GPIO试用</title>
 				<link>https://mlciv.com/blog/2013/07/03/raspberry-gpio/</link>
-				<pubDate>Wed, 03 Jul 2013 22:14:00 -0600</pubDate>
+				<pubDate>Wed, 03 Jul 2013 22:14:00 -0500</pubDate>
 				<description>&lt;h1 id=&quot;raspberry-pi-gpio-试用&quot;&gt;Raspberry pi GPIO 试用&lt;/h1&gt;
 
 &lt;p&gt;最近入手了Raspberry Pi,安装了Raspxbmc系统 一个很漂亮的多媒体系统，在树莓派的论坛
