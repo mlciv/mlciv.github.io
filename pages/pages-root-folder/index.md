@@ -10,6 +10,8 @@ permalink: /index.html
 ---
 
 # News
+- 08/2024: I'll be joining University of Oklahoma as an Assistant Professor in the
+School of Computer Science starting Fall 2024.
 - 11/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin. I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
 - 05/2023: We present our demo on slack-based dialogue synthesis in NSF Visit to iSAT.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
