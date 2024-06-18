@@ -8,12 +8,44 @@ layout: research-index
 header: no
 permalink: /index.html
 ---
+# Research Interests
+To maintain robustness and control in adopting advanced black-box
+neural technologies, such as foundation models, domain-specific
+conversational systems can gain advantages from employing
+interpretable modular designs. This involves breaking down tasks into
+logically abstracted or theory-grounded sub-modules aligned with our
+desired level of control. My research focues on addressing the challenges:
+- **Modularized NLP.** To connect each module and make a coherent
+          system, my research studies *deep structured prediction* for
+          extracting symbolic representations from text
+          ([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
+          [CoNLL'19](https://aclanthology.org/K19-2013/),
+          [ACL'19](https://aclanthology.org/P19-1563/),
+          [NAACL'21](https://aclanthology.org/2021.naacl-main.62/),
+          [IWSDS'23](https://arxiv.org/abs/2302.12944)) and
+          *controllable generation* with augmented-memory, symbolic or
+          neural-symbolic constraints
+          ([DSTC7'19](http://workshop.colips.org/dstc7/papers/13.pdf), [ACL'19](https://aclanthology.org/P19-1192/),
+          [BEA'23](https://aclanthology.org/2023.bea-1.47/)).
+- **Learning with Inductive Biases.** Beyond the expensive supervised data in many domains~(e.g.,
+          psychotherapy, teaching, tutoring, small-group collaboration), we investigate learning with domain-specific knowledges as inductive biases, such as graph-based parsing via anchoring analysis([CoNLL'19](https://aclanthology.org/K19-2013)),
+      database workload characterization via self-supervised learning ([VLDB'22](https://dl.acm.org/doi/10.14778/3503585.3503600)),
+      zero-shot dialogue state tracking via description-driven
+      learning and supplementary pretraining ([NAACL'21](https://aclanthology.org/2021.naacl-main.62/)).
+- **Deployment in Real-world Scenarios.** Unexpected,
+      complex dialogue scenarios can potentially span infinitely many
+      topics, states and environmental settings([ACL'23](https://aclanthology.org/2023.acl-short.156)). We study
+      robustness issues when deploying dialogue system in our daily
+      life, such as in-classroom AI partner ([AIAIC'23](https://aichildinteraction.github.io/preprint/AIAIC23_paper_7399.pdf)),
+      noisy speech ([UMAP'23](https://dl.acm.org/doi/10.1145/3565472.3595606)),
+      multi-party, multi-modal dynamics ([IWSDS'23](https://arxiv.org/abs/2302.12944)),
+      and conversational simulation.
+
 
 # News
 - 08/2024: I'll be joining University of Oklahoma as an Assistant Professor in the
 School of Computer Science starting Fall 2024.
 - 11/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin. I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
-- 05/2023: We present our demo on slack-based dialogue synthesis in NSF Visit to iSAT.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
 - 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to [ACL'23](https://2023.aclweb.org/calls/main_conference/)
 - 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
