@@ -2,7 +2,7 @@
 <code>
 $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 </code>
-</pre><p>其使用方法，参见<a href="http://mxcl.github.com/homebrew/">官网</a>。<h3 id="11-ruby">1.1 Ruby</h3><p>mac本身自带了ruby,可以使用<code class="highlighter-rouge">ruby -v</code> 查看版本号，<code class="highlighter-rouge">which ruby</code> 查看$PATH中设置的当前路径。可以看到版本是1.8.3版本，而octopress需要1.9.3+的版本，以及需要进行升级，rvm（ruby version manager）是用于管理ruby版本的，用rbenv也可以，rake是ruby中类似于make工具。如果你打算学习ruby/rails, rvm是必不可少的工具之一。Ruby的更新和安装请详细请参考http://ruby-china.org/wiki/rvm-guide 这篇wiki<pre>
+</pre><p>其使用方法，参见<a href="http://mxcl.github.com/homebrew/">官网</a>。<h3 id="11-ruby">1.1 Ruby</h3><p>mac本身自带了ruby,可以使用<code class="language-plaintext highlighter-rouge">ruby -v</code> 查看版本号，<code class="language-plaintext highlighter-rouge">which ruby</code> 查看$PATH中设置的当前路径。可以看到版本是1.8.3版本，而octopress需要1.9.3+的版本，以及需要进行升级，rvm（ruby version manager）是用于管理ruby版本的，用rbenv也可以，rake是ruby中类似于make工具。如果你打算学习ruby/rails, rvm是必不可少的工具之一。Ruby的更新和安装请详细请参考http://ruby-china.org/wiki/rvm-guide 这篇wiki<pre>
 <code>
 $ rvm install 1.9.3 &amp;&amp; rvm use 1.9.3 
 $ rvm ruby gems latest

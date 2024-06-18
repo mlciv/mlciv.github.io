@@ -4,9 +4,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://mlciv.com/</id>
 	<title>Jie Cao | Dialogue, NLP, ML</title>
-	<updated>2024-06-18T18:49:41+00:00</updated>
+	<updated>2024-06-18T15:43:38-06:00</updated>
 
-	<subtitle>Jie Cao's Personal Website.</subtitle>
+	<subtitle>Jie Cao&apos;s Personal Website.</subtitle>
 
 	
 		
@@ -22,14 +22,14 @@
 	<link href="https://mlciv.com/atom.xml" rel="self" type="application/rss+xml" />
 	<link href="https://mlciv.com/" rel="alternate" type="text/html" />
 
-	<generator uri="http://jekyllrb.com" version="3.8.6">Jekyll</generator>
+	<generator uri="http://jekyllrb.com" version="4.3.3">Jekyll</generator>
 
 	
 		<entry>
 			<id>https://mlciv.com/blog/2016/02/20/shortcut-collections/</id>
 			<title>shortcut collections</title>
 			<link href="https://mlciv.com/blog/2016/02/20/shortcut-collections/" rel="alternate" type="text/html" title="shortcut collections" />
-			<updated>2016-02-20T12:09:00+00:00</updated>
+			<updated>2016-02-20T12:09:00-07:00</updated>
 
 			
 				
@@ -43,7 +43,7 @@
 			
 			<summary></summary>
 			<content type="html" xml:base="https://mlciv.com/blog/2016/02/20/shortcut-collections/">&lt;h1 id=&quot;outline&quot;&gt;Outline&lt;/h1&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    1. Mac shortcut
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    1. Mac shortcut
     2. Bash shortcut
     3. Vim shortcut
     4. IDEA shortcut
@@ -95,14 +95,14 @@ Pay attention to leader key, and how manage session, window, pane.&lt;/p&gt;
 			
 			
 
-			<published>2016-02-20T12:09:00+00:00</published>
+			<published>2016-02-20T12:09:00-07:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2015/09/19/note3-aofa-recurrence/</id>
 			<title>Note3-AofA: Recurrence</title>
 			<link href="https://mlciv.com/blog/2015/09/19/note3-aofa-recurrence/" rel="alternate" type="text/html" title="Note3-AofA: Recurrence" />
-			<updated>2015-09-19T16:31:00+00:00</updated>
+			<updated>2015-09-19T16:31:00-06:00</updated>
 
 			
 				
@@ -128,7 +128,7 @@ telescoping methods and Master Theorem etc.&lt;/p&gt;
 $a_n = a_n+n$ with $a_0=1$&lt;/p&gt;
 
 &lt;h3 id=&quot;elementary-discrete-sums&quot;&gt;Elementary discrete sums&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* geometric series
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* geometric series
 * arthimetic series
 * bionmial (upper)
 * bionmial theorem
@@ -144,20 +144,20 @@ $a_n = a_n+n$ with $a_0=1$&lt;/p&gt;
 $a_n = 2a_{n-1} + 2^n$ with $a_0=0$
 Divide by $2^n$&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac {a\_n}{2^n} = \frac {a\_{n-1}}{2^{n-1}} +1&lt;/script&gt;
+\[\frac {a\_n}{2^n} = \frac {a\_{n-1}}{2^{n-1}} +1\]
 
 &lt;h3 id=&quot;why-2n-summation-factor&quot;&gt;why 2^n? summation factor&lt;/h3&gt;
 
 &lt;p&gt;For $a_n =x_na_{n-1}+….$&lt;/p&gt;
 
 &lt;p&gt;=&amp;gt; Divid by $x_n \cdot x_{n-1} \cdot x_{n-2}…..x_1$
-&lt;script type=&quot;math/tex&quot;&gt;a =(1+1/n)a\_{n-1}+2&lt;/script&gt;&lt;/p&gt;
+\(a =(1+1/n)a\_{n-1}+2\)&lt;/p&gt;
 
 &lt;p&gt;Then summation factor:
-&lt;script type=&quot;math/tex&quot;&gt;\frac {n+1}{n} \cdot \frac {n}{n-1}....\frac {2}{1} = n+1&lt;/script&gt;&lt;/p&gt;
+\(\frac {n+1}{n} \cdot \frac {n}{n-1}....\frac {2}{1} = n+1\)&lt;/p&gt;
 
 &lt;p&gt;therefore,
-&lt;script type=&quot;math/tex&quot;&gt;\frac {a\_n}{n+1} = \frac {a\_{n-1}}{n}+ \frac {2}{n+1}&lt;/script&gt;&lt;/p&gt;
+\(\frac {a\_n}{n+1} = \frac {a\_{n-1}}{n}+ \frac {2}{n+1}\)&lt;/p&gt;
 
 &lt;h1 id=&quot;types-of-recurrences&quot;&gt;Types of recurrences&lt;/h1&gt;
 
@@ -172,7 +172,7 @@ Divide by $2^n$&lt;/p&gt;
 
 &lt;h4 id=&quot;simple-convergence&quot;&gt;Simple Convergence&lt;/h4&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a\_n = \frac {1}{1+a\_{n-1}}, \quard n\&gt;0 a\_0 = 1&lt;/script&gt;
+\[a\_n = \frac {1}{1+a\_{n-1}}, \quard n\&amp;gt;0 a\_0 = 1\]
 
 &lt;h4 id=&quot;quadratic-convergence-and-newtons-method&quot;&gt;Quadratic convergence and Newton’s method&lt;/h4&gt;
 
@@ -182,53 +182,52 @@ Divide by $2^n$&lt;/p&gt;
 
 &lt;h3 id=&quot;linear-recurrences-with-constant-coefficients&quot;&gt;Linear recurrences with constant coefficients)&lt;/h3&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a\_n = a_{n-1}+2a_{n-2}&lt;/script&gt;
+\[a\_n = a_{n-1}+2a_{n-2}\]
 
 &lt;h4 id=&quot;1-gf&quot;&gt;1. GF&lt;/h4&gt;
 &lt;p&gt;1.1 OGF for linear recurrences.&lt;/p&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;a\_n = x_{1}a_{n-1}+x_{2}a_{n-2}+...x_{t}a_{n-t}&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-f(z) = g(z) \sum\_{0\leq n \&lt; t} a\_n z^n (mod z^t) %]]&gt;&lt;/script&gt;
+&lt;p&gt;\(a\_n = x_{1}a_{n-1}+x_{2}a_{n-2}+...x_{t}a_{n-t}\)
+\(f(z) = g(z) \sum\_{0\leq n \&amp;lt; t} a\_n z^n (mod z^t)\)
 where $g(z) = 1- x_{1}z - x_{2}z^2….x_{t}z^t$
-&lt;script type=&quot;math/tex&quot;&gt;f(z) = u_{0}(z)-u_{1}(z)...u\_{t}(z)&lt;/script&gt;, dependens on initial values&lt;/p&gt;
+\(f(z) = u_{0}(z)-u_{1}(z)...u\_{t}(z)\), dependens on initial values&lt;/p&gt;
 
 &lt;p&gt;$a_0,a_1,…a_{t-1}$
-&lt;script type=&quot;math/tex&quot;&gt;a(z) = \frac {f(z)}{g(z)}&lt;/script&gt;&lt;/p&gt;
+\(a(z) = \frac {f(z)}{g(z)}\)&lt;/p&gt;
 
 &lt;p&gt;for simple OGF, we can lookup the OGF table to get the a(n).
 However, sometimes, the a(z) is complexed expressed by z.&lt;/p&gt;
 
 &lt;p&gt;then we can expand generating functions or find functional equations on generating fucntions, to transform the
 generating function into the coeffient form of l(z)z^N
-Example Solving linear recurrence &lt;script type=&quot;math/tex&quot;&gt;a\_n = 5a_{n-1}-8a_{n-2}+4a\_{n-3},\quad for \  n \geq 3\  with \  a\_0=0,a\_1=1,a\_2=4&lt;/script&gt;&lt;/p&gt;
+Example Solving linear recurrence \(a\_n = 5a_{n-1}-8a_{n-2}+4a\_{n-3},\quad for \  n \geq 3\  with \  a\_0=0,a\_1=1,a\_2=4\)&lt;/p&gt;
 
 &lt;p&gt;Step 1: make recurence valid for all n&lt;/p&gt;
 
 &lt;p&gt;when $a_0=0$, it need no delta.
 when $a_1=1$, it need $\delta_{n1} = 1$, only works when n = 1
 when $a_2=4$, it need $\delta_{n2} = -1$, only works when n = 2
-So &lt;script type=&quot;math/tex&quot;&gt;a\_n = 5a_{n-1}-8a_{n-2}+4a_{n-3}+\delta_{n1}+\delta\_{n\_2}&lt;/script&gt;&lt;/p&gt;
+So \(a\_n = 5a_{n-1}-8a_{n-2}+4a_{n-3}+\delta_{n1}+\delta\_{n\_2}\)&lt;/p&gt;
 
 &lt;p&gt;Step 2: multiple by $z^n$, and sum on n&lt;/p&gt;
 
 &lt;p&gt;since there will only a z for n = 1, and $-z^2$ for n = 2.&lt;br /&gt;
-&lt;script type=&quot;math/tex&quot;&gt;A(z) = 5zA(z)-8z^2A(z)+4z^3A(z)+z-z^2&lt;/script&gt;&lt;/p&gt;
+\(A(z) = 5zA(z)-8z^2A(z)+4z^3A(z)+z-z^2\)&lt;/p&gt;
 
 &lt;p&gt;Step 3: Solve A(z)&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;A(z) = \frac {z-z^2}{1-5z+8z^2-4z^3}&lt;/script&gt;
+\[A(z) = \frac {z-z^2}{1-5z+8z^2-4z^3}\]
 
 &lt;p&gt;easy found that in the above formation of $\frac {f(z)}{g(z)}$&lt;/p&gt;
 
 &lt;p&gt;Step 4: Simplify or partial fractions.&lt;/p&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;A(z) = \frac {z(1-z)}{(1-z)(1-2z)^2}&lt;/script&gt;, sometimes, there will be partial
+&lt;p&gt;\(A(z) = \frac {z(1-z)}{(1-z)(1-2z)^2}\), sometimes, there will be partial
 fractions.&lt;/p&gt;
 
 &lt;p&gt;Step 5: Expand A(Z) to get a_n&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a\_n = n2^{n-1}&lt;/script&gt;
+\[a\_n = n2^{n-1}\]
 
 &lt;p&gt;some other application of generating functions: Probability Generating
 Functions to simplify the caculation for expectation and so on, Bivariate Generating Functions based couting and analysis of cost paramters.&lt;/p&gt;
@@ -244,7 +243,7 @@ easily understood in this context&lt;/p&gt;
 &lt;h4 id=&quot;3-analytic-combinatorics&quot;&gt;3. Analytic combinatorics&lt;/h4&gt;
 &lt;p&gt;Symbolic methods, see more on Analytic combinatorics.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Step 1: Combinatatorial constructions
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Step 1: Combinatatorial constructions
 Step 2: Symblic transfer , Get GF equations.
 Step 3: analytic transfer , Get coefficient asymptotic
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -254,7 +253,7 @@ Step 3: analytic transfer , Get coefficient asymptotic
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;summation factor
-&lt;script type=&quot;math/tex&quot;&gt;a\_n = na_{n – 1} + n(n – 1)a_{n – 2}&lt;/script&gt;
+\(a\_n = na_{n – 1} + n(n – 1)a_{n – 2}\)
 =&amp;gt; Divided by n!&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -280,7 +279,7 @@ Step 3: analytic transfer , Get coefficient asymptotic
 &lt;p&gt;$a_n = n+a_{\lfloor{n/2}\rfloor}+a_{\lceil{n/2}\rceil}+n$&lt;/p&gt;
 
 &lt;h3 id=&quot;classic-examples&quot;&gt;Classic examples:&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Binary search
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Binary search
 * Mergesort
 * Bather network
 * Karatsuba multiplication
@@ -294,14 +293,13 @@ Step 3: analytic transfer , Get coefficient asymptotic
   &lt;li&gt;Combining solutions with extra cost $\Theta(N^{\gamma}(\log_N)^\delta)$&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;a\_n = a_{n/\beta+O(1)}+ a_{n/\beta+O(1)}+....a\_{n/\beta+O(1)}+ \Theta(n^{\gamma}(\log\_N)^\delta&lt;/script&gt;
+&lt;p&gt;\(a\_n = a_{n/\beta+O(1)}+ a_{n/\beta+O(1)}+....a\_{n/\beta+O(1)}+ \Theta(n^{\gamma}(\log\_N)^\delta\)
 with alpha terms for the sum, telescoping, 
-&lt;script type=&quot;math/tex&quot;&gt;{\alpha}^{\log\_{\beta}^n} + \Theta (n^{\gamma}(\log\_N)^\delta)&lt;/script&gt;
+\({\alpha}^{\log\_{\beta}^n} + \Theta (n^{\gamma}(\log\_N)^\delta)\)
 is given by 
-&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
-a\_n = \Theta (n^{\gamma}(\log\_N)^\delta) \quad when \quad \gamma \&lt; log\_{\beta}^{\alpha} %]]&gt;&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;a\_n = \Theta (n^{\gamma}(\log\_N)^{\delta+1}) \quad when \quad \gamma = log\_{\beta}^{\alpha}&lt;/script&gt;
-&lt;script type=&quot;math/tex&quot;&gt;a\_n = \Theta (n^{\log_{\beta}^{\alpha}} \quad when \quad \gamma \&gt; log_{\beta}^{\alpha}&lt;/script&gt;&lt;/p&gt;
+\(a\_n = \Theta (n^{\gamma}(\log\_N)^\delta) \quad when \quad \gamma \&amp;lt; log\_{\beta}^{\alpha}\)
+\(a\_n = \Theta (n^{\gamma}(\log\_N)^{\delta+1}) \quad when \quad \gamma = log\_{\beta}^{\alpha}\)
+\(a\_n = \Theta (n^{\log_{\beta}^{\alpha}} \quad when \quad \gamma \&amp;gt; log_{\beta}^{\alpha}\)&lt;/p&gt;
 
 &lt;p&gt;More about Master Theorem,
 “A Master Theorem for Discrete Divide and Conquer Recurrences”, SODA 2011&lt;/p&gt;
@@ -346,7 +344,7 @@ method involves the following steps:&lt;/p&gt;
   &lt;li&gt;Prove tighter bounds on the solution, based on the guessed solution and the substitution.
 For illustrative purposes, suppose that we apply this method to the Fibonacci
 recurrence:
-&lt;script type=&quot;math/tex&quot;&gt;a\_n = a_{n – 1} + a_{n – 2}&lt;/script&gt; 
+\(a\_n = a_{n – 1} + a_{n – 2}\) 
 for n &amp;gt; 1 with a0 = 0 and a1 = 1.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -384,14 +382,14 @@ on the (smaller) unknown part of the solution.&lt;/li&gt;
 			
 			
 
-			<published>2015-09-19T16:31:00+00:00</published>
+			<published>2015-09-19T16:31:00-06:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2015/09/19/note2-aofa/</id>
 			<title>Note2-AofA: A scientfic Approach</title>
 			<link href="https://mlciv.com/blog/2015/09/19/note2-aofa/" rel="alternate" type="text/html" title="Note2-AofA: A scientfic Approach" />
-			<updated>2015-09-19T14:05:00+00:00</updated>
+			<updated>2015-09-19T14:05:00-06:00</updated>
 
 			
 				
@@ -449,19 +447,19 @@ An effect would never be noticed in this galaxy.
 
 &lt;h3 id=&quot;empirical&quot;&gt;Empirical:&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Run algorithm to solve real algorithm
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Run algorithm to solve real algorithm
 * Measure running time and/or count operations Challenge: need good implementation
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;mathematical&quot;&gt;Mathematical:&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Develop mathematical model.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Develop mathematical model.
 * Analyze algorithm within model Challenge: need good model. need to the math
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;scientific&quot;&gt;Scientific:&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Run algorithm to solve real problem
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Run algorithm to solve real problem
 * Check for agreement with model. Challenge: need all of the above.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -502,7 +500,7 @@ Hypothesis: Running time of Quicksort is ~aN in N.&lt;/p&gt;
 
 &lt;p&gt;Experiment.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Run for input size N. Observe running time.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Run for input size N. Observe running time.
 * Could solve for a.
 * Predict time for 10N to increase by a factor ..
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -516,14 +514,14 @@ Hypothesis: Running time of Quicksort is ~aN in N.&lt;/p&gt;
 			
 			
 
-			<published>2015-09-19T14:05:00+00:00</published>
+			<published>2015-09-19T14:05:00-06:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2015/09/19/note1-aofa/</id>
 			<title>Note1-AofA: From AofA to AC</title>
 			<link href="https://mlciv.com/blog/2015/09/19/note1-aofa/" rel="alternate" type="text/html" title="Note1-AofA: From AofA to AC" />
-			<updated>2015-09-19T11:33:00+00:00</updated>
+			<updated>2015-09-19T11:33:00-06:00</updated>
 
 			
 				
@@ -571,20 +569,20 @@ general picture from this lecture. &lt;!-- more --&gt;&lt;/p&gt;
 &lt;p&gt;Analysis of Algorithm(1995) -&amp;gt; INRIA tech reports -&amp;gt; Analytic Combinatorics
 In principle, classical methods can provide&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* full detials.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* full detials.
 * full and accurate asymptotic estimates
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;In practice, it is ofter possible to&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* generalize specialized derivations
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* generalize specialized derivations
 * skip details and move directly to accurate asymptotics
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;knuth-the-art-of-computer-programming&quot;&gt;Knuth: The Art of Computer Programming&lt;/h2&gt;
 &lt;p&gt;To analyze an algorithm:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Develop a good implementation and a realistic input mode
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Develop a good implementation and a realistic input mode
 * Determine the caose and execution frequency of each operation.
 * Calculate the total running time
 * Run experiments to validate model and analysis  Beni: 
@@ -595,32 +593,32 @@ In principle, classical methods can provide&lt;/p&gt;
 
 &lt;p&gt;Drawbacks:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Model may be unrealistic.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Model may be unrealistic.
 * Excessive detail likely in the analysis
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;theory-of-algorithms-ahu-1970clrs&quot;&gt;Theory of Algorithms (AHU 1970,CLRS)&lt;/h2&gt;
 &lt;p&gt;To address Knuth drawbacks:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Analyze worst-case cost [takes model out of the picture]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Analyze worst-case cost [takes model out of the picture]
 * Use O-notation for upper bound [takes detail out of analysis]
 * Classify algorithms by these costs
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Beni:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Enable a new Age of Algorithm Design
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Enable a new Age of Algorithm Design
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Drawbacks:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Analysis is often unsuitable for scientific studies (often overlooked)
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Analysis is often unsuitable for scientific studies (often overlooked)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;analytic-combinatorics&quot;&gt;Analytic combinatorics&lt;/h2&gt;
 &lt;p&gt;can provide a basis for scitenfic studies.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* A calculus for developing models.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* A calculus for developing models.
 * Universal laws that encompass the detail in the analysis
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -629,13 +627,13 @@ In principle, classical methods can provide&lt;/p&gt;
 
 &lt;p&gt;AC Basic process:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Defin a combinatorial construction that precisely sepcifies the structure.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Defin a combinatorial construction that precisely sepcifies the structure.
 2. Use a symbolic transfer theorem to derive a GF equation.
 3. Use an analytic transfer theorem to extract coefficient asymptotics
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;combinatorial-constructions&quot;&gt;Combinatorial constructions:&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Algeraic formular built from natural combinatorial operators
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* Algeraic formular built from natural combinatorial operators
 * Operands are atoms or other combinatorial constructsions
 * Two cases: atoms are unlabelled or labelled (all different)i ### Generating functions:
 * controverial for some time. no particular meaning
@@ -643,7 +641,7 @@ symbolic meyhods: OGFs,EGFs,MGFs
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;extract-coefficients-asymptotics&quot;&gt;Extract coefficients asymptotics&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;analytic transfer theorems based on GF as complex function.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;analytic transfer theorems based on GF as complex function.
 Complex Asympotics: Singularity Analysis, Saddle Pointi [Asmptotiv
 Counting,Moments of paramenters]
 =&amp;gt; Random Structures: Multivarite Asymptotics, Singularity
@@ -651,21 +649,21 @@ Perturbation.[limit laws,Large Deviations]
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;combinatorial-structures&quot;&gt;combinatorial structures:&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;unlabelled universe:
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;unlabelled universe:
     trees,strings,languages, compostitions.partitions, intergers.
 labelled universe:
     permutations,cycles,words,mappings,urns,cayley trees
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;universal-laws&quot;&gt;Universal laws&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;of sweeping generarlity are on hallmark of analytic combinatorics
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;of sweeping generarlity are on hallmark of analytic combinatorics
 Example: Context-free constructions
 Grobner basis eleminations
 Drmota-Lalley-wood theorem
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;analytic-combinatorics-at-the-next-level&quot;&gt;Analytic combinatorics at the next level&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Combinatorial parameters are handled with MGFS, often leadning to limit
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Combinatorial parameters are handled with MGFS, often leadning to limit
 laws.
 Complicated singualrity strucuture leads to oscillatory behavior (like RS/PF
         formula in common).
@@ -677,7 +675,7 @@ New types of implicit GS functional equations are arise. very strong list and gr
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;applications-of-analytic-combinatorics&quot;&gt;Applications of analytic combinatorics&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* patterns in random strings
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* patterns in random strings
 * polynomials over finite fields
 * hashing
 * data compression
@@ -695,14 +693,14 @@ New types of implicit GS functional equations are arise. very strong list and gr
 			
 			
 
-			<published>2015-09-19T11:33:00+00:00</published>
+			<published>2015-09-19T11:33:00-06:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2015/02/17/hadoop-distcp-secure2insecure_0.20.2/</id>
 			<title>hadoop distcp from secure to insecure 0.20.2</title>
 			<link href="https://mlciv.com/blog/2015/02/17/hadoop-distcp-secure2insecure_0.20.2/" rel="alternate" type="text/html" title="hadoop distcp from secure to insecure 0.20.2" />
-			<updated>2015-02-17T17:14:00+00:00</updated>
+			<updated>2015-02-17T17:14:00-07:00</updated>
 
 			
 				
@@ -790,14 +788,14 @@ Just run your job as usually.
 			
 			
 
-			<published>2015-02-17T17:14:00+00:00</published>
+			<published>2015-02-17T17:14:00-07:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2014/04/26/ga-for-octopress/</id>
 			<title>Google Analytics for Octopress</title>
 			<link href="https://mlciv.com/blog/2014/04/26/ga-for-octopress/" rel="alternate" type="text/html" title="Google Analytics for Octopress" />
-			<updated>2014-04-26T21:52:00+00:00</updated>
+			<updated>2014-04-26T21:52:00-06:00</updated>
 
 			
 				
@@ -912,7 +910,7 @@ page-view: &amp;lt;/br&amp;gt;
   service_account_email:    #XXXXXX@developer.gserviceaccount.com &amp;lt;/br&amp;gt;
   key_file: privatekey.p12  #service account private key file &amp;lt;/br&amp;gt;
   key_file: privatekey.p12  #service account private key file &amp;lt;/br&amp;gt;
-  key_secret: notasecret    #service account private key's password &amp;lt;/br&amp;gt;
+  key_secret: notasecret    #service account private key&apos;s password &amp;lt;/br&amp;gt;
   profileID:                #ga:XXXXXXXX &amp;lt;/br&amp;gt;
   start: 3 years ago        #Beginning of report &amp;lt;/br&amp;gt;
   end: now                  #End of report&amp;lt;/br&amp;gt;
@@ -956,14 +954,14 @@ page-view: &amp;lt;/br&amp;gt;
 			
 			
 
-			<published>2014-04-26T21:52:00+00:00</published>
+			<published>2014-04-26T21:52:00-06:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2013/12/14/octave-on-mac/</id>
 			<title>Octave on Mac</title>
 			<link href="https://mlciv.com/blog/2013/12/14/octave-on-mac/" rel="alternate" type="text/html" title="Octave on Mac" />
-			<updated>2013-12-14T19:21:00+00:00</updated>
+			<updated>2013-12-14T19:21:00-07:00</updated>
 
 			
 				
@@ -1079,14 +1077,14 @@ before you use plot() in octave.(And of course you need install X11 first.)&lt;/
 				<category term="Octave" />
 			
 
-			<published>2013-12-14T19:21:00+00:00</published>
+			<published>2013-12-14T19:21:00-07:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2013/12/11/mavericks-clt/</id>
 			<title>Mavericks CLT</title>
 			<link href="https://mlciv.com/blog/2013/12/11/mavericks-clt/" rel="alternate" type="text/html" title="Mavericks CLT" />
-			<updated>2013-12-11T00:17:00+00:00</updated>
+			<updated>2013-12-11T00:17:00-07:00</updated>
 
 			
 				
@@ -1120,14 +1118,14 @@ xcode-select --install
 			
 			
 
-			<published>2013-12-11T00:17:00+00:00</published>
+			<published>2013-12-11T00:17:00-07:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2013/07/09/raspberry-wifi/</id>
 			<title>Raspberry 无线网卡无法使用问题</title>
 			<link href="https://mlciv.com/blog/2013/07/09/raspberry-wifi/" rel="alternate" type="text/html" title="Raspberry 无线网卡无法使用问题" />
-			<updated>2013-07-09T00:25:00+00:00</updated>
+			<updated>2013-07-09T00:25:00-06:00</updated>
 
 			
 				
@@ -1164,14 +1162,14 @@ wlan0网卡的，但是就是获取不到IP地址，而且手动配置也不行�
 				<category term="wifi" />
 			
 
-			<published>2013-07-09T00:25:00+00:00</published>
+			<published>2013-07-09T00:25:00-06:00</published>
 		</entry>
 	
 		<entry>
 			<id>https://mlciv.com/blog/2013/07/03/raspberry-gpio/</id>
 			<title>Raspberry-GPIO试用</title>
 			<link href="https://mlciv.com/blog/2013/07/03/raspberry-gpio/" rel="alternate" type="text/html" title="Raspberry-GPIO试用" />
-			<updated>2013-07-03T22:14:00+00:00</updated>
+			<updated>2013-07-03T22:14:00-06:00</updated>
 
 			
 				
@@ -1261,7 +1259,7 @@ GPIO.setmode(GPIO.BOARD)
 				<category term="gpio" />
 			
 
-			<published>2013-07-03T22:14:00+00:00</published>
+			<published>2013-07-03T22:14:00-06:00</published>
 		</entry>
 	
 </feed>
