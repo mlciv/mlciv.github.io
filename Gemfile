@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', "~> 231", group: :jekyll_plugins
+#gem 'github-pages', "~> 231", group: :jekyll_plugins
+gem 'jekyll-github-metadata'
 gem 'rdiscount'
 gem 'jekyll'
 gem 'jekyll-paginate'
