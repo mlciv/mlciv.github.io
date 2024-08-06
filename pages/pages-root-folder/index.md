@@ -9,14 +9,11 @@ header: no
 permalink: /index.html
 ---
 # Research Interests
-To maintain robustness and control in adopting advanced black-box
+My research focuses on addressing the challenges of maintaining robustness and control in adopting advanced black-box
 neural technologies, such as foundation models, domain-specific
-conversational systems can gain advantages from employing
-interpretable modular designs. This involves breaking down tasks into
-logically abstracted or theory-grounded sub-modules aligned with our
-desired level of control. My research focues on addressing the challenges:
+practical conversational systems :
 - **Modularized NLP.** To connect each module and make a coherent
-          system, my research studies *deep structured prediction* for
+          NLP system, my research studies *deep structured prediction* for
           extracting symbolic representations from text
           ([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
           [CoNLL'19](https://aclanthology.org/K19-2013/),
@@ -43,8 +40,7 @@ desired level of control. My research focues on addressing the challenges:
 
 
 # News
-- 08/2024: I'll be joining University of Oklahoma as an Assistant Professor in the
-School of Computer Science starting Fall 2024.
+- 08/2024: I'll be joining [University of Oklahoma](https://www.ou.edu/) as an Assistant Professor in the [School of Computer Science](https://www.ou.edu/coe/cs) starting Fall 2024.
 - 11/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin. I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
 - 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to [ACL'23](https://2023.aclweb.org/calls/main_conference/)
