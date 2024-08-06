@@ -9,9 +9,7 @@ header: no
 permalink: /index.html
 ---
 # Research Interests
-My research focuses on addressing the challenges of maintaining robustness and control in adopting advanced black-box
-neural technologies, such as foundation models, domain-specific
-practical conversational systems :
+My research focuses on addressing the challenges of maintaining robustness and control in practical conversational systems~(e.g., Education, Health):
 - **Modularized NLP.** To connect each module and make a coherent
           NLP system, my research studies *deep structured prediction* for
           extracting symbolic representations from text
