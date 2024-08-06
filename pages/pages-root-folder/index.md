@@ -66,11 +66,11 @@ Errors in Small Group Classroom Discourse" got accepted to
 
 # Research Experience
 - [09/2022 - Now ] Postdoctoral Research Associate at [NSF AI Institute for Student-AI Teaming(iSAT)](https://www.colorado.edu/research/ai-institute/), CU Boulder.
-    * I mainly work with [James Martin](https://home.cs.colorado.edu/~martin/), [Martha Palmer](https://www.colorado.edu/faculty/palmer-martha/) and [Boulder NLP Group](https://colorado.edu/lab/clear/). I worked on AI for Education, e.g.. collaborative learning and tutoring.
+    * I mainly work with [James Martin](https://home.cs.colorado.edu/~martin/), [Martha Palmer](https://www.colorado.edu/faculty/palmer-martha/), and [Boulder NLP Group](https://colorado.edu/lab/clear/). I worked on AI for Education, e.g.. collaborative learning and tutoring.
 - [08/2015 - 08/2022] Research Assistant at **Utah NLP Lab, Univeristy of Utah**, Salt Lake City
    * I obtained my Ph.D. from the [Kahlert School of Computing](https://cs.utah.edu/) at [University of
         Utah](https://www.ou.edu), where I worked with [Vivek
-        Srikumar](https://svivek.com) and [Uath NLP Group](https://nlp.cs.utah.edu)
+        Srikumar](https://svivek.com) and [Uath NLP Group](https://nlp.cs.utah.edu). My thesis is on [inductive biases on deep linguistic structured predictions](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true).
 - [06/2020 - 12/2020] Applied Scientist Intern at **AWS AI, Amazon Lex**, Remote
    *  Our paper on schema-guided dialog got accepted by NAACL 2021.
 - [06/2019 - 09/2019] Applied Scientist Intern at **AWS AI, Amazon Lex**, Seattle
