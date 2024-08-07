@@ -1,7 +1,7 @@
 ---
 ---
 
-{{ reference | replace_first: 'Jie Cao', '<b>Jie Cao</b>' | replace_first: '{{entry.title}}', '<a href="{{entry.url}}">{{entry.title}}</a>' }}
+{{ reference | replace_first: 'Jie Cao', '<b>Jie Cao</b>' }}
 
 <span id="{{key}}-materials">
     &nbsp;&nbsp;&nbsp;
@@ -9,9 +9,15 @@
     <div id="{{key}}-bibtex" style="display:none;">
     <pre class="collapse">{{entry.bibtex}}</pre>
     </div>
+
     {% if link %}
     &nbsp;&nbsp;&nbsp;
     <a href="{{ link | prepend: site.url }}">PDF</a>
+    {% endif %}
+
+    {% if entry.url %}
+    &nbsp;&nbsp;&nbsp;
+    <a href="{{ entry.url }}">URL</a>
     {% endif %}
 
     {% if links['slides.pdf'] %}
