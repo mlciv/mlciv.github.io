@@ -63,13 +63,13 @@ Errors in Small Group Classroom Discourse" got accepted to
 -->
 
 # Research Experience
-- [09/2022 - 08/2024] Postdoctoral Research Associate at [NSF AI Institute for Student-AI Teaming(iSAT)](https://www.colorado.edu/research/ai-institute/), CU Boulder.
+- [09/2022 - Now ] Postdoctoral Research Associate at [NSF AI Institute for Student-AI Teaming(iSAT)](https://www.colorado.edu/research/ai-institute/), CU Boulder.
     * I mainly work with [James Martin](https://home.cs.colorado.edu/~martin/), [Martha Palmer](https://www.colorado.edu/faculty/palmer-martha/), and [Boulder NLP Group](https://colorado.edu/lab/clear/). I worked on AI for Education, e.g.. collaborative learning and tutoring.
 - [08/2015 - 08/2022] Research Assistant at **Utah NLP Lab, Univeristy of Utah**, Salt Lake City
    * I obtained my Ph.D. from the [Kahlert School of Computing](https://cs.utah.edu/) at [University of
         Utah](https://www.ou.edu), where I worked with [Vivek
         Srikumar](https://svivek.com) and [Uath NLP Group](https://nlp.cs.utah.edu). My thesis is on [inductive biases on deep linguistic structured predictions](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true).
-- [06/2020 - 12/2020] Applied Scientist II Intern at **AWS AI, Amazon Lex**, Remote
+- [06/2020 - 12/2020] Applied Scientist Intern at **AWS AI, Amazon Lex**, Remote
    *  Our paper on schema-guided dialog got accepted by NAACL 2021.
 - [06/2019 - 09/2019] Applied Scientist Intern at **AWS AI, Amazon Lex**, Seattle
    *  In CoNLL shared task MRP 2019, over 16 teams, our system on cross-framework meaning representation parsing ranked 1st in AMR parsing task, 5th in UCCA, 6th and 7th in PSD and DM tasks. [Spotlight Talk](https://www.youtube.com/watch?v=5ZMZSfl_Ng0)
@@ -78,5 +78,39 @@ Errors in Small Group Classroom Discourse" got accepted to
 - [09/2008 - 03/2012] Research Assistant at **[CGCL Lab, Huazhong University of Science and Technology](http://grid.hust.edu.cn/)**, Wuhan
    *  I worked closely with Prof. Xia Xie and Prof. Hai Jin. My research interests are widely around Xen, Xen-ARM virtualization, and distributed computing. We study equipping R language with JVM-based large scale distributed statistical infrastructure, such as Hadoop, Spark.
 
+# Work Experience
+- [10/2014 - 07/2015] Assistant Researcher, **SOHU RDC Lab**, Beijing
+    *  Hadoop, Spark, Data migration, Data security, Distributed machine learning 
+- [07/2013 - 06/2014] Senior Software Engineer, **ZUN CLUB (Startup)**, Beijing
+    *  Heterogeneous data intergration, Hotel recommendation system.
+- [03/2012 - 06/2013] Software Engineer, **Baidu**, Beijing
+    *  Voice Assistant, Mobile Search, Speed optimization, Mobile Anti-Attack
+- [08/2010 - 05/2011] Software Engineer Intern, **Alibaba**, Hangzhou
+    *  KV Storage, MySQL, Database Replication, Real-time Computing, Distributed Pub/Sub Data Pipeline.
+
+# Teaching & Mentoring
+- Fall 2023, U of Colorado Boulder, Instructor, co-teaching ([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin.
+- 2019-2020, U of Utah, Mentoring [Tarun Sunkaraneni](https://tsunny007.github.io/), Bachelor Thesis on ['Transformer-based Observers in Psychotherapy'](https://www.cs.utah.edu/docs/techreports/2020/pdf/UUCS-20-011.pdf)
+- Fall 2018, U of Utah, TA for CS 6350 Machine Learning
+- Spring 2019, U of Utah, TA for CS 6355 Structured Prediction
+- Fall 2016, U of Utah, TA for CS 6350 Machine Learning
+- 2007-2008, HUST, Leader for Algorithm & Game Team in a student innovation organization, [Unique Studio](https://hustunique.com/)
+
+
 # Academic Service
 - PC Member / Reviewers for [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA'23](https://aclanthology.org/venues/bea/), [NLP4ConvAI'23](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023), ACL'20-23, EMNLP'20-23, NAACL'21, EACL'21,24, COLING'(20,22,24), AAAI'19-24, ACL Rolling Review'21-23, AIED'23, EDM'24
+
+# Honors and Awards
+- [2023] iSAT Trainee Grant 2023 on Conversational Simulation on Small-group Discussion. 
+- [2019] CoNLL Shared Task, Cross-framework meaning representation parsing, ranked 1st(over 16 teams) for AMR parsing task.
+- [2018] DSTC7 track1, ranked 2nd for both advising and ubuntu in subtask 5(with external knowledge)
+- [2015] Our system ['Talking Geckos'](https://www.slideshare.net/jiessiecao/talking-geckos-question-and-answering) winned 1st in a question-answering competition during Fall 2015 NLP class.
+- [2010] VMware Cloud Computing Innovation Cup, Top 50
+- [2009] Google Andriod Innovative Idea Sharing Award
+- [2007] "Computer World" Magazine Scholarship (50 students per year in China)
+- [2007] Microsoft ImagineCup
+    *  Algorithm Challenge, Top 50 
+    *  Visual Gaming Contest(Project Hoshimi), Top 2 in China, 18th in world final.
+- [2006] HUST ACM Programming Contest, Top 3
+
+
