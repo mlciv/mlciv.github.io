@@ -10,7 +10,7 @@ permalink: /index.html
 ---
 # Research Interests
 My research focuses on addressing the challenges of maintaining robustness and control in practical conversational systems~(e.g., Education, Health):
-- **Modularized NLP.** To connect each module and make a coherent
+- **Modularized NLP.** To connect each module~(e.g., LLMs) and make a coherent
           NLP system, my research studies *deep structured prediction* for
           extracting symbolic representations from text
           ([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
@@ -21,7 +21,7 @@ My research focuses on addressing the challenges of maintaining robustness and c
           *controllable generation* with augmented-memory, symbolic or
           neural-symbolic constraints
           ([DSTC7'19](http://workshop.colips.org/dstc7/papers/13.pdf), [ACL'19](https://aclanthology.org/P19-1192/),
-          [BEA'23](https://aclanthology.org/2023.bea-1.47/)).
+          [BEA'23](https://aclanthology.org/2023.bea-1.47/)), LLMs([L@S'24](https://dl.acm.org/doi/10.1145/3657604.366466://dl.acm.org/doi/10.1145/3657604.3664664)).
 - **Learning with Inductive Biases.** Beyond the expensive supervised data in many domains~(e.g.,
           psychotherapy, teaching, tutoring, small-group collaboration), we investigate learning with domain-specific knowledge as inductive biases, such as graph-based parsing via anchoring analysis([CoNLL'19](https://aclanthology.org/K19-2013)),
       tree-structure database query plan characterization via self-supervised learning ([VLDB'22](https://dl.acm.org/doi/10.14778/3503585.3503600)),
