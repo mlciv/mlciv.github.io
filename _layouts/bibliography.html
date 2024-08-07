@@ -4,20 +4,20 @@
 {{ reference | replace_first: 'Jie Cao', '<b>Jie Cao</b>' }}
 
 <span id="{{key}}-materials">
-    <a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">BibTeX</a>
+    <a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">&nbsp;BibTeX</a>
     <div id="{{key}}-bibtex" style="display:none;">
     <pre class="collapse">{{entry.bibtex}}</pre>
     </div>
 
     {% if link %}
-    <a href="{{ link | prepend: site.url }}">Paper</a>
+    <a href="{{ link | prepend: site.url }}">&nbsp;Paper</a>
     {% endif %}
 
     {% if links['slides.pdf'] %}
-    <a href="{{ links['slides.pdf'] | prepend: site.url }}">Slides</a>
+    <a href="{{ links['slides.pdf'] | prepend: site.url }}">&nbsp;Slides</a>
     {% endif %}
 
     {% if links['poster.pdf'] %}
-    <a href="{{ links['poster.pdf'] | prepend: site.url }}">Poster</a>
+    <a href="{{ links['poster.pdf'] | prepend: site.url }}">&nbsp;Poster</a>
     {% endif %}
 </span>
