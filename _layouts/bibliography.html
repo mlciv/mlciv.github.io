@@ -1,23 +1,26 @@
 ---
 ---
 
-{{ reference | replace_first: 'Jie Cao', '<b>Jie Cao</b>' }}
+{{ reference | replace_first: 'Jie Cao', '<b>Jie Cao</b>' | replace_first: '{{entry.title}}', '<a href="{{entry.url}}">{{entry.title}}</a>' }}
 
 <span id="{{key}}-materials">
-    <a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">&nbsp;&nbsp;&nbsp;&nbsp;BibTeX</a>
+    &nbsp;&nbsp;&nbsp;
+    <a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">BibTeX</a>
     <div id="{{key}}-bibtex" style="display:none;">
     <pre class="collapse">{{entry.bibtex}}</pre>
     </div>
-
     {% if link %}
-    <a href="{{ link | prepend: site.url }}">&nbsp;&nbsp;&nbsp;&nbsp;PDF</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="{{ link | prepend: site.url }}">PDF</a>
     {% endif %}
 
     {% if links['slides.pdf'] %}
-    <a href="{{ links['slides.pdf'] | prepend: site.url }}">&nbsp;&nbsp;&nbsp;&nbsp;Slides</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="{{ links['slides.pdf'] | prepend: site.url }}">Slides</a>
     {% endif %}
 
     {% if links['poster.pdf'] %}
-    <a href="{{ links['poster.pdf'] | prepend: site.url }}">&nbsp;&nbsp;&nbsp;&nbsp;Poster</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="{{ links['poster.pdf'] | prepend: site.url }}">Poster</a>
     {% endif %}
 </span>
