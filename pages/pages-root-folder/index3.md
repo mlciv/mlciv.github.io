@@ -6,7 +6,7 @@
 #
 layout: research-index
 header: no
-permalink: /index.html
+#permalink: /index.html
 ---
 # Research Interests
 My research focuses on addressing the challenges of maintaining robustness and control in practical conversational systems~(e.g., Education, Health):
