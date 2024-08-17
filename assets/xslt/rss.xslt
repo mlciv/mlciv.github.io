@@ -426,7 +426,7 @@ function toggleDiv(element){
             
               <li><a href="/public/CV_Jie-Cao.pdf" target="_blank" class="icon-cv" title=""></a></li>
             
-              <li><a href="mailto:jiecao at colorado dot edu" target="_blank" class="icon-mail" title=""></a></li>
+              <li><a href="mailto:jie dot cao at ou dot edu" target="_blank" class="icon-mail" title=""></a></li>
             
               <li><a href="https://www.researchgate.net/profile/Jie-Cao-7" target="_blank" class="icon-researchgate" title=""></a></li>
             
