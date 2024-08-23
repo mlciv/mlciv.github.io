@@ -9,7 +9,7 @@ widget1:
   title: Natural Language Processing (CSCI-LING 5832, CU Boulder, Fall 2023)
   url: 'https://canvas.colorado.edu/courses/95371/'
   image: '/assets/img/teaching/slp3.jpg'
-  text: In Fall 2023, I co-taught Nartual Language Processing ([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with Prof. James Martin. I mainly taught LLMs, In-Context Learning, Dialogue, etc.
+  text: In Fall 2023, I co-taught Natural Language Processing ([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with Prof. James Martin. I mainly taught LLMs, In-Context Learning, Dialogue, etc.
 
 widget2:
   title: Machine Learning(CS 6350, U of Utah, Fall 2016, Fall 2018)

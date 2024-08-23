@@ -10,7 +10,7 @@ permalink: /index.html
 ---
 
 # Research Interests
-My research centers around on *Natural Language Processing*. I study *Multi-party/Multi-modal Dialogue* with methods covering Deep Learning, Structured Prediction, Large Language Models, etc. I am specially interested in addressing the challenges on robustness and control in practical conversational systems~(e.g., Education, Health):
+My research centers around on *Natural Language Processing*. I study *Multi-party/Multi-modal Dialogue* with methods covering Deep Learning, Structured Prediction, Large Language Models, etc. I am broadly obsessed with discrete structured modeling in and beyond language. I also am interested in addressing the challenges on robustness and control in practical conversational systems~(e.g., Education, Health):
 
 - **Modularized NLP.** To connect each module~(e.g., LLMs) and make a coherent
           NLP system, my research studies *deep structured prediction* for
