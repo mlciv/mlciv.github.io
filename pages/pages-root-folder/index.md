@@ -23,12 +23,12 @@ My research centers around on *Natural Language Processing*. I study *Multi-part
           *controllable generation* with augmented-memory, symbolic,
           neural-symbolic constraints
           ([DSTC7'19](http://workshop.colips.org/dstc7/papers/13.pdf), [ACL'19](https://aclanthology.org/P19-1192/),
-          [BEA'23](https://aclanthology.org/2023.bea-1.47/)), and LLMs([L@S'24](https://dl.acm.org/doi/10.1145/3657604.366466://dl.acm.org/doi/10.1145/3657604.3664664)).
+          [BEA'23](https://aclanthology.org/2023.bea-1.47/)), and LLM fine-tuning([L@S'24](https://dl.acm.org/doi/10.1145/3657604.366466://dl.acm.org/doi/10.1145/3657604.3664664)), adapters and editing, etcs.
 - **Learning with Inductive Biases.** Beyond the expensive supervised data in many domains~(e.g.,
           psychotherapy, teaching, tutoring, small-group collaboration), we investigate learning with domain-specific knowledge as inductive biases, such as graph-based parsing via anchoring analysis([CoNLL'19](https://aclanthology.org/K19-2013)),
       tree-structure database query plan characterization via self-supervised learning ([VLDB'22](https://dl.acm.org/doi/10.14778/3503585.3503600)),
       zero-shot dialogue state tracking via description-driven
-      learning and supplementary pretraining ([NAACL'21](https://aclanthology.org/2021.naacl-main.62/)).
+      learning and supplementary pretraining ([NAACL'21](https://aclanthology.org/2021.naacl-main.62/)), and data synthesis for LLM alignment, etc.
 - **Deployment in Real-world Scenarios.** Unexpected,
       complex dialogue scenarios can potentially span infinitely many
       topics, states and environmental settings([ACL'23](https://aclanthology.org/2023.acl-short.156)). We study
