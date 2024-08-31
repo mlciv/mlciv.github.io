@@ -11,9 +11,9 @@ permalink: /index.html
 
 # Research Interests
 
-My research centers on *Natural Language Processing*, with a specific focus on *Dialogue*. As AI problems grow more complex, I'm especially interested in designing modular AI systems for future large-scale collaborative AI projects. I also study discrete structures both within and beyond language, and I'm committed to solving challenges in applying trustworthy AI in Education and Health.
+My research centers on *Natural Language Processing*, with a specific focus on *Dialogue*. As AI problems grow more complex, I'm especially interested in designing modularized AI systems for future large-scale collaborative AI projects. I also study discrete structures both within and beyond language, and I'm committed to solving challenges in applying trustworthy AI in Education and Health.
 
-- **Modularized NLP**: I focus on breaking down complex problems and integrating them into cohesive AI systems. My research spans abstract language representation, neuro-symbolic interfaces, and ensuring differentiability while connecting modules like LLMs. This includes structured prediction~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
+- **Modularized NLP**: I focus on breaking down complex problems and integrating them into cohesive AI systems. My research spans formal language representation, neuro-symbolic interfaces, and ensuring differentiability while connecting modules like LLMs. This includes structured prediction~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
            [CoNLL'19](https://aclanthology.org/K19-2013/),
            [ACL'19](https://aclanthology.org/P19-1563/),
            [NAACL'21](https://aclanthology.org/2021.naacl-main.62/),
