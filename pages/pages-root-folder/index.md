@@ -13,12 +13,11 @@ permalink: /index.html
 
 My research centers on *Natural Language Processing*, with a specific focus on *Dialogue*. As AI problems grow more complex, I'm especially interested in designing modular AI systems for future large-scale collaborative AI projects. I also study discrete structures both within and beyond language, and I'm committed to solving challenges in applying trustworthy AI in Education and Health.
 
-- **Modularized NLP**: I focus on breaking down complex problems and integrating them into cohesive AI systems. My research spans abstract language representation, neuro-symbolic interfaces, and ensuring differentiability while connecting modules like LLMs. This includes structured prediction~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),¬
-           [CoNLL'19](https://aclanthology.org/K19-2013/),¬
-           [ACL'19](https://aclanthology.org/P19-1563/),¬
-           [NAACL'21](https://aclanthology.org/2021.naacl-main.62/),¬
-           [IWSDS'23](https://arxiv.org/abs/2302.12944)), controllable generation with constraints~([DSTC7'19](http://workshop.colips.org/dstc7/papers/13.pdf), [ACL'19](https://aclanthology.org/P19-1192/),¬
-           [BEA'23](https://aclanthology.org/2023.bea-1.47/)), and fine-tuning LLMs~([L@S'24](https://dl.acm.org/doi/10.1145/3657604.366466://dl.acm.org/doi/10.1145/36576043664664)).
+- **Modularized NLP**: I focus on breaking down complex problems and integrating them into cohesive AI systems. My research spans abstract language representation, neuro-symbolic interfaces, and ensuring differentiability while connecting modules like LLMs. This includes structured prediction~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
+           [CoNLL'19](https://aclanthology.org/K19-2013/),
+           [ACL'19](https://aclanthology.org/P19-1563/),
+           [NAACL'21](https://aclanthology.org/2021.naacl-main.62/),
+           [IWSDS'23](https://arxiv.org/abs/2302.12944)), controllable generation with constraints ([DSTC7'19](http://workshop.colips.org/dstc7/papers/13.pdf), [ACL'19](https://aclanthology.org/P19-1192/),[BEA'23](https://aclanthology.org/2023.bea-1.47/)), and fine-tuning LLMs ([L@S'24](https://dl.acm.org/doi/10.1145/3657604.366466://dl.acm.org/doi/10.1145/36576043664664)).
 
 - **Learning with Minimal Supervision.** We often have limited supervision in practical applications, where
 data is scarce, high-quality theory-supported data annotations are time-consuming, and other reward signals
@@ -27,7 +26,7 @@ through trial and error are expensive. To tackle this, we investigate learning w
       zero-shot dialogue state tracking via description-driven
       learning and supplementary pretraining ([NAACL'21](https://aclanthology.org/2021.naacl-main.62/)), and data synthesis for LLM alignment, etc.
 
-- **Deployment in Real-world Scenarios.** The complex environment of the real world often makes our model fall short when faced with different input distributions([ACL'23](https://aclanthology.org/2023.acl-short.156)), unseen conversational dynamics, unnoticed non-verbal behavior([AIAIC'23](https://aichildinteraction.github.io/preprint/AIAIC23_paper_7399.pdf)), noisy speech in small-group classroom([UMAP'23](https://dl.acm.org/doi/10.1145/3565472.3595606)),
+- **Deployment in Real-world Scenarios.** The complex environment of the real world often makes our model fall short when faced with different input distributions ([ACL'23](https://aclanthology.org/2023.acl-short.156)), unseen conversational dynamics, unnoticed non-verbal behavior ([AIAIC'23](https://aichildinteraction.github.io/preprint/AIAIC23_paper_7399.pdf)), noisy speech in small-group classroom ([UMAP'23](https://dl.acm.org/doi/10.1145/3565472.3595606)),
       multi-party, multi-modal dynamics ([IWSDS'23](https://arxiv.org/abs/2302.12944)),
       and conversational simulation.
 
