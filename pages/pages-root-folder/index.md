@@ -54,7 +54,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 
 # Research Experience
 - [09/2022 - 08/2024] Postdoctoral Research Associate at [NSF AI Institute for Student-AI Teaming(iSAT)](https://www.colorado.edu/research/ai-institute/), CU Boulder.
-    * I mainly work with [James Martin](https://home.cs.colorado.edu/~martin/), [Martha Palmer](https://www.colorado.edu/faculty/palmer-martha/), and [Boulder NLP Group](https://colorado.edu/lab/clear/). I worked on AI for Education, e.g.. collaborative learning and tutoring.
+    * I mainly worked with [James Martin](https://home.cs.colorado.edu/~martin/), [Martha Palmer](https://www.colorado.edu/faculty/palmer-martha/), and [Boulder NLP Group](https://colorado.edu/lab/clear/). I worked on AI for Education, e.g.. collaborative learning and tutoring.
 - [08/2015 - 08/2022] Research Assistant at **Utah NLP Lab, Univeristy of Utah**, Salt Lake City
    * I obtained my Ph.D. from the [Kahlert School of Computing](https://cs.utah.edu/) at [University of
         Utah](https://www.ou.edu), where I worked with [Vivek
@@ -69,5 +69,5 @@ Errors in Small Group Classroom Discourse" got accepted to
    *  I worked closely with Prof. Xia Xie and Prof. Hai Jin. My research interests are widely around Xen, Xen-ARM virtualization, and distributed computing. We study equipping R language with JVM-based large scale distributed statistical infrastructure, such as Hadoop, Spark.
 
 # Academic Service
-- Standing Reviewer for Journal: [Computational Linguistics](https://submissions.cljournal.org/index.php/cljournal)
+- Standing Reviewer for Journals: [Computational Linguistics](https://submissions.cljournal.org/index.php/cljournal)
 - PC Member / Reviewer for Conferences and Workshops: ACL'(20-24), EMNLP'(20-24), NAACL'(21-25), EACL'21,24, COLING'(20,22,24), CoNLL'(19-24), COLM'24, AAAI'(19-25), ACL Rolling Review'21-24, AIED'(23-24), EDM'(23-24), [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA](https://aclanthology.org/venues/bea/), [NLP4ConvAI](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023)
