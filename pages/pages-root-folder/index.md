@@ -13,12 +13,12 @@ permalink: /index.html
 
 My research is primarily focused on **Natural Language Processing**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become increasingly complex, I'm keen on developing modularized AI systems tailored for future large-scale collaborative projects. I also investigate *foundational structures and principles*, both within and beyond language, which are critical for creating efficient and reliable AI systems, especially in domains like Education and Health.
 
-- **Modularized NLP.**: My research spans formal language representation, neuro-symbolic interfaces, and ensuring differentiability while connecting modules like LLMs. This includes structured prediction~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
+- **Modularized NLP.** My research spans formal language representation, neuro-symbolic interfaces, and ensuring differentiability while connecting modules like LLMs. This includes structured prediction~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
            [CoNLL'19](https://aclanthology.org/K19-2013/),
            [ACL'19](https://aclanthology.org/P19-1563/),
            [NAACL'21](https://aclanthology.org/2021.naacl-main.62/),
            [IWSDS'23](https://arxiv.org/abs/2302.12944)), controllable generation with constraints ([DSTC7'19](http://workshop.colips.org/dstc7/papers/13.pdf), [ACL'19](https://aclanthology.org/P19-1192/),[BEA'23](https://aclanthology.org/2023.bea-1.47/)).
-- **Learning with Minimal Supervision.** In practical applications, we often have limited supervision because data is scarce, high-quality annotations are time-consuming, and trial-and-error verification are expensive. To address this, we explore learning with domain-specific knowledge as inductive biases. Examples include graph-based parsing via anchoring analysis([CoNLL'19](https://aclanthology.org/K19-2013)),
+- **Learning with Minimal Supervision.** In practical applications, we often have limited supervision because data is scarce, high-quality annotations are time-consuming, and trial-and-error verification are expensive. We explore learning with inductive biases, such as graph-based parsing via anchoring analysis([CoNLL'19](https://aclanthology.org/K19-2013)),
       tree-structure database query plan characterization via self-supervised learning ([VLDB'22](https://dl.acm.org/doi/10.14778/3503585.3503600)),
       zero-shot dialogue state tracking via description-driven
       learning and supplementary pretraining ([NAACL'21](https://aclanthology.org/2021.naacl-main.62/)), and LLM finetuning ([L@S'24](https://dl.acm.org/doi/10.1145/3657604.366466://dl.acm.org/doi/10.1145/36576043664664)), etc.
