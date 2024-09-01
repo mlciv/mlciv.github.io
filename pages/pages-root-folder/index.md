@@ -13,7 +13,7 @@ permalink: /index.html
 
 My research is primarily focused on **Natural Language Processing**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become increasingly complex, I'm keen on developing modularized AI systems tailored for future large-scale collaborative projects. I also investigate *foundational structures and principles*, both within and beyond language, which are critical for creating efficient and reliable AI systems, especially in domains like Education and Health.
 
-- **Modularized NLP.** My research spans formal language representation, neuro-symbolic interfaces, and ensuring differentiability while decomposing and integrating submodules like LLMs into a cohesive AI system. This includes deep structured prediction~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
+- **Modularized NLP.** My research spans formal language representation, neuro-symbolic interfaces, and ensuring differentiability while decomposing and integrating submodules like LLMs into a cohesive AI system. This includes deep structured prediction ([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
            [CoNLL'19](https://aclanthology.org/K19-2013/),
            [ACL'19](https://aclanthology.org/P19-1563/),
            [NAACL'21](https://aclanthology.org/2021.naacl-main.62/),
@@ -58,7 +58,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 - [08/2015 - 08/2022] Research Assistant at **Utah NLP Lab, Univeristy of Utah**, Salt Lake City
    * I obtained my Ph.D. from the [Kahlert School of Computing](https://cs.utah.edu/) at [University of
         Utah](https://www.ou.edu), where I worked with [Vivek
-        Srikumar](https://svivek.com) and [Uath NLP Group](https://nlp.cs.utah.edu). My thesis is on [inductive biases on deep linguistic structured predictions](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true).
+        Srikumar](https://svivek.com) and [Uath NLP Group](https://nlp.cs.utah.edu). My Ph.D. dissertation is on [inductive biases on deep linguistic structured predictions](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true).
 - [06/2020 - 12/2020] Applied Scientist II Intern at **AWS AI, Amazon Lex**, Remote
    *  Our paper on schema-guided dialog got accepted by NAACL 2021.
 - [06/2019 - 09/2019] Applied Scientist Intern at **AWS AI, Amazon Lex**, Seattle
@@ -69,4 +69,5 @@ Errors in Small Group Classroom Discourse" got accepted to
    *  I worked closely with Prof. Xia Xie and Prof. Hai Jin. My research interests are widely around Xen, Xen-ARM virtualization, and distributed computing. We study equipping R language with JVM-based large scale distributed statistical infrastructure, such as Hadoop, Spark.
 
 # Academic Service
-- PC Member / Reviewers for [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA'23](https://aclanthology.org/venues/bea/), [NLP4ConvAI'23](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023), ACL'20-23, EMNLP'20-23, NAACL'21, EACL'21,24, COLING'(20,22,24), AAAI'19-24, ACL Rolling Review'21-23, AIED'23, EDM'24
+- Standing Reviewer for Journal: [Computational Linguistics](https://submissions.cljournal.org/index.php/cljournal)
+- PC Member / Reviewer for Conferences and Workshops: ACL'(20-24), EMNLP'(20-24), NAACL'(21-25), EACL'21,24, COLING'(20,22,24), CoNLL'(19-24), COLM'24, AAAI'(19-25), ACL Rolling Review'21-24, AIED'(23-24), EDM'(23-24), [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA](https://aclanthology.org/venues/bea/), [NLP4ConvAI](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023)
