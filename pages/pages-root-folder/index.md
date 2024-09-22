@@ -13,7 +13,7 @@ permalink: /index.html
 
 My research is primarily focused on **Natural Language Processing**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become more complex, I'm keen on developing modularized AI systems tailored for future large-scale projects that demand increasing *collaboration and adaptability* with humans, machines, and the world.
 
-- **Modularized NLP.** My research covers symbolic language representations, neuro-symbolic interfaces, aiming to decompose and integrate submodules~(e.g., domain knowledge, LLMs across multiple modalities) into controllable AI systems. This has been applied to deep structured prediction on temporal structures from sentence to dialogue~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
+- **Modularized NLP.** My research covers symbolic language representations, neuro-symbolic interfaces, aiming to decompose and integrate submodules~(e.g., structured knowledge, multi-modal processing) into controllable AI systems. This has been applied to deep linguistic structured prediction from sentence to dialogue~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
            [CoNLL'19](https://aclanthology.org/K19-2013/),
            [ACL'19](https://aclanthology.org/P19-1563/),
            [NAACL'21](https://aclanthology.org/2021.naacl-main.62/),
@@ -22,7 +22,7 @@ My research is primarily focused on **Natural Language Processing**, particularl
       tree-structure database query plan characterization via self-supervised contrastive learning ([VLDB'22](https://dl.acm.org/doi/10.14778/3503585.3503600)),
       zero-shot dialogue state tracking via description-driven
       learning and supplementary pretraining ([NAACL'21](https://aclanthology.org/2021.naacl-main.62/)), and LLM prompting and finetuning ([L@S'24](https://dl.acm.org/doi/10.1145/3657604.366466://dl.acm.org/doi/10.1145/36576043664664)), etc.
-- **Deployment in Real-world Scenarios.** I studied language modeling under the complex environment of the real world, such as distributions shift([ACL'23](https://aclanthology.org/2023.acl-short.156)), unnoticed non-verbal behavior ([AIAIC'23](https://aichildinteraction.github.io/preprint/AIAIC23_paper_7399.pdf)), noisy speech in small-group classroom ([UMAP'23](https://dl.acm.org/doi/10.1145/3565472.3595606)),
+- **Deployment in Real-world Scenarios.** I studied language modeling under the complex environment of the real world, such as distribution shift([ACL'23](https://aclanthology.org/2023.acl-short.156)), unnoticed non-verbal behavior ([AIAIC'23](https://aichildinteraction.github.io/preprint/AIAIC23_paper_7399.pdf)), noisy speech in small-group classroom ([UMAP'23](https://dl.acm.org/doi/10.1145/3565472.3595606)),
       multi-party, multi-modal dynamics ([IWSDS'23](https://arxiv.org/abs/2302.12944)),
       and robust evaluations with conversational simulation.
 
