@@ -11,7 +11,7 @@ permalink: /index.html
 
 # Research Interests
 
-My research is primarily focused on **Natural Language Processing**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become more complex, I'm keen on developing modularized AI systems tailored for future large-scale projects that demand increasing *reasoning, collaboration, and adaptability* with humans, machines, and the world.
+My research is primarily focused on **Natural Language Processing**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become more complex, I'm keen on developing modularized AI systems tailored for future large-scale projects that demand Human-AI Teaming, which requires complex *reasoning, collaboration, and adaptation*.
 
 - **Modularized NLP.** To decompose and integrate submodules~(e.g., structured knowledge, mixture of experts, multi-modalities) into controllable AI systems, my research spans symbolic language representations, neuro-symbolic interfaces, which have been applied to deep linguistic structured prediction from sentence to dialogue~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
            [CoNLL'19](https://aclanthology.org/K19-2013/),
@@ -28,6 +28,7 @@ My research is primarily focused on **Natural Language Processing**, particularl
 
 
 # News
+- 10/2024: iHAT(Interactive Human-AI Teaming) Lab launched! The lowercase i symbolize interactive, innovative, and intelligent. The iHAT lab is dedicated to pioneering research that harness the potential of Human-AI teaming, enabling smarter decision-making and enhanced productivity.
 - 08/2024: I'll be joining [University of Oklahoma](https://www.ou.edu/) as an Assistant Professor in the [School of Computer Science](https://www.ou.edu/coe/cs) starting Fall 2024.
 - 11/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin. I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
