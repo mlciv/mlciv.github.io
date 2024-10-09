@@ -28,7 +28,6 @@ My research is primarily focused on **Natural Language Processing**, particularl
 
 
 # News
-- 10/2024: iHAT(Interactive Human-AI Teaming) Lab launched! The lowercase i symbolize interactive, innovative, and intelligent. The iHAT lab is dedicated to pioneering research that harness the potential of Human-AI teaming, enabling smarter decision-making and enhanced productivity.
 - 08/2024: I'll be joining [University of Oklahoma](https://www.ou.edu/) as an Assistant Professor in the [School of Computer Science](https://www.ou.edu/coe/cs) starting Fall 2024.
 - 11/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin. I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
