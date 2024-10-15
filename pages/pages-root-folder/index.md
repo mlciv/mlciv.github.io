@@ -20,7 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current inte
 
 # News
 - 09/2024: Talk with students on "History of NLP" at the [OU AI/ML Club](https://www.instagram.com/ou.artificial/).
-- 07/2024: Our paper on dialogue classification via LLM fintuning is accepted to [L@S'24](https://dl.acm.org/doi/10.1145/3657604.3664664).
+- 07/2024: Our paper on dialogue classification via LLM finetuning is accepted to [L@S'24](https://dl.acm.org/doi/10.1145/3657604.3664664).
 - 02/2024: Invited Talk on "Modularized Conversational Modeling" at Emory University, Northern Illinois University, Georgia State University, University of Oklahoma.
 - 11/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with [James Martin](https://home.cs.colorado.edu/~martin/). I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
