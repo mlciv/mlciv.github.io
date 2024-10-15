@@ -9,12 +9,14 @@ header: no
 permalink: /index.html
 ---
 
+Jie Cao is an Assitant Professor in the School of Computer Science at the
+University of Oklahoma. Before joining OU, he spent two years as a post-doctoral researcher at the NSF AI Institute for Student-AI Teaming (iSAT) at the University of Colorado Boulder, where he worked with <a href="https://home.cs.colorado.edu/~martin/">James Martin</a>, <a href="https://www.colorado.edu/faculty/palmer-martha/">Martha Palmer</a>. He obtained my Ph.D. from the <a href="https://cs.utah.edu/">Kahlert School of Computing</a> at the <a href="https://www.utah.edu">University of Utah</a>, where he worked with <a href="https://svivek.com">Vivek Srikumar</a>. Previously, he completed his master's degree in Computer Science from Huazhong University of Science of Technology in China, and he has also worked/interned in industrial companies including Alibaba, Baidu, WeChat, and Amazon, etc.
 # Research Interests
 
 I work on **Natural Language Processing** and **Machine Learning**. Current interests include:
-- Dialogue System, and its application on Mental Health, Education etc.
-- Neuro-Symbolic Methods and Structured Prediction
-- Efficient Post-training and Evaluation of Large Language Model
+- Controllable Dialogue System, and its application on Mental Health, Education, etc
+- Structured Prediction and Neuro-Symbolic Methods for modularized AI system
+- Efficient Prompt Optimization and Post-training of Large Language Model
 
 # News
 - 09/2024: Talk with students on "History of NLP" at the [OU AI/ML Club](https://www.instagram.com/ou.artificial/).
