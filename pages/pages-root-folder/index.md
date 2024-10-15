@@ -11,25 +11,16 @@ permalink: /index.html
 
 # Research Interests
 
-My research is primarily focused on **Natural Language Processing**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become more complex, I'm keen on developing modularized AI systems tailored for future large-scale projects that demand Human-AI Teaming, which requires complex *reasoning, collaboration, and adaptation*.
-
-- **Modularized NLP.** To decompose and integrate submodules~(e.g., structured knowledge, mixture of experts, multi-modalities) into controllable AI systems, my research spans symbolic language representations, neuro-symbolic interfaces, which have been applied to deep linguistic structured prediction from sentence to dialogue~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
-           [CoNLL'19](https://aclanthology.org/K19-2013/),
-           [ACL'19](https://aclanthology.org/P19-1563/),
-           [NAACL'21](https://aclanthology.org/2021.naacl-main.62/),
-           [IWSDS'23](https://arxiv.org/abs/2302.12944)), controllable generation with constraints ([DSTC7'19](http://workshop.colips.org/dstc7/papers/13.pdf), [ACL'19](https://aclanthology.org/P19-1192/),[BEA'23](https://aclanthology.org/2023.bea-1.47/)).
-- **Controllable Learning with Minimal Supervision.** I investigated *foundational models that integrating data-driven with various inductive biases*, which are critical for creating efficient and trustworthy AI systems~(especially for Education and Health). I studied graph-based parsing via latent anchoring analysis([CoNLL'19](https://aclanthology.org/K19-2013)),
-      tree-structure database query plan characterization via self-supervised contrastive learning ([VLDB'22](https://dl.acm.org/doi/10.14778/3503585.3503600)),
-      zero-shot dialogue state tracking via description-driven
-      learning and supplementary pretraining ([NAACL'21](https://aclanthology.org/2021.naacl-main.62/)), and LLM prompting and finetuning ([L@S'24](https://dl.acm.org/doi/10.1145/3657604.366466://dl.acm.org/doi/10.1145/36576043664664)), etc.
-- **Robust Deployment in Real-world Scenarios.** I studied language modeling under the complex environment of the real world, such as distribution shift([ACL'23](https://aclanthology.org/2023.acl-short.156)), unnoticed non-verbal behavior ([AIAIC'23](https://aichildinteraction.github.io/preprint/AIAIC23_paper_7399.pdf)), noisy speech in small-group classroom ([UMAP'23](https://dl.acm.org/doi/10.1145/3565472.3595606)),
-      multi-party, multi-modal dynamics ([IWSDS'23](https://arxiv.org/abs/2302.12944)),
-      and robust evaluations with conversational simulation.
-
+I work on **Natural Language Processing** and **Machine Learning**. Current interests include:
+- Dialogue System, and its application on Mental Health, Education etc.
+- Neuro-Symbolic Methods and Structured Prediction
+- Efficient Post-training and Evaluation of Large Language Model
 
 # News
-- 08/2024: I'll be joining [University of Oklahoma](https://www.ou.edu/) as an Assistant Professor in the [School of Computer Science](https://www.ou.edu/coe/cs) starting Fall 2024.
-- 11/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with James Martin. I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
+- 09/2024: Talk with students on "History of NLP" at the [OU AI/ML Club](https://www.instagram.com/ou.artificial/).
+- 07/2024: Our paper on dialogue classification via LLM fintuning is accepted to [L@S'24](https://dl.acm.org/doi/10.1145/3657604.3664664).
+- 02/2024: Invited Talk on "Modularized Conversational Modeling" at Emory University, Northern Illinois University, Georgia State University, University of Oklahoma.
+- 11/2023: In Fall 2023, I taught NLP class~([CSCI-LING 5832](https://canvas.colorado.edu/courses/95371/)) with [James Martin](https://home.cs.colorado.edu/~martin/). I newly created course materials on LLMs, In-Context Learning, Dialogue Generation, etc.
 - 05/2023: Our paper on Question Generation accepted to [BEA'23](https://sig-edu.org/bea/2023)
 - 05/2023: A short paper on "Mind the Gap between the Application Track and the Real World" got accepted to [ACL'23](https://2023.aclweb.org/calls/main_conference/)
 - 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
@@ -44,7 +35,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 
 # Selected Publications
 
-{% bibliography %}
+{% bibliography --file selected %}
 <!--
 {% bibliography --query @*[year=2021] %}
 {% bibliography --query @*[year=2019] %}
