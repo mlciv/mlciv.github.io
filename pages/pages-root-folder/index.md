@@ -15,7 +15,7 @@ University of Oklahoma. Before joining OU, he spent two years as a post-doctoral
 # Research Interests
 I work on **Natural Language Processing** and **Machine Learning**. Current interests include:
 - Controllable Multi-party Multi-modal Dialogue, and its application on Mental Health, Education, etc
-- Structured Prediction and Neuro-Symbolic Methods for Modularized NLP
+- Structured Prediction and Neuro-Symbolic Methods for Modularized NLP, AI4Science.
 - Efficient Prompt Optimization and Post-training of Large Language Model
 
 # News
