@@ -10,7 +10,7 @@ permalink: /index.html
 ---
 
 Jie Cao is an Assitant Professor in the School of Computer Science at the
-University of Oklahoma. Before joining OU, he spent two years as a post-doctoral researcher at the NSF AI Institute for Student-AI Teaming ([iSAT](https://www.colorado.edu/research/ai-institute/)) at the University of Colorado Boulder, where he mainly worked with <a href="https://home.cs.colorado.edu/~martin/">James Martin</a> and <a href="https://www.colorado.edu/faculty/palmer-martha/">Martha Palmer</a>. He obtained his Ph.D. from the <a href="https://cs.utah.edu/">Kahlert School of Computing</a> at the <a href="https://www.utah.edu">University of Utah</a>, where he worked with <a href="https://svivek.com">Vivek Srikumar</a>. Previously, he completed his M.S. and B.S. in Computer Science from Huazhong University of Science of Technology in China, and he has also worked/interned in industrial companies including Alibaba, Baidu, WeChat, and Amazon, etc.
+University of Oklahoma. Before joining OU, he spent two years as a post-doctoral researcher at the NSF AI Institute for Student-AI Teaming ([iSAT](https://www.colorado.edu/research/ai-institute/)) at the University of Colorado Boulder, where he mainly worked with <a href="https://home.cs.colorado.edu/~martin/">James Martin</a> and <a href="https://www.colorado.edu/faculty/palmer-martha/">Martha Palmer</a>. He obtained his Ph.D. from the <a href="https://cs.utah.edu/">Kahlert School of Computing</a> at the <a href="https://www.utah.edu">University of Utah</a>, where he worked with <a href="https://svivek.com">Vivek Srikumar</a>. Previously, he completed his M.S. and B.S. in Computer Science from Huazhong University of Science of Technology~([HUST](https://english.hust.edu.cn/)) in China, and he has also worked/interned in industrial companies including Alibaba, Baidu, WeChat, and Amazon, etc.
 
 # Research Interests
 I work on **Natural Language Processing** and **Machine Learning**. Current interests include:
@@ -36,7 +36,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 - 06/2022: New preprint on [visual analysis of neural network pruning](https://arxiv.org/abs/2206.07918?context=cs.LG).
 
 # Selected Publications
-(See more in [Publication Page](/publications/) or [Google scholar](https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en))
+(See full list in [Publication Page](/publications/) or [Google Scholar](https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en))
 {% bibliography --file selected %}
 <!--
 {% bibliography --query @*[year=2021] %}
