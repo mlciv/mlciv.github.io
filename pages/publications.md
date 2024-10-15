@@ -6,7 +6,7 @@ teaser: ""
 permalink: "/publications/"
 header : no
 ---
-# Publication Overview
+## Overview
 
 My research is primarily focused on **Natural Language Processing**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become more complex, I'm keen on developing modularized AI systems tailored for future large-scale projects that demand Human-AI Teaming, which requires complex *reasoning, collaboration, and adaptation*.
 
@@ -24,7 +24,7 @@ My research is primarily focused on **Natural Language Processing**, particularl
       and robust evaluations with conversational simulation.
 
 
-
+## Conference 
 {% bibliography %}
 <!--
 {% bibliography --query @*[year=2021] %}
