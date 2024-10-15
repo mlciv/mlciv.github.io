@@ -10,9 +10,9 @@ permalink: /index.html
 ---
 
 Jie Cao is an Assitant Professor in the School of Computer Science at the
-University of Oklahoma. Before joining OU, he spent two years as a post-doctoral researcher at the NSF AI Institute for Student-AI Teaming ([iSAT](https://www.colorado.edu/research/ai-institute/)) at the University of Colorado Boulder, where he worked with <a href="https://home.cs.colorado.edu/~martin/">James Martin</a>, <a href="https://www.colorado.edu/faculty/palmer-martha/">Martha Palmer</a>. He obtained my Ph.D. from the <a href="https://cs.utah.edu/">Kahlert School of Computing</a> at the <a href="https://www.utah.edu">University of Utah</a>, where he worked with <a href="https://svivek.com">Vivek Srikumar</a>. Previously, he completed his master's degree in Computer Science from Huazhong University of Science of Technology in China, and he has also worked/interned in industrial companies including Alibaba, Baidu, WeChat, and Amazon, etc.
-# Research Interests
+University of Oklahoma. Before joining OU, he spent two years as a post-doctoral researcher at the NSF AI Institute for Student-AI Teaming ([iSAT](https://www.colorado.edu/research/ai-institute/)) at the University of Colorado Boulder, where he worked with <a href="https://home.cs.colorado.edu/~martin/">James Martin</a>, <a href="https://www.colorado.edu/faculty/palmer-martha/">Martha Palmer</a>. He obtained my Ph.D. from the <a href="https://cs.utah.edu/">Kahlert School of Computing</a> at the <a href="https://www.utah.edu">University of Utah</a>, where he worked with <a href="https://svivek.com">Vivek Srikumar</a>. Previously, he completed his M.S. and B.S. in Computer Science from Huazhong University of Science of Technology in China, and he has also worked/interned in industrial companies including Alibaba, Baidu, WeChat, and Amazon, etc.
 
+# Research Interests
 I work on **Natural Language Processing** and **Machine Learning**. Current interests include:
 - Controllable Multi-party Multi-modal Dialogue, and its application on Mental Health, Education, etc
 - Structured Prediction and Neuro-Symbolic Methods for modularized NLP
@@ -28,7 +28,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current inte
 - 04/2023: Our paper on "A Comparative Analysis of Automatic Speech Recognition
 Errors in Small Group Classroom Discourse" got accepted to
 [UMAP'23](https://www.um.org/umap2023/).
-- 03/2023: \#FirstGrant My research proposal on conversational simulation on small-group discussion got awarded by iSAT Trainee Grant.
+- 03/2023: My research on conversational simulation on small-group discussion got awarded by iSAT Trainee Grant.
 - 02/2023: Our paper on AI agent for Jigsaw Classrooms got accepted on [AIAIC'23](https://aichildinteraction.github.io/).
 - 12/2022: Our paper on Dependency Dialog Act got accepted on [IWSDS'23](https://sites.google.com/view/iwsds2023/home).
 - 12/2022: Invited Talk on Database Workload Characterization work at Microsoft's Gray Systems Lab. [Slides](https://www.debjyotipaul.in/assets/pub/query_encoder_vldb22_slides.pdf).
@@ -36,7 +36,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 - 06/2022: New preprint on [visual analysis of neural network pruning](https://arxiv.org/abs/2206.07918?context=cs.LG).
 
 # Selected Publications
-See more in [Publication](/publications/) or [Google scholar](https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en)
+(See more in [Publication Page](/publications/) or [Google scholar](https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en))
 {% bibliography --file selected %}
 <!--
 {% bibliography --query @*[year=2021] %}
