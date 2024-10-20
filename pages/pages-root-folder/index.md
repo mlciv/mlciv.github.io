@@ -16,7 +16,7 @@ University of Oklahoma. Before joining OU, he spent two years as a post-doctoral
 I work on **Natural Language Processing** and **Machine Learning**. Current interests include:
 - Multi-party Multi-modal Dialogue, and its applications on Mental Health, Education, etc
 - Efficient Structured Prediction and Symbolic Methods for Controlling and Augmenting Neural Networks
-- Robust Deployment, and Evaluation of Trustworthy AI.
+- Robust Deployment, and Evaluation of Trustworthy AI
 
 # News
 - 09/2024: Talk with students on "History of NLP" at the [OU AI/ML Club](https://www.instagram.com/ou.artificial/).
