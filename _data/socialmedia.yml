@@ -8,11 +8,11 @@
   class: icon-semantic-scholar
   title: ""
 
-- name: Resume
-  url: /public/CV_Jie-Cao.pdf
-  class: icon-cv
-  title: ""
-
+#- name: Resume
+#  url: /public/CV_Jie-Cao.pdf
+#  class: icon-cv
+#  title: ""
+#
 - name: Email
   url: mailto:jie dot cao at ou dot edu
   class: icon-mail
