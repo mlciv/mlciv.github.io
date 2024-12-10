@@ -20,7 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current inte
 
 # News
 - 11/2024: Our paper "Enhancing Talk Moves Analysis in Mathematics Tutoring through Classroom Teaching Discourse" got accepted to [COLING'2025](https://coling2025.org/).
-- 11/2024: Our paper "“Understanding Robustness Lottery”: A Geometric Visual Comparative Analysis of Neural Network Pruning Approaches" got accepted to TVCG.
+- 11/2024: Our paper on [visualization for network pruning](https://doi.org/10.1109/tvcg.2024.3514996) got accepted to [TVCG](https://www.computer.org/csdl/journal/tg).
 - 09/2024: Talk with students on "History of NLP" at the [OU AI/ML Club](https://www.instagram.com/ou.artificial/).
 - 07/2024: Our paper on dialogue classification via LLM finetuning is accepted to [L@S'24](https://dl.acm.org/doi/10.1145/3657604.3664664).
 - 02/2024: Invited Talk on "Modularized Conversational Modeling" at Emory University, Northern Illinois University, Georgia State University, University of Oklahoma.
