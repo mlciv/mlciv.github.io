@@ -24,6 +24,10 @@
   url: "/teaching/"
   side: left
 
+- title: AIDeadlines 
+  url: "/ai-deadlines/"
+  side: left
+
 #
 #   Navigation to the right › side: right
 #
