@@ -19,6 +19,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current inte
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News
+- 02/2025: New preprint on multimodal LLM on material science [MatterChat](https://arxiv.org/abs/2502.13107).
 - 11/2024: Our paper "Enhancing Talk Moves Analysis in Mathematics Tutoring through Classroom Teaching Discourse" got accepted to [COLING'2025](https://coling2025.org/).
 - 11/2024: Our paper on [visualization for network pruning](https://doi.org/10.1109/tvcg.2024.3514996) got accepted to [TVCG](https://www.computer.org/csdl/journal/tg).
 - 09/2024: Talk with students on "History of NLP" at the [OU AI/ML Club](https://www.instagram.com/ou.artificial/).
