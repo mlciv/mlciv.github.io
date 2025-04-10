@@ -19,7 +19,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current inte
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News
-- 04/2025: Our paper on multi-perspective discourse analysis on teaching and tutoring dialogue got accepted to [EDM20205](https://educationaldatamining.org/edm2025/).
+- 04/2025: Our paper on multi-perspective discourse analysis on teaching and tutoring dialogue got accepted to [EDM2025](https://educationaldatamining.org/edm2025/).
 - 02/2025: New preprint on multimodal LLM on material science [MatterChat](https://arxiv.org/abs/2502.13107).
 - 11/2024: Our paper "Enhancing Talk Moves Analysis in Mathematics Tutoring through Classroom Teaching Discourse" got accepted to [COLING'2025](https://coling2025.org/).
 - 11/2024: Our paper on [visualization for network pruning](https://doi.org/10.1109/tvcg.2024.3514996) got accepted to [TVCG](https://www.computer.org/csdl/journal/tg).
