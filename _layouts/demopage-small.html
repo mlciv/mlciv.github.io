@@ -17,17 +17,21 @@ format: blog-index
 {% endcomment %}
 <div class="row t60">
         {% if page.widget1.title %}
-                {% include _frontpage-widget.html widget=page.widget1 %}
+                {% include _frontpage-widget-small.html widget=page.widget1 %}
         {% endif %}
 
 
         {% if page.widget2.title %}
-                {% include _frontpage-widget.html widget=page.widget2 %}
+                {% include _frontpage-widget-small.html widget=page.widget2 %}
         {% endif %}
 
 
         {% if page.widget3.title %}
-                {% include _frontpage-widget.html widget=page.widget3 %}
+                {% include _frontpage-widget-small.html widget=page.widget3 %}
+        {% endif %}
+        
+        {% if page.widget4.title %}
+                {% include _frontpage-widget-small.html widget=page.widget4 %}
         {% endif %}
 </div><!-- /.row -->
 

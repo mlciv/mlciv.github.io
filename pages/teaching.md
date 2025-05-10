@@ -1,5 +1,5 @@
 ---
-layout: demopage 
+layout: demopage-small 
 title: "Teaching"
 subheadline: "Teaching"
 teaser: ""
