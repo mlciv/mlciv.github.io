@@ -20,6 +20,10 @@
   url: "/publications/"
   side: left
 
+- title: Students
+  url: "/students"
+  side: left
+
 - title: Teaching
   url: "/teaching/"
   side: left
