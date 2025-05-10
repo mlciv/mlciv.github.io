@@ -10,7 +10,7 @@ widget1:
   title: Text Analytics (NLP) (CS-5293, OU, Spring 2025)
   url: 'https://canvas.ou.edu/courses/388014/'
   image: '/assets/img/teaching/slp3.jpg'
-  text: In Spring 2025, I taught Natural Language Processing ([CS-5293](https://canvas.ou.edu/courses/388014).
+  text: In Spring 2025, I taught graduate-level course on Natural Language Processing ([CS-5293](https://canvas.ou.edu/courses/388014)).
 
 widget2:
   title: Natural Language Processing (CSCI-LING 5832, CU Boulder, Fall 2023)
