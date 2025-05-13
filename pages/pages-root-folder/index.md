@@ -20,8 +20,8 @@ I work on **Natural Language Processing** and **Machine Learning**. Current inte
 
 # News  
 - 05/2025: Congratulations to Masiko Mamba on being awarded the Undergraduate Engineering Research Fellowship for Summer 2025.
-- 05/2025: I was awarded Alternative Textbook Grant to improve Jupyter Notebook-based NLP course materials, with a focus on practical skills on recent advances in LLM and Agentic AI.
-- 04/2025: Our paper on multi-perspective discourse analysis on teaching and tutoring dialogue got accepted to [EDM2025](https://educationaldatamining.org/edm2025/).
+- 04/2025: Our paper on [multi-perspective discourse analysis](https://arxiv.org/abs/2505.07161) on teaching and tutoring dialogue got accepted to [EDM2025](https://educationaldatamining.org/edm2025/).
+- 04/2025: I was awarded Alternative Textbook Grant to improve Jupyter Notebook-based NLP course materials, with a focus on practical skills on recent advances in LLM and Agentic AI.
 - 03/2025: Invited Talk in Graduate Student Community@Gallogly College of Engineering: [Advances in Open LLM](https://www.youtube.com/watch?v=eCFXPn3AQxQ&ab_channel=GraduateStudentCommunityatGCOEOU%28GSC-GCOE%29k)
 - 02/2025: New preprint on multimodal LLM on material science [MatterChat](https://arxiv.org/abs/2502.13107).
 - 11/2024: Our paper "Enhancing Talk Moves Analysis in Mathematics Tutoring through Classroom Teaching Discourse" got accepted to [COLING'2025](https://coling2025.org/).
