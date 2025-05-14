@@ -7,7 +7,7 @@ permalink: "/teaching/"
 header : no
 
 widget1:
-  title: Text Analytics (NLP) (CS-5293, OU)
+  title: Natural Language Processing (CS-5293, OU)
   url: 'https://canvas.ou.edu/courses/388014/'
   image: '/assets/img/teaching/slp3.jpg'
   text: In Spring and Fall 2025, I taught graduate-level course on Natural Language Processing.
