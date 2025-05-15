@@ -1,9 +1,13 @@
 - menu_name: "Related Links"
+- name: "OU NLP Group"
+  url: "https://ounlp.org"
+  class: "ounlp"
+  title: "OU NLP"
 
 - name: "Utah NLP Group"
-  url: "http://nlp.cs.utah.edu"
+  url: "https://nlp.cs.utah.edu"
   class: "mlnlp"
-  title: "Utah NLP Group"
+  title: "Utah NLP"
 
 - name: "iSAT"
   url: "https://www.colorado.edu/research/ai-institute/"

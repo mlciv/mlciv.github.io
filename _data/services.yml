@@ -4,9 +4,9 @@
   url: "/contact/"
   title: "Contact"
 
-- name: "AIDeadlines"
+- name: "AI-Deadlines"
   url: "/ai-deadlines/"
-  title: "AIDeadlines"
+  title: "AI-Deadlines"
 
 - name: "RSS"
   url: "/feed.xml"
