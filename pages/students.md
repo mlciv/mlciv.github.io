@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: student
 title: "Students"
 subheadline: ""
 teaser: ""
