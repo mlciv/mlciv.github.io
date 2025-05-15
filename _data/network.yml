@@ -1,10 +1,10 @@
 - menu_name: "Related Links"
-- name: "OU NLP Group"
+- name: "OU NLP"
   url: "https://ounlp.org"
   class: "ounlp"
   title: "OU NLP"
 
-- name: "Utah NLP Group"
+- name: "Utah NLP"
   url: "https://nlp.cs.utah.edu"
   class: "mlnlp"
   title: "Utah NLP"
