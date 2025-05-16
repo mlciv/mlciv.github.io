@@ -14,4 +14,4 @@ header : no
 ## Undergraduate Reseachers
 * Tiffany Nguyen (Spring 2025 - ), Hornors College, BS in Computer Science, BA in Japanese
 * Masiko Mamba (Summer 2025 - ), BS in Computer Science
-* Cuoung Huynh (Summer 2025 - ), BS in Computer Science
+* Cuong Huynh (Summer 2025 - ), BS in Computer Science
