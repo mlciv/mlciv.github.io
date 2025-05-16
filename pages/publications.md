@@ -35,12 +35,8 @@ My research is primarily focused on **Natural Language Processing**, particularl
 {% bibliography --query @*[year=2022] %}
 ### 2021
 {% bibliography --query @*[year=2021] %}
-### 2020
-{% bibliography --query @*[year=2020] %}
-### 2019
-{% bibliography --query @*[year=2019] %}
 ### Earlier
-{% bibliography --query @*[year <=2015] %}
+{% bibliography --query @*[year <=2020] %}
 
 
 
