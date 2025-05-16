@@ -24,7 +24,7 @@ My research is primarily focused on **Natural Language Processing**, particularl
       and robust evaluations with conversational simulation.
 
 
-## Conference Papers
+## Papers
 ### 2025
 {% bibliography --query @*[year=2025] %}
 ### 2024
