@@ -12,7 +12,7 @@ header : no
 * Joshua Wiseman (Summer 2025 - Present), MS Student, BS from University of Oklahoma
 
 ## Undergraduate Reseachers
-* Tiffany Nguyen (Spring 2025 - ), Hornors College, BS in Computer Science, BA in Japanese
+* Tiffany Nguyen (Spring 2025 - ), Honors College, BS in Computer Science, BA in Japanese
 * Masiko Mamba (Summer 2025 - ), BS in Computer Science
 * Cuong Huynh (Summer 2025 - ), BS in Computer Science
 * Nicholas Immenschuh (Summer 2025 - ), BS in Computer Science
