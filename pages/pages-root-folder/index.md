@@ -19,8 +19,6 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
-
-{: .scrollable}
 - 06/2025: One paper on "Adversarial Attacks on Cooperative Spectrum Sensing: A LLM-Powered Multi-Agent Approach" got accepted to [IEEE SPAWC 2025](https://2025.ieeespawc.org/).
 - 05/2025: Congratulations to Masiko Mamba on being awarded the Undergraduate Engineering Research Fellowship for Summer 2025.
 - 04/2025: Our paper on [multi-perspective discourse analysis](https://arxiv.org/abs/2505.07161) on teaching and tutoring dialogue got accepted to [EDM2025](https://educationaldatamining.org/edm2025/).
@@ -44,6 +42,7 @@ Errors in Small Group Classroom Discourse" got accepted to
 - 12/2022: Invited Talk on Database Workload Characterization work at Microsoft's Gray Systems Lab. [Slides](https://www.debjyotipaul.in/assets/pub/query_encoder_vldb22_slides.pdf).
 - 08/2022: I joined [NSF AI Institute for Student-AI Teaming (iSAT)](https://www.colorado.edu/research/ai-institute/) as a post-doctoral researcher.
 - 06/2022: New preprint on [visual analysis of neural network pruning](https://arxiv.org/abs/2206.07918?context=cs.LG).
+{: .scrollable}
 
 # Selected Publications
 (See full list in [Publication Page](/publications/) or [Google Scholar](https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en))
