@@ -10,6 +10,7 @@ header : no
 * Yiming Liu (Spring 2025 - Present), PhD Student, BS from Ohio State University, MS from Worcester Polytechnic Institute
 * Ziyue Zhang (Fall 2025 - Present), PhD Student, BS from Zhengzhou University, MS from Renmin University of China
 * Joshua Wiseman (Summer 2025 - Present), MS Student, BS from University of Oklahoma
+* Arman Radmanesh (Summer 2025 - Present), MS Student, BS from AmirKabir University of Technology
 
 ## Undergraduate Reseachers
 * Tiffany Nguyen (Spring 2025 - ), Honors College, BS in Computer Science, BA in Japanese
