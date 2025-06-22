@@ -191,6 +191,15 @@ ul, ol {
     margin-left: 20px;
     padding: 0;
 }
+
+ul.scrollable {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
 li {
     margin-left: 20px;
 }
