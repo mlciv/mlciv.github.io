@@ -19,6 +19,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
+
 {: .scrollable}
 - 06/2025: One paper on "Adversarial Attacks on Cooperative Spectrum Sensing: A LLM-Powered Multi-Agent Approach" got accepted to [IEEE SPAWC 2025](https://2025.ieeespawc.org/).
 - 05/2025: Congratulations to Masiko Mamba on being awarded the Undergraduate Engineering Research Fellowship for Summer 2025.
