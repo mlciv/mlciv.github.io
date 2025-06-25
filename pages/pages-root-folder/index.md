@@ -16,7 +16,7 @@ University of Oklahoma, leading the OUNLP lab. I am also affiliated with the [Da
 I work on **Natural Language Processing** and **Machine Learning**. Current research interests include:
 - Multi-party Multi-modal Dialogue/Discourse Analysis on Mental Health, Education, etc
 - Efficient Structured Prediction and Symbolic Methods for Controlling and Augmenting Neural Networks
-- LLMs, Agentic AI, such as Material Science, Hydrology, etc
+- LLM and its Applications on Material Science, Hydrology, Security, etc
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
@@ -75,5 +75,5 @@ Errors in Small Group Classroom Discourse" got accepted to
 
 # Academic Service
 - Standing Reviewer for Journals: [Computational Linguistics](https://submissions.cljournal.org/index.php/cljournal)
-- Area Chair for ACL ARR 2025
+- Area Chair for ACL ARR 
 - PC Member / Reviewer for Conferences and Workshops: ACL'(20-25), EMNLP'(20-25), NAACL'(21-25), EACL'21,24, COLING'(20,22,24,25), CoNLL'(19-25), COLM'(24-25), AAAI'(19-25), ACL Rolling Review'21-25, AIED'(23-25), EDM'(23-25), [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA(23-25)](https://aclanthology.org/venues/bea/), [NLP4ConvAI](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023)
