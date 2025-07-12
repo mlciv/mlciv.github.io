@@ -10,6 +10,7 @@ header : no
 
 My research is primarily focused on **Natural Language Processing**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become more complex, I'm keen on developing modularized AI systems tailored for future large-scale projects that demand Human-AI Teaming, which requires complex *control, reasoning, collaboration, and adaptation*.
 
+<!--
 - **Modularized NLP.** To decompose and integrate submodules~(e.g., structured knowledge, mixture of experts, multi-modalities) into controllable AI systems, my research spans symbolic language representations, neuro-symbolic interfaces, which have been applied to *deep linguistic structured prediction* from sentence to dialogue~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
            [CoNLL'19](https://aclanthology.org/K19-2013/),
            [ACL'19](https://aclanthology.org/P19-1563/),
@@ -22,7 +23,7 @@ My research is primarily focused on **Natural Language Processing**, particularl
 - **Robust Deployment.** I studied language modeling under the complex environment of the real world, such as network pruning([TVCG'24](https://ieeexplore.ieee.org/document/10787269)), distribution shift([ACL'23](https://aclanthology.org/2023.acl-short.156)), unnoticed non-verbal behavior ([AIAIC'23](https://aichildinteraction.github.io/preprint/AIAIC23_paper_7399.pdf)), noisy speech in small-group classroom ([UMAP'23](https://dl.acm.org/doi/10.1145/3565472.3595606)),
       multi-party, multi-modal dynamics ([IWSDS'23](https://arxiv.org/abs/2302.12944)),
       and robust evaluations with conversational simulation.
-
+-->
 
 ## Papers
 (See full list in [Google Scholar](https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en))
