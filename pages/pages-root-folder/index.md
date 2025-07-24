@@ -15,7 +15,7 @@ University of Oklahoma, leading the OUNLP lab. I am also affiliated with the [Da
 # Research Interests
 I work on **Natural Language Processing** and **Machine Learning**. Current research interests include:
 - Multi-party Multi-modal Dialogue/Discourse Analysis on Mental Health, Education, etc
-- LLM/MLLM Alignement and Agents for Science, focusing on Knowledge Enchanced LLM (such as structures) and Human-AI Teaming, etc
+- LLM/MLLM Alignement and Agents, focusing on Domain "World" and Human-AI Teaming, etc
 - Efficient Structured Prediction and Symbolic Methods for Controlling and Augmenting Neural Networks
 - Robust Deployment, and Evaluation of Trustworthy AI
 
