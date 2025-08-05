@@ -6,12 +6,11 @@ teaser: ""
 permalink: "/students/"
 header : no
 ---
-
 ## Graduate Students
-* Yiming Liu (Spring 2025 - Present), PhD Student in CS
-* Ziyue Zhang (Fall 2025 - Present), PhD Student in DSA
-* Joshua Wiseman (Summer 2025 - Present), MS Student in CS
-* Arman Radmanesh (Summer 2025 - Present), MS Student in DSA
+* Yiming Liu (Spring 2025 - Present), PhD Student in CS, BS from Ohio State University, MS from Worcester Polytechnic Institute
+* Ziyue Zhang (Fall 2025 - Present), PhD Student in DSA, BS from Zhengzhou University, MS from Renmin University of China
+* Joshua Wiseman (Summer 2025 - Present), MS Student in CS, BS from University of Oklahoma
+* Arman Radmanesh (Summer 2025 - Present), MS Student in DSA, BS from AmirKabir University of Technology
 
 ## Undergraduate Reseachers
 * Tiffany Nguyen (Spring 2025 - ), Honors College, BS in CS, BA in Japanese
