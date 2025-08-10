@@ -92,7 +92,7 @@
 }
 
 .badge-column {
-  min-width: 100px;
+  min-width: 140px;
   text-align: center;
   padding-top: 0.0625rem;
 }
@@ -140,7 +140,7 @@
 }
 
 .selected-publications .badge-column {
-  min-width: 140px;
+  min-width: 160px;
   text-align: center;
   padding-top: 0.125rem;
 }
