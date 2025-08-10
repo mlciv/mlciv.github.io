@@ -33,10 +33,24 @@ bundle install
 ```
 
 ### Run Locally
+
+#### Option 1: HTTP (Simple)
 ```bash
 bundle exec jekyll serve --config _config.yml,_config_dev.yml
 ```
 Visit [http://localhost:4000](http://localhost:4000) in your browser.
+
+#### Option 2: HTTPS (Recommended - works with browser security)
+```bash
+./start-dev.sh
+```
+Or manually:
+```bash
+bundle exec jekyll serve --config _config.yml,_config_dev.yml --host localhost --port 4000 --ssl-cert localhost-cert.pem --ssl-key localhost-key.pem
+```
+Visit [https://localhost:4000](https://localhost:4000) in your browser.
+
+**Note:** When using HTTPS, you'll see a security warning because it's a self-signed certificate. Click "Advanced" and then "Proceed to localhost" to continue.
 
 ---
 
@@ -149,12 +163,42 @@ JaneDoe:
 This site uses [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) for publications.
 
 1. **Edit BibTeX files** in `_bibliography/` (e.g., `references.bib`, `selected.bib`).
-2. **Display publications** in a page using:
+2. **Add conference badges** by including a `shorttitle` field in your BibTeX entry:
+   ```bibtex
+   @article{example2024,
+     title={Your Paper Title},
+     author={Author, Name},
+     journal={Conference Name},
+     shorttitle={CONF},  % This will show as a colored badge
+     year={2024}
+   }
+   ```
+3. **Display publications** in a page using:
    ```liquid
    {% bibliography --query @*[year=2025] %}
    {% bibliography --file selected %}
    ```
-3. **Configure scholar settings** in `_config.yml` under `scholar:`.
+4. **Configure scholar settings** in `_config.yml` under `scholar:`.
+
+**Supported Conference Badge Types:**
+- **Computer Vision**: `ICCV`, `CVPR` (Red)
+- **Machine Learning**: `NeurIPS`, `ICML` (Purple)
+- **AI**: `AAAI`, `IJCAI` (Orange)
+- **Computational Linguistics**: `ACL`, `EMNLP`, `NAACL`, `CoNLL`, `COLING` (Green)
+- **Education & Workshops**: `BEA`, `EDM`, `Workshop` (Yellow)
+- **IEEE Conferences**: `IEEE SPAWC`, `IEEE TVCG`, `IEEE APSCC`, `IEEE ICSC` (Dark Gray)
+- **Other Conferences**: `UMAP`, `VLDB`, `AIAIC`, `DSTC`, `L@S`, `IWSDS` (Blue)
+- **Preprints & Dissertations**: `arXiv`, `Ph.D. Dissertation` (Gray)
+
+**Note**: All shorttitles are now properly configured in both `references.bib` and `selected.bib` files.
+
+**Layout Features:**
+- **Two-column layout**: Each publication entry has badges in the left column and paper information in the right column
+- **Publications page**: Professional styling with subtle backgrounds and hover effects
+- **Homepage selected publications**: Same two-column structure for consistency
+- **Mobile responsive**: Automatically switches to single column layout on mobile devices
+
+**Note**: The `shorttitle` field is automatically excluded from the BibTeX output when users click to view the citation.
 
 ### Adding PDF Files for Publications
 

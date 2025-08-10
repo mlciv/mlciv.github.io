@@ -1,13 +1,79 @@
 ---
 ---
+<div class="badge-column">
+{% if entry.shorttitle %}
+  {% assign conference_type = entry.shorttitle | downcase %}
+  {% if conference_type contains 'iccv' %}
+    {% assign badge_class = 'iccv' %}
+  {% elsif conference_type contains 'cvpr' %}
+    {% assign badge_class = 'cvpr' %}
+  {% elsif conference_type contains 'neurips' or conference_type contains 'nips' %}
+    {% assign badge_class = 'neurips' %}
+  {% elsif conference_type contains 'icml' %}
+    {% assign badge_class = 'icml' %}
+  {% elsif conference_type contains 'aaai' %}
+    {% assign badge_class = 'aaai' %}
+  {% elsif conference_type contains 'ijcai' %}
+    {% assign badge_class = 'ijcai' %}
+  {% elsif conference_type contains 'acl' %}
+    {% assign badge_class = 'acl' %}
+  {% elsif conference_type contains 'emnlp' %}
+    {% assign badge_class = 'emnlp' %}
+  {% elsif conference_type contains 'naacl' %}
+    {% assign badge_class = 'naacl' %}
+  {% elsif conference_type contains 'bea' %}
+    {% assign badge_class = 'bea' %}
+  {% elsif conference_type contains 'workshop' %}
+    {% assign badge_class = 'workshop' %}
+  {% elsif conference_type contains 'ieee' %}
+    {% assign badge_class = 'ieee' %}
+  {% elsif conference_type contains 'edm' %}
+    {% assign badge_class = 'edm' %}
+  {% elsif conference_type contains 'umap' %}
+    {% assign badge_class = 'umap' %}
+  {% elsif conference_type contains 'vldb' %}
+    {% assign badge_class = 'vldb' %}
+  {% elsif conference_type contains 'conll' %}
+    {% assign badge_class = 'conll' %}
+  {% elsif conference_type contains 'coling' %}
+    {% assign badge_class = 'coling' %}
+  {% elsif conference_type contains 'dissertation' %}
+    {% assign badge_class = 'dissertation' %}
+  {% elsif conference_type contains 'arxiv' %}
+    {% assign badge_class = 'arxiv' %}
+  {% elsif conference_type contains 'aiaic' %}
+    {% assign badge_class = 'aiaic' %}
+  {% elsif conference_type contains 'dstc' %}
+    {% assign badge_class = 'dstc' %}
+  {% elsif conference_type contains 'spawc' %}
+    {% assign badge_class = 'spawc' %}
+  {% elsif conference_type contains 'tvcg' %}
+    {% assign badge_class = 'tvcg' %}
+  {% elsif conference_type contains 'apscc' %}
+    {% assign badge_class = 'apscc' %}
+  {% elsif conference_type contains 'icsc' %}
+    {% assign badge_class = 'icsc' %}
+  {% elsif conference_type contains 'l@s' or conference_type contains 'las' %}
+    {% assign badge_class = 'las' %}
+  {% elsif conference_type contains 'iwsds' %}
+    {% assign badge_class = 'iwsds' %}
+  {% elsif conference_type contains 'ph.d' or conference_type contains 'phd' or conference_type contains 'dissertation' %}
+    {% assign badge_class = 'phd' %}
+  {% else %}
+    {% assign badge_class = '' %}
+  {% endif %}
+  <span class="conference-badge {{ badge_class }}">{{ entry.shorttitle }}</span>
+{% endif %}
+</div>
 
+<div class="content-column">
 {{ reference | replace_first: 'Jie Cao', '<b>Jie Cao</b>' }}
 
 <span id="{{key}}-materials">
     &nbsp;&nbsp;
     <a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">BibTeX</a>
     <div id="{{key}}-bibtex" style="display:none;">
-    <pre class="collapse">{{entry.bibtex}}</pre>
+    <pre class="collapse">{% assign bibtex_without_shorttitle = entry.bibtex | replace: 'shorttitle = {' | replace: entry.shorttitle | replace: '},' | replace: '}' %}{{ bibtex_without_shorttitle }}</pre>
     </div>
 
     {% if link %}
@@ -30,3 +96,4 @@
     <a href="{{ links['poster.pdf'] | prepend: site.url }}">Poster</a>
     {% endif %}
 </span>
+</div>
