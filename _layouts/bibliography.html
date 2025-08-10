@@ -73,7 +73,9 @@
     &nbsp;&nbsp;
     <a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">BibTeX</a>
     <div id="{{key}}-bibtex" style="display:none;">
-    <pre class="collapse">{% assign bibtex_without_shorttitle = entry.bibtex | replace: 'shorttitle = {' | replace: entry.shorttitle | replace: '},' | replace: '}' %}{{ bibtex_without_shorttitle }}</pre>
+    <pre class="collapse">{% assign bibtex_lines = entry.bibtex | split: '
+' %}{% assign filtered_lines = '' %}{% for line in bibtex_lines %}{% unless line contains 'shorttitle = {' %}{% assign filtered_lines = filtered_lines | append: line | append: '
+' %}{% endunless %}{% endfor %}{{ filtered_lines }}</pre>
     </div>
 
     {% if link %}
