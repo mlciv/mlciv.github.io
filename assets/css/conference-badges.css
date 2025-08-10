@@ -99,6 +99,24 @@
 
 .content-column {
   flex: 1;
+  min-width: 0; /* Allow content to shrink */
+  overflow-wrap: break-word; /* Break long words */
+  word-wrap: break-word;
+}
+
+/* Ensure BibTeX content doesn't break the layout */
+.content-column pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
 /* Homepage selected publications two-column layout */
@@ -129,6 +147,9 @@
 
 .selected-publications .content-column {
   flex: 1;
+  min-width: 0; /* Allow content to shrink */
+  overflow-wrap: break-word; /* Break long words */
+  word-wrap: break-word;
 }
 
 /* Responsive adjustments */
