@@ -26,6 +26,9 @@
 .conference-badge.iccv { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
 .conference-badge.cvpr { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
 
+/* Special case for ICCV Workshop - Black */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%); }
+
 /* Machine Learning */
 .conference-badge.neurips { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
 .conference-badge.icml { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }

@@ -5,7 +5,9 @@
 <div class="badge-column">
 {% if entry.shorttitle %}
   {% assign conference_type = entry.shorttitle | downcase %}
-  {% if conference_type contains 'iccv' %}
+  {% if conference_type contains 'iccv workshop' %}
+    {% assign badge_class = 'iccv-workshop' %}
+  {% elsif conference_type contains 'iccv' %}
     {% assign badge_class = 'iccv' %}
   {% elsif conference_type contains 'cvpr' %}
     {% assign badge_class = 'cvpr' %}
