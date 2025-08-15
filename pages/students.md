@@ -13,7 +13,8 @@ header : no
 * Arman Radmanesh (Summer 2025 - Present), MS Student in DSA, BS from AmirKabir University of Technology
 
 ## Undergraduate Reseachers
-* Tiffany Nguyen (Spring 2025 - ), Honors College, BS in CS, BA in Japanese
-* Masiko Mamba (Summer 2025 - ), BS in CS 
-* Cuong Huynh (Summer 2025 - ), BS in CS 
-* Nicholas Immenschuh (Summer 2025 - ), Honors College, BS in CS 
+* Tiffany Nguyen (Spring 2025 - Present), Honors College, BS in CS, BA in Japanese
+* Masiko Mamba (Summer 2025 - Present), BS in CS 
+* Cuong Huynh (Summer 2025 - Present), BS in CS 
+* Nicholas Immenschuh (Summer 2025 - Present), Honors College, BS in CS 
+* Ava D Batson Perez(Fall 2025 - Present), Honors College, BS in CS

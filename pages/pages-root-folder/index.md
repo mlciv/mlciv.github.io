@@ -20,8 +20,9 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
-- 07/2025: One paper on "AQUAH: Automatic Quantification and Unified Agent in Hydrology" got accepted to [ICCV'2025 Workshop on Sustainability with Earth observation and AI](https://sustain-eo-ai.github.io/).
-- 06/2025: One paper on "Adversarial Attacks on Cooperative Spectrum Sensing: A LLM-Powered Multi-Agent Approach" got accepted to [IEEE SPAWC 2025](https://2025.ieeespawc.org/).
+- 08/2025: Congratulations to Tiffany and Ava for receiving the Undergraduate Engineering Research Fellowship for Fall 2025!
+- 07/2025: Our paper on "AQUAH: Automatic Quantification and Unified Agent in Hydrology" got accepted to [ICCV'2025 Workshop on Sustainability with Earth observation and AI](https://sustain-eo-ai.github.io/).
+- 06/2025: Our paper on "Adversarial Attacks on Cooperative Spectrum Sensing: A LLM-Powered Multi-Agent Approach" got accepted to [IEEE SPAWC 2025](https://2025.ieeespawc.org/).
 - 05/2025: Congratulations to Masiko Mamba on being awarded the Undergraduate Engineering Research Fellowship for Summer 2025.
 - 04/2025: Our paper on [multi-perspective discourse analysis](https://arxiv.org/abs/2505.07161) on teaching and tutoring dialogue got accepted to [EDM2025](https://educationaldatamining.org/edm2025/).
 - 04/2025: I was awarded Alternative Textbook Grant on practical course content on recent advances in LLM and Agentic AI.
@@ -29,6 +30,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - 02/2025: New preprint on multimodal LLM on material science [MatterChat](https://arxiv.org/abs/2502.13107).
 - 11/2024: Our paper "Enhancing Talk Moves Analysis in Mathematics Tutoring through Classroom Teaching Discourse" got accepted to [COLING'2025](https://coling2025.org/).
 - 11/2024: Our paper on [visualization for network pruning](https://doi.org/10.1109/tvcg.2024.3514996) got accepted to [TVCG](https://www.computer.org/csdl/journal/tg).
+- 10/2024: Invited Talk on "Modularized Conversational Modeling" at the [OU DISC](https://www.ou.edu/disc).
 - 09/2024: Talk with students on "History of NLP" at the [OU AI/ML Club](https://www.instagram.com/ou.artificial/).
 - 07/2024: Our paper on dialogue classification via LLM finetuning is accepted to [L@S'24](https://dl.acm.org/doi/10.1145/3657604.3664664).
 - 02/2024: Invited Talk on "Modularized Conversational Modeling" at Emory University, Georgia State University.
