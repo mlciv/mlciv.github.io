@@ -17,4 +17,4 @@ header : no
 * Masiko Mamba (Summer 2025 - Present), BS in CS 
 * Cuong Huynh (Summer 2025 - Present), BS in CS 
 * Nicholas Immenschuh (Summer 2025 - Present), Honors College, BS in CS 
-* Ava D Batson Perez(Fall 2025 - Present), Honors College, BS in CS
+* Ava Batson Perez(Fall 2025 - Present), Honors College, BS in CS
