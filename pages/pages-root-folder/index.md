@@ -22,7 +22,6 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 # News  
 - 08/2025: Congratulations to Tiffany and Ava for receiving the Undergraduate Engineering Research Fellowship for Fall 2025!
 - 07/2025: Our paper on "AQUAH: Automatic Quantification and Unified Agent in Hydrology" got accepted to [ICCV'2025 Workshop on Sustainability with Earth observation and AI](https://sustain-eo-ai.github.io/).
-- 06/2025: Our paper on "Adversarial Attacks on Cooperative Spectrum Sensing: A LLM-Powered Multi-Agent Approach" got accepted to [IEEE SPAWC 2025](https://2025.ieeespawc.org/).
 - 05/2025: Congratulations to Masiko Mamba on being awarded the Undergraduate Engineering Research Fellowship for Summer 2025.
 - 04/2025: Our paper on [multi-perspective discourse analysis](https://arxiv.org/abs/2505.07161) on teaching and tutoring dialogue got accepted to [EDM2025](https://educationaldatamining.org/edm2025/).
 - 04/2025: I was awarded Alternative Textbook Grant on practical course content on recent advances in LLM and Agentic AI.
