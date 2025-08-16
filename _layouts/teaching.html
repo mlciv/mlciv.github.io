@@ -1,0 +1,101 @@
+---
+layout: default
+format: blog-index
+---
+
+<!-- Include teaching page CSS -->
+<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/teaching.css">
+
+<div id="header-home">
+    <div class="row">
+        <div class="small-12 columns">
+        </div>
+    </div>
+</div>
+
+<div class="row t60">
+    <div class="small-12 columns teaching-page-title">
+        <h1>{{ page.title }}</h1>
+        {% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+    </div>
+</div>
+
+<!-- Course 1 -->
+{% if page.widget1.title %}
+<div class="row t60 teaching-course">
+    <div class="medium-6 columns">
+        {% if page.widget1.image %}
+            {% capture widget_image %}{% if page.widget1.image contains 'http' %}{{ page.widget1.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget1.image }}{% endif %}{% endcapture %}
+            <img src="{{ widget_image }}" alt="{{ page.widget1.title }}" style="width: 100%;" />
+        {% endif %}
+    </div>
+    <div class="medium-6 columns">
+        <h2 class="font-size-h3">{{ page.widget1.title }}</h2>
+        <p>{{ page.widget1.text }}</p>
+        {% if page.widget1.url %}
+            <p><a class="button" href="{% if page.widget1.url contains 'http' %}{{ page.widget1.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget1.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+
+<!-- Course 2 -->
+{% if page.widget2.title %}
+<div class="row t60 teaching-course">
+    <div class="medium-6 columns">
+        {% if page.widget2.image %}
+            {% capture widget_image %}{% if page.widget2.image contains 'http' %}{{ page.widget2.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget2.image }}{% endif %}{% endcapture %}
+            <img src="{{ widget_image }}" alt="{{ page.widget2.title }}" style="width: 100%;" />
+        {% endif %}
+    </div>
+    <div class="medium-6 columns">
+        <h2 class="font-size-h3">{{ page.widget2.title }}</h2>
+        <p>{{ page.widget2.text }}</p>
+        {% if page.widget2.url %}
+            <p><a class="button" href="{% if page.widget2.url contains 'http' %}{{ page.widget2.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget2.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+
+<!-- Course 3 -->
+{% if page.widget3.title %}
+<div class="row t60 teaching-course">
+    <div class="medium-6 columns">
+        {% if page.widget3.image %}
+            {% capture widget_image %}{% if page.widget3.image contains 'http' %}{{ page.widget3.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget3.image }}{% endif %}{% endcapture %}
+            <img src="{{ widget_image }}" alt="{{ page.widget3.title }}" style="width: 100%;" />
+        {% endif %}
+    </div>
+    <div class="medium-6 columns">
+        <h2 class="font-size-h3">{{ page.widget3.title }}</h2>
+        <p>{{ page.widget3.text }}</p>
+        {% if page.widget3.url %}
+            <p><a class="button" href="{% if page.widget3.url contains 'http' %}{{ page.widget3.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget3.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+
+<!-- Course 4 -->
+{% if page.widget4.title %}
+<div class="row t60 teaching-course">
+    <div class="medium-6 columns">
+        {% if page.widget4.image %}
+            {% capture widget_image %}{% if page.widget4.image contains 'http' %}{{ page.widget4.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget4.image }}{% endif %}{% endcapture %}
+            <img src="{{ widget_image }}" alt="{{ page.widget4.title }}" style="width: 100%;" />
+        {% endif %}
+    </div>
+    <div class="medium-6 columns">
+        <h2 class="font-size-h3">{{ page.widget4.title }}</h2>
+        <p>{{ page.widget4.text }}</p>
+        {% if page.widget4.url %}
+            <p><a class="button" href="{% if page.widget4.url contains 'http' %}{{ page.widget4.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget4.url }}{% endif %}">{{ site.data.language.more }}</a></p>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+
+<div class="row">
+    {{ content }}
+</div>
