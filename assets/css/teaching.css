@@ -10,6 +10,20 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Reduce gap between columns */
+.teaching-course .columns {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.teaching-course .columns:first-child {
+    padding-left: 0;
+}
+
+.teaching-course .columns:last-child {
+    padding-right: 0;
+}
+
 .teaching-course:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
@@ -20,7 +34,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
 }
 

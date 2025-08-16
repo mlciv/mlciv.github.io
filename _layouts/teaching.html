@@ -23,13 +23,13 @@ format: blog-index
 <!-- Course 1 -->
 {% if page.widget1.title %}
 <div class="row t60 teaching-course">
-    <div class="medium-6 columns">
+    <div class="medium-4 columns">
         {% if page.widget1.image %}
             {% capture widget_image %}{% if page.widget1.image contains 'http' %}{{ page.widget1.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget1.image }}{% endif %}{% endcapture %}
             <img src="{{ widget_image }}" alt="{{ page.widget1.title }}" style="width: 100%;" />
         {% endif %}
     </div>
-    <div class="medium-6 columns">
+    <div class="medium-8 columns">
         <h2 class="font-size-h3">{{ page.widget1.title }}</h2>
         <p>{{ page.widget1.text }}</p>
         {% if page.widget1.url %}
@@ -42,13 +42,13 @@ format: blog-index
 <!-- Course 2 -->
 {% if page.widget2.title %}
 <div class="row t60 teaching-course">
-    <div class="medium-6 columns">
+    <div class="medium-4 columns">
         {% if page.widget2.image %}
             {% capture widget_image %}{% if page.widget2.image contains 'http' %}{{ page.widget2.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget2.image }}{% endif %}{% endcapture %}
             <img src="{{ widget_image }}" alt="{{ page.widget2.title }}" style="width: 100%;" />
         {% endif %}
     </div>
-    <div class="medium-6 columns">
+    <div class="medium-8 columns">
         <h2 class="font-size-h3">{{ page.widget2.title }}</h2>
         <p>{{ page.widget2.text }}</p>
         {% if page.widget2.url %}
@@ -61,13 +61,13 @@ format: blog-index
 <!-- Course 3 -->
 {% if page.widget3.title %}
 <div class="row t60 teaching-course">
-    <div class="medium-6 columns">
+    <div class="medium-4 columns">
         {% if page.widget3.image %}
             {% capture widget_image %}{% if page.widget3.image contains 'http' %}{{ page.widget3.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget3.image }}{% endif %}{% endcapture %}
             <img src="{{ widget_image }}" alt="{{ page.widget3.title }}" style="width: 100%;" />
         {% endif %}
     </div>
-    <div class="medium-6 columns">
+    <div class="medium-8 columns">
         <h2 class="font-size-h3">{{ page.widget3.title }}</h2>
         <p>{{ page.widget3.text }}</p>
         {% if page.widget3.url %}
@@ -80,13 +80,13 @@ format: blog-index
 <!-- Course 4 -->
 {% if page.widget4.title %}
 <div class="row t60 teaching-course">
-    <div class="medium-6 columns">
+    <div class="medium-4 columns">
         {% if page.widget4.image %}
             {% capture widget_image %}{% if page.widget4.image contains 'http' %}{{ page.widget4.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.widget4.image }}{% endif %}{% endcapture %}
             <img src="{{ widget_image }}" alt="{{ page.widget4.title }}" style="width: 100%;" />
         {% endif %}
     </div>
-    <div class="medium-6 columns">
+    <div class="medium-8 columns">
         <h2 class="font-size-h3">{{ page.widget4.title }}</h2>
         <p>{{ page.widget4.text }}</p>
         {% if page.widget4.url %}
