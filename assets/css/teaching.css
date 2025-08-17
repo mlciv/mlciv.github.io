@@ -2,8 +2,8 @@
 
 /* Course container styling */
 .teaching-course {
-    margin-bottom: 3rem;
-    padding: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
     background: #f8f9fa;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -12,8 +12,8 @@
 
 /* Reduce gap between columns */
 .teaching-course .columns {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
 }
 
 .teaching-course .columns:first-child {
@@ -34,7 +34,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    max-width: 70%;
+    max-width: 85%;
     height: auto;
 }
 

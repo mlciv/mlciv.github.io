@@ -18,3 +18,7 @@ header : no
 * Cuong Huynh (Summer 2025 - Present), BS in CS 
 * Nicholas Immenschuh (Summer 2025 - Present), Honors College, BS in CS 
 * Ava Batson Perez(Fall 2025 - Present), Honors College, BS in CS
+
+## External Student Collaborators
+I also work with students outsides of OU, including:
+* Jannatun Naim, University of Colorado Boulder. We work on educational discourse analysis.
