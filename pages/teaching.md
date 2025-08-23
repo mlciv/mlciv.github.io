@@ -1,7 +1,7 @@
 ---
 layout: teaching 
 title: "Teaching"
-subheadline: "Teaching"
+subheadline: ""
 teaser: ""
 permalink: "/teaching/"
 header : no

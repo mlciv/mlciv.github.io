@@ -1,24 +1,25 @@
 ---
 layout: default
-format: blog-index
+format: publication-index
+header : no
 ---
 
 <!-- Include teaching page CSS -->
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/teaching.css">
 
-<div id="header-home">
-    <div class="row">
-        <div class="small-12 columns">
-        </div>
-    </div>
-</div>
+<div class="row t30">
+	<div class="medium-12 columns">
+    <article>
+			<header>
+				{% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
+				<h1>{{ page.title }}</h1>
+			</header>
 
-<div class="row t60">
-    <div class="small-12 columns teaching-page-title">
-        <h1>{{ page.title }}</h1>
-        {% if page.subheadline %}<p class="subheadline">{{ page.subheadline }}</p>{% endif %}
-    </div>
-</div>
+			{% if page.teaser %}
+			<p class="teaser">
+				{{ page.teaser }}
+			</p>
+			{% endif %}
 
 <!-- Course 1 -->
 {% if page.widget1.title %}
