@@ -20,7 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
-- 08/2025: Thrilled to share that our paper has been accepted in Journal of Hydrology (details forthcoming). Grateful to my coauthors for guiding me into the hydrology journey alongside AI.
+- 08/2025: Thrilled to share that [our paper using state space model for reservoir release](https://www.sciencedirect.com/science/article/abs/pii/S0022169425014830?via%3Dihub) has been accepted in Journal of Hydrology. Grateful to my coauthors for guiding me into the hydrology journey alongside AI.
 - 08/2025: One paper on frame semantics and LLM got accepted to EMNLP'2025 Main Conference!
 - 08/2025: Congratulations to Tiffany and Ava for receiving the Undergraduate Engineering Research Fellowship for Fall 2025!
 - 07/2025: One paper on "AQUAH: Automatic Quantification and Unified Agent in Hydrology" got accepted to [ICCV'2025 Workshop on Sustainability with Earth observation and AI](https://sustain-eo-ai.github.io/).
