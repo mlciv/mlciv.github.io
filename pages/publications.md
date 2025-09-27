@@ -8,7 +8,7 @@ header : no
 ---
 ## Research Overview
 
-My research is primarily focused on **Natural Language Processing**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become more complex, I'm keen on developing modularized AI systems tailored for future large-scale projects that demand Human-AI Teaming, which requires complex *control, reasoning, collaboration, and adaptation*.
+My research is primarily focused on **Natural Language Processing** and **Machine Learning**, particularly in the area of **Dialogue** and **Structured Prediction**. As AI challenges become more complex, I'm keen on developing modularized AI systems tailored for future large-scale projects that demand Human-AI Teaming, which requires complex *control, reasoning, collaboration, and adaptation*.
 
 <!--
 - **Modularized NLP.** To decompose and integrate submodules~(e.g., structured knowledge, mixture of experts, multi-modalities) into controllable AI systems, my research spans symbolic language representations, neuro-symbolic interfaces, which have been applied to *deep linguistic structured prediction* from sentence to dialogue~([Dissertation'22](https://www.proquest.com/docview/2777357718?pq-origsite=gscholar&fromopenview=true),
