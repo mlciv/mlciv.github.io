@@ -20,5 +20,5 @@ header : no
 * Ava Batson Perez(Fall 2025 - Present), BS in CS
 
 ## External Student Collaborators
-I also work with students outsides of OU, including:
+I also work with students outside of OU, including:
 * Jannatun Naim, University of Colorado Boulder. We work on educational discourse analysis.
