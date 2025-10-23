@@ -21,7 +21,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 
 # News  
 - 10/2025: Congratulations to Cuong Huynh! His undergraduate summer research on text simplication has been accepted to TSAR2025 Workshop@EMNLP. Multi-round fine-grained symbolic rules could further refine the LLM-based simiplication.
-- 09/2025: Our proposal on semic simulation was awarded by Amazon for 4 Max-Q GPUs.
+- 09/2025: Our collaborative proposal on semic simulation was awarded by Amazon for 4 Max-Q GPUs.
 - 09/2025: Our proposal on Small Language Model awarded by NSF ACCESS for 2000+ hrs initial GPU Credits.
 - 08/2025: Thrilled to share that [our paper using state space model for reservoir release](https://www.sciencedirect.com/science/article/abs/pii/S0022169425014830?via%3Dihub) has been accepted in Journal of Hydrology. Grateful to my coauthors for guiding me into the hydrology journey alongside AI.
 - 08/2025: One paper on frame semantics and LLM got accepted to EMNLP'2025 Main Conference!
