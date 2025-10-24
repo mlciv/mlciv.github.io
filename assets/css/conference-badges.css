@@ -172,6 +172,27 @@
 .conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
 
 /* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
 .conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
 
 @media (max-width: 768px) {
