@@ -47,10 +47,10 @@
 #  title: ""
 #
 #
-#- name: LinkedIn
-#  url: https://www.linkedin.com/in/jiecao-mlciv/
-#  class: icon-linkedin
-#  title: ""
+- name: LinkedIn
+  url: https://www.linkedin.com/in/jiecao-mlciv/
+  class: icon-linkedin
+  title: ""
 #
 
 # - name: Mixcloud
