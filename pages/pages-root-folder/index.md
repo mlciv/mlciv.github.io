@@ -20,6 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
+- 10/2025: New preprint "Rethinking On-policy Optimization for Query Augmentation" is now available on [arXiv](https://arxiv.org/abs/2510.17139). We present the first systematic comparison of prompting-based and RL-based query augmentation and introduce a novel hybrid method OPQE that outperforms both approaches.
 - 10/2025: Congratulations to Cuong Huynh! His undergraduate summer research on text simplication has been accepted to TSAR2025 Workshop@EMNLP. Multi-round fine-grained symbolic rules could further refine the LLM-based simiplication.
 - 09/2025: Our collaborative proposal on semic simulation was awarded by Amazon for 4 Max-Q GPUs.
 - 09/2025: Our proposal on Small Language Model awarded by NSF ACCESS for 2000+ hrs initial GPU Credits.
