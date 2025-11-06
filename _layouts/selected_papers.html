@@ -89,6 +89,20 @@
     {% assign badge_class = 'ieee-icsc' %}
   {% elsif conference_type contains 'l@s' %}
     {% assign badge_class = 'l-s' %}
+  {% elsif conference_type contains 'j. hydrol.' %}
+    {% assign badge_class = 'j--hydrol-' %}
+  {% elsif conference_type contains 'iccv workshop' %}
+    {% assign badge_class = 'iccv-workshop' %}
+  {% elsif conference_type contains 'ph.d. dissertation' %}
+    {% assign badge_class = 'ph-d--dissertation' %}
+  {% elsif conference_type contains 'ieee tvcg' %}
+    {% assign badge_class = 'ieee-tvcg' %}
+  {% elsif conference_type contains 'ieee apscc' %}
+    {% assign badge_class = 'ieee-apscc' %}
+  {% elsif conference_type contains 'ieee icsc' %}
+    {% assign badge_class = 'ieee-icsc' %}
+  {% elsif conference_type contains 'l@s' %}
+    {% assign badge_class = 'l-s' %}
   {% else %}
     {% assign badge_class = '' %}
   {% endif %}
