@@ -14,3 +14,6 @@ gem 'jekyll-scholar', group: :jekyll_plugins
 
 # Added at 2024-06-18 15:38:24 -0600 by Jiessie:
 gem "webrick", "~> 1.8"
+
+# Pin sass-embedded to a stable version for GitHub Actions compatibility
+gem 'sass-embedded', '~> 1.80.0'
