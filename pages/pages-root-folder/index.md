@@ -20,7 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
-- 11/2025: Invited Talk on "Decoding Classroom Dialogue: Discourse Analysis in STEM Education" at Rice University[Ken Kennedy Institute AI Seminar Series](https://events.rice.edu/event/ai-seminar-2025-cao)
+- 11/2025: Invited Talk on "Decoding Classroom Dialogue: Discourse Analysis in STEM Education" at Rice University [Ken Kennedy Institute AI Seminar Series](https://events.rice.edu/event/ai-seminar-2025-cao)
 - 11/2025: New preprint "Translation via Annotation: A Computational Study of Translating Classical Chinese into Japanese" is now available on [arXiv](https://arxiv.org/abs/2511.05239).
 - 10/2025: New preprint "Rethinking On-policy Optimization for Query Augmentation" is now available on [arXiv](https://arxiv.org/abs/2510.17139). We present the first systematic comparison of prompting-based and RL-based query augmentation and introduce a novel hybrid method OPQE that outperforms both approaches.
 - 10/2025: Congratulations to Cuong Huynh! His undergraduate summer research on [text simplication](https://aclanthology.org/2025.tsar-1.19/) has been accepted to [TSAR2025 Workshop@EMNLP](https://tsar-workshop.github.io/program/). Multi-round fine-grained symbolic rules could further refine the LLM-based simiplication.
