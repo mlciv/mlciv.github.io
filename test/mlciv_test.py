@@ -1,7 +1,7 @@
 #asdasd
 
 def test_function(a, b):
-    raise NotImplementedError("This function is not yet implemented.")
+    raise NotImplementedError("This function is finished now")
 
 
 def main():
