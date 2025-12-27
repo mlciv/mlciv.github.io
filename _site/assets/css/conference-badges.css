@@ -1,0 +1,4098 @@
+/* Conference Badge Styles - Inspired by Waterloo CAESR */
+.conference-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  position: relative;
+  top: -1px;
+  transition: all 0.2s ease;
+}
+
+.conference-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Different colors for different conference types */
+/* Computer Vision */
+.conference-badge.iccv { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+.conference-badge.cvpr { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* Special case for ICCV Workshop - Blue */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* Machine Learning */
+.conference-badge.neurips { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
+.conference-badge.icml { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); }
+
+/* AI */
+.conference-badge.aaai { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+.conference-badge.ijcai { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+
+/* Computational Linguistics (CL) - All grouped together */
+.conference-badge.acl { background: linear-gradient(135deg, #27ae60 0%, #229954 100%); }
+.conference-badge.emnlp { background: linear-gradient(135deg, #27ae60 0%, #229954 100%); }
+.conference-badge.naacl { background: linear-gradient(135deg, #27ae60 0%, #229954 100%); }
+.conference-badge.conll { background: linear-gradient(135deg, #27ae60 0%, #229954 100%); }
+.conference-badge.coling { background: linear-gradient(135deg, #27ae60 0%, #229954 100%); }
+
+/* Education & Workshops */
+.conference-badge.bea { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
+.conference-badge.tsar { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
+.conference-badge.workshop { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
+.conference-badge.edm { background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%); }
+
+/* IEEE Conferences */
+.conference-badge.ieee { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+.conference-badge.spawc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+.conference-badge.tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+.conference-badge.apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+.conference-badge.icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* Other Conferences */
+.conference-badge.umap { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+.conference-badge.vldb { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+.conference-badge.aiaic { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+.conference-badge.dstc { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+.conference-badge.las { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+.conference-badge.iwsds { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* Preprints & Dissertations */
+.conference-badge.arxiv { background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%); }
+.conference-badge.dissertation { background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%); }
+.conference-badge.phd { background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%); }
+
+/* Two-column layout for publications */
+.bibliography {
+  margin: 0.25rem 0;
+}
+
+.bibliography li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem;
+  align-items: start;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem;
+  border-left: 3px solid #e0e0e0;
+  background: #fafafa;
+  border-radius: 0 4px 4px 0;
+  transition: all 0.2s ease;
+  list-style: none;
+}
+
+.bibliography li:hover {
+  border-left-color: #3498db;
+  background: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.badge-column {
+  min-width: 140px;
+  text-align: center;
+  padding-top: 0.0625rem;
+}
+
+.content-column {
+  flex: 1;
+  min-width: 0; /* Allow content to shrink */
+  overflow-wrap: break-word; /* Break long words */
+  word-wrap: break-word;
+}
+
+/* Ensure BibTeX content doesn't break the layout */
+.content-column pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0.25rem;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Homepage selected publications two-column layout */
+.selected-publications {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem;
+  align-items: start;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem;
+  border-left: 3px solid #e0e0e0;
+  background: #fafafa;
+  border-radius: 0 4px 4px 0;
+  transition: all 0.2s ease;
+}
+
+.selected-publications:hover {
+  border-left-color: #3498db;
+  background: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.selected-publications .badge-column {
+  min-width: 160px;
+  text-align: center;
+  padding-top: 0.125rem;
+}
+
+.selected-publications .content-column {
+  flex: 1;
+  min-width: 0; /* Allow content to shrink */
+  overflow-wrap: break-word; /* Break long words */
+  word-wrap: break-word;
+}
+
+/* Responsive adjustments */
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* TSAR */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+/* J. HYDROL. */
+.conference-badge.j--hydrol- { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* ICCV WORKSHOP */
+.conference-badge.iccv-workshop { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); }
+
+/* PH.D. DISSERTATION */
+.conference-badge.ph-d--dissertation { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+/* IEEE TVCG */
+.conference-badge.ieee-tvcg { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE APSCC */
+.conference-badge.ieee-apscc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* IEEE ICSC */
+.conference-badge.ieee-icsc { background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%); }
+
+/* L@S */
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.tsar { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+.conference-badge.l-s { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
+
+@media (max-width: 768px) {
+  .conference-badge {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+    margin-right: 6px;
+  }
+  
+  .bibliography li {
+    grid-template-columns: 1fr;
+    gap: 0.125rem;
+    margin-bottom: 0.125rem;
+    padding: 0.125rem;
+  }
+  
+  .badge-column {
+    min-width: auto;
+    text-align: left;
+    padding-top: 0;
+  }
+  
+  .selected-publications {
+    grid-template-columns: 1fr;
+    gap: 0.125rem;
+    margin-bottom: 0.125rem;
+    padding: 0.125rem;
+  }
+  
+  .selected-publications .badge-column {
+    min-width: auto;
+    text-align: left;
+    padding-top: 0;
+  }
+}

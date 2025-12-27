@@ -1,0 +1,568 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+		<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Rethinking On-policy Optimization for Query Augmentation</title>
+	<link rel="stylesheet" type="text/css" href="https://localhost:4000/assets/css/styles_feeling_responsive.css" />
+	<link rel="stylesheet" type="text/css" href="https://localhost:4000/assets/css/conference-badges.css" />
+	<script src="https://localhost:4000/assets/js/modernizr.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+  <script>
+if (location.protocol != 'https:'){
+   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
+    WebFont.load({
+      google: {
+        families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+      }
+    });
+  </script>
+  <script language="JavaScript" type="text/javascript">
+function toggleDiv(element){
+   if(document.getElementById(element).style.display == 'none')
+       document.getElementById(element).style.display = 'block';
+    else
+       document.getElementById(element).style.display = 'none';
+}
+  </script>
+
+  <noscript>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic|Volkhov' rel='stylesheet' type='text/css' />
+  </noscript>
+
+  
+	
+	<meta name="description" content="Our new preprint on query augmentation for information retrieval is now available on arXiv." />
+
+	
+
+	
+
+
+
+	
+	<link rel="icon" sizes="32x32" href="https://localhost:4000/assets/img/favicon-32x32.png" />
+
+
+
+
+	
+	<link rel="icon" sizes="192x192" href="https://localhost:4000/assets/img/touch-icon-192x192.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png" />
+
+
+
+
+	
+	<link rel="apple-touch-icon-precomposed" href="https://localhost:4000/assets/img/apple-touch-icon-precomposed.png" />	
+
+
+
+
+	
+	<meta name="msapplication-TileImage" content="https://localhost:4000/assets/img/msapplication_tileimage.png" />
+
+
+
+
+	
+	<meta name="msapplication-TileColor" content="#fabb00" />
+
+
+
+	<!-- Facebook Optimization -->
+	<meta property="og:locale" content="en_EN" />
+	
+	<meta property="og:title" content="Rethinking On-policy Optimization for Query Augmentation" />
+	<meta property="og:description" content="Jie Cao&#39;s Personal Website." />
+	<meta property="og:url" content="https://localhost:4000//blog/2025/10/20/new-preprint-query-augmentation/" />
+	<meta property="og:site_name" content="Jie Cao | Dialogue, NLP, ML" />
+	
+
+	
+
+	<!-- Search Engine Optimization -->
+	
+
+	<link type="text/plain" rel="author" href="https://localhost:4000/humans.txt" />
+
+	
+
+	
+</head>
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+<!-- <h1 class="show-for-small-only"><a href="https://localhost:4000" class="icon-tree"> Jie Cao | Dialogue, NLP, ML</a></h1>
+-->
+      <h1><a href="https://localhost:4000" class="icon-tree"> Jie Cao | Dialogue, NLP, ML</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a href="https://localhost:4000/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a href="https://localhost:4000/publications/">Publications</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a href="https://localhost:4000/students">Students</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a href="https://localhost:4000/teaching/">Teaching</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="https://localhost:4000" title="Jie Cao | Dialogue, NLP, ML – Machine Learning Civilization">
+				<img src="https://localhost:4000/assets/img/logo.png" alt="Jie Cao | Dialogue, NLP, ML – Machine Learning Civilization">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	
+
+<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<span itemprop="name">
+					<p class="subheadline">New Preprint</p>
+					<h1>Rethinking On-policy Optimization for Query Augmentation</h1>
+				</span>
+			</header>
+
+
+			
+			<p class="teaser" itemprop="description">
+				Our new preprint on query augmentation for information retrieval is now available on arXiv.
+			</p>
+			
+
+			<span itemprop="articleSection">
+			<p>We are excited to announce our new preprint <strong>“Rethinking On-policy Optimization for Query Augmentation”</strong> is now available on <a href="https://arxiv.org/abs/2510.17139">arXiv</a>!</p>
+
+<h2 id="about-the-work">About the Work</h2>
+
+<p>Recent advances in large language models (LLMs) have led to a surge of interest in query augmentation for information retrieval (IR). In this work, we present the first systematic comparison of prompting-based and RL-based query augmentation across diverse benchmarks, including evidence-seeking, ad hoc, and tool retrieval.</p>
+
+<h2 id="key-findings">Key Findings</h2>
+
+<p>Our key finding is that <strong>simple, training-free query augmentation often performs on par with, or even surpasses, more expensive RL-based counterparts</strong>, especially when using powerful LLMs.</p>
+
+<h2 id="novel-contribution-opqe">Novel Contribution: OPQE</h2>
+
+<p>Motivated by this discovery, we introduce a novel hybrid method, <strong>On-policy Pseudo-document Query Expansion (OPQE)</strong>, which, instead of rewriting a query, the LLM policy learns to generate a pseudo-document that maximizes retrieval performance, thus merging the flexibility and generative structure of prompting with the targeted optimization of RL.</p>
+
+<p>We show that <strong>OPQE outperforms both standalone prompting and RL-based rewriting</strong>, demonstrating that a synergistic approach yields the best results.</p>
+
+<h2 id="authors">Authors</h2>
+
+<ul>
+  <li><strong>Zhichao Xu</strong> (First Author)</li>
+  <li><strong>Shengyao Zhuang</strong></li>
+  <li><strong>Xueguang Ma</strong></li>
+  <li><strong>Bingsen Chen</strong></li>
+  <li><strong>Yijun Tian</strong></li>
+  <li><strong>Fengran Mo</strong></li>
+  <li><strong>Jie Cao</strong> (Corresponding Author)</li>
+  <li><strong>Vivek Srikumar</strong></li>
+</ul>
+
+<h2 id="links">Links</h2>
+
+<ul>
+  <li><strong>arXiv</strong>: <a href="https://arxiv.org/abs/2510.17139">https://arxiv.org/abs/2510.17139</a></li>
+  <li><strong>DOI</strong>: <a href="https://doi.org/10.48550/arXiv.2510.17139">https://doi.org/10.48550/arXiv.2510.17139</a></li>
+</ul>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>Recent advances in large language models (LLMs) have led to a surge of interest in query augmentation for information retrieval (IR). Two main approaches have emerged. The first prompts LLMs to generate answers or pseudo-documents that serve as new queries, relying purely on the model’s parametric knowledge or contextual information. The second applies reinforcement learning (RL) to fine-tune LLMs for query rewriting, directly optimizing retrieval metrics. While having respective advantages and limitations, the two approaches have not been compared under consistent experimental conditions. In this work, we present the first systematic comparison of prompting-based and RL-based query augmentation across diverse benchmarks, including evidence-seeking, ad hoc, and tool retrieval. Our key finding is that simple, training-free query augmentation often performs on par with, or even surpasses, more expensive RL-based counterparts, especially when using powerful LLMs. Motivated by this discovery, we introduce a novel hybrid method, On-policy Pseudo-document Query Expansion (OPQE), which, instead of rewriting a query, the LLM policy learns to generate a pseudo-document that maximizes retrieval performance, thus merging the flexibility and generative structure of prompting with the targeted optimization of RL. We show OPQE outperforms both standalone prompting and RL-based rewriting, demonstrating that a synergistic approach yields the best results. Our implementation is made available to facilitate reproducibility.</p>
+
+<hr />
+
+<p><em>This preprint represents ongoing research in the intersection of large language models and information retrieval. We welcome feedback and collaboration opportunities.</em></p>
+
+			</span>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2025-10-20" itemprop="datePublished"> 2025-10-20</time>
+				
+
+				<span class="icon-archive pr20"> RESEARCH</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> information-retrieval</span> <span class="icon-price-tag pr10"> query-augmentation</span> <span class="icon-price-tag pr10"> large-language-models</span> <span class="icon-price-tag pr10"> reinforcement-learning</span> </span>
+			</p>
+
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="https://localhost:4000/blog/2016/02/20/shortcut-collections/">&laquo; shortcut collections</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="https://localhost:4000/blog/archive/" title="Blog Archive">Archive</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			</div><!--  /.page-meta -->
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">About This Site</h5>
+            <a href='https://clustrmaps.com/site/1c1qk'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=0e1633&w=a&t=tt&d=IgdtycDtJRw5iK09Bdntwkwc_eV6_48ZGPhs8u6d09M&co=0b4975&ct=cdd4d9'/></a>
+            <p class="shadow-black">
+              Jie Cao's Personal Website.
+              <a href="https://localhost:4000/info/">More ›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+          <div class="medium-6 large-5 columns">
+          <div class="small-6 medium-3 large-4 columns">
+            
+              
+                <h5 class="shadow-black">Services</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href=""  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/contact/"  title="Contact">Contact</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/ai-deadlines/"  title="AI-Deadlines">AI-Deadlines</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-4 columns">
+            
+              
+                <h5 class="shadow-black">Related Links</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href=""  title=""></a>
+                </li>
+            
+              
+                <li class="ounlp" >
+                  <a href="https://ounlp.org" target="_blank"  title="OU NLP">OU NLP</a>
+                </li>
+            
+              
+                <li class="mlnlp" >
+                  <a href="https://nlp.cs.utah.edu" target="_blank"  title="Utah NLP">Utah NLP</a>
+                </li>
+            
+              
+                <li class="iSAT" >
+                  <a href="https://www.colorado.edu/research/ai-institute/" target="_blank"  title="iSAT">iSAT</a>
+                </li>
+            
+              
+                <li class="CLEAR" >
+                  <a href="https://www.colorado.edu/lab/clear/" target="_blank"  title="CLEAR">CLEAR</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-4.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="b30 small-12 medium-6 columns credits">
+            <p>
+            <a href="http://phlow.de" alt="Theme created by Phlow"> Powered by Phlow</a>
+            </p>
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns social-icons">
+            <ul class="inline-list">
+            
+              <li><a href="https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en" target="_blank" class="icon-google-scholar" title=""></a></li>
+            
+              <li><a href="https://www.semanticscholar.org/author/Jie-Cao/144089400" target="_blank" class="icon-semantic-scholar" title=""></a></li>
+            
+              <li><a href="mailto:jie dot cao at ou dot edu" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.researchgate.net/profile/Jie-Cao-7" target="_blank" class="icon-researchgate" title=""></a></li>
+            
+              <li><a href="https://dblp.org/pid/39/6191-10.html" target="_blank" class="icon-dblp" title=""></a></li>
+            
+              <li><a href="https://orcid.org/0000-0001-8268-954X" target="_blank" class="icon-orcid" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/jiecao-mlciv/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="https://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50404010-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
