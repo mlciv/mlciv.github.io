@@ -20,7 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
-- 11/2025: Thanks for Thinking Machines for the [Tiner Teaching Grant](https://thinkingmachines.ai/blog/tinker-research-and-teaching-grants/)! 
+- 11/2025: Thanks for Thinking Machines for the [Tinker Teaching Grant](https://thinkingmachines.ai/blog/tinker-research-and-teaching-grants/)! 
 - 11/2025: Invited Talk on "Decoding Classroom Dialogue: Discourse Analysis in STEM Education" at Rice University [Ken Kennedy Institute AI Seminar Series](https://events.rice.edu/event/ai-seminar-2025-cao)
 - 11/2025: New preprint "Translation via Annotation: A Computational Study of Translating Classical Chinese into Japanese" is now available on [arXiv](https://arxiv.org/abs/2511.05239).
 - 10/2025: New preprint "Rethinking On-policy Optimization for Query Augmentation" is now available on [arXiv](https://arxiv.org/abs/2510.17139). We present the first systematic comparison of prompting-based and RL-based query augmentation and introduce a novel hybrid method OPQE that outperforms both approaches.
