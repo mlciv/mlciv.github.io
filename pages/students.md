@@ -14,10 +14,9 @@ header : no
 ## Undergraduate Reseachers
 * Masiko Mamba (Summer 2025 - ), BS in CS 
 * Cuong Huynh (Summer 2025 - ), BS in CS 
-* Nicholas Immenschuh (Summer 2025 - ), Honors College, BS in CS 
 * Ava Batson Perez(Fall 2025 - ), BS in CS
-* Tiffany Nguyen (Spring 2025 - ), Honors College, BS in CS, BA in Japanese
-* Nicholas Immenschuh (Summer 2025 - ), Honors College, BS in CS 
+* Tiffany Nguyen (Spring 2025 - Fall 2025), Honors College, BS in CS, BA in Japanese
+* Nicholas Immenschuh (Summer 2025), Honors College, BS in CS 
 
 ## External Student Collaborators
 I also work with students outside of OU, including:
