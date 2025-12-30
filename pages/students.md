@@ -21,4 +21,10 @@ header : no
 
 ## External Student Collaborators
 I also work with students outside of OU, including:
-* Jannatun Naim, University of Colorado Boulder. We work on educational discourse analysis.
+* Jannatun Naim, University of Colorado Boulder.
+* Zilong Li, University of Colorado Boulder.
+
+## Alumni
+
+Graduate:
+* Joshua Wiseman (M.S., 2025) -> Northrop Grumman
