@@ -20,6 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
+- 02/2026: Congratulations to Cuong and Masiko for receving Undergraduate Research Opportunities Program (UROP) fewllowship for Spring 2026!
 - 01/2026: Our paper on "Translation via Annotation: A Computational Study of Translating Classical Chinese into Japanese" got accepted to EACL'2026 Main Conference.
 - 11/2025: Thanks for Thinking Machines for the [Tinker Teaching Grant](https://thinkingmachines.ai/blog/tinker-research-and-teaching-grants/)! 
 - 11/2025: Invited Talk on "Decoding Classroom Dialogue: Discourse Analysis in STEM Education" at Rice University [Ken Kennedy Institute AI Seminar Series](https://events.rice.edu/event/ai-seminar-2025-cao)
