@@ -382,6 +382,18 @@ mark {
 .iconfont       { font-family: iconfont; }
 .iconfont-48    { font-size: 48px; }
 
+/* SVG-backed icon (keeps same .icon-*:before pattern) */
+.icon-acl:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask: url('../img/icons/acl.svg') no-repeat center / contain;
+  mask: url('../img/icons/acl.svg') no-repeat center / contain;
+  vertical-align: -0.125em;
+}
+
 
 [data-icon]:before { content: attr(data-icon); }
 

@@ -28,13 +28,16 @@
   class: icon-dblp
   title: ""
 
+- name: ACL Anthology
+  url: https://aclanthology.org/people/jie-cao/
+  class: icon-acl
+  title: ""
+
 - name: ORCID
   url: https://orcid.org/0000-0001-8268-954X
   class: icon-orcid
   title: ""
 
-
-#
 #- name: GitHub
 #  url: http://github.com/mlciv
 #  class: icon-github
