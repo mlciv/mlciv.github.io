@@ -28,7 +28,7 @@ My research is primarily focused on **Natural Language Processing** and **Machin
 ## Papers
 (See full list in [Google Scholar](https://scholar.google.com/citations?user=McBrjX4AAAAJ&hl=en))
 ### 2026
-{% bibliography --query @*[year=2025] %}
+{% bibliography --query @*[year=2026] %}
 ### 2025
 {% bibliography --query @*[year=2025] %}
 ### 2024
