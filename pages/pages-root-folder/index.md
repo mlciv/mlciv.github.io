@@ -10,12 +10,12 @@ permalink: /index.html
 ---
 
 Dr. Jie Cao is an Assistant Professor in the [School of Computer Science](https://www.ou.edu/coe/cs) at the
-University of Oklahoma, leading the OUNLP lab. I am also affiliated with the [Data Science and Analytics Institute](https://www.ou.edu/coe/dsai) at OU. Before joining OU, he spent two years as a post-doctoral researcher at the NSF AI Institute for Student-AI Teaming ([iSAT](https://www.colorado.edu/research/ai-institute/)) at the University of Colorado Boulder, where he mainly worked with <a href="https://home.cs.colorado.edu/~martin/">Dr. James Martin</a> and <a href="https://www.colorado.edu/faculty/palmer-martha/">Dr. Martha Palmer</a>. He obtained his Ph.D. from the <a href="https://cs.utah.edu/">Kahlert School of Computing</a> at the <a href="https://www.utah.edu">University of Utah</a>, where he worked with <a href="https://svivek.com">Dr. Vivek Srikumar</a>. Earlier in his academic journey, he completed his M.S. and B.S. in Computer Science at Huazhong University of Science of Technology~([HUST](https://english.hust.edu.cn/)) in China, and he has also worked/interned in industrial companies including Alibaba, Baidu, Sohu, WeChat(@Palo Alto), and Amazon, etc.
+University of Oklahoma, leading the OUNLP lab. I am also affiliated with the [Data Science and Analytics Institute](https://www.ou.edu/coe/dsai) and [TSET Health Promotion Research Center](https://healthpromotionresearch.org/) at OU. Before joining OU, he spent two years as a post-doctoral researcher at the NSF AI Institute for Student-AI Teaming ([iSAT](https://www.colorado.edu/research/ai-institute/)) at the University of Colorado Boulder, where he mainly worked with <a href="https://home.cs.colorado.edu/~martin/">Dr. James Martin</a> and <a href="https://www.colorado.edu/faculty/palmer-martha/">Dr. Martha Palmer</a>. He obtained his Ph.D. from the <a href="https://cs.utah.edu/">Kahlert School of Computing</a> at the <a href="https://www.utah.edu">University of Utah</a>, where he worked with <a href="https://svivek.com">Dr. Vivek Srikumar</a>. Earlier in his academic journey, he completed his M.S. and B.S. in Computer Science at Huazhong University of Science of Technology~([HUST](https://english.hust.edu.cn/)) in China, and he has also worked/interned in industrial companies including Alibaba, Baidu, Sohu, WeChat(@Palo Alto), and Amazon, etc.
 
 # Research Interests
 I work on **Natural Language Processing** and **Machine Learning**. Current research interests include:
-- Multi-party Multi-modal Dialogue/Discourse Analysis on Mental Health, Education, etc
-- LLM/MLLM Alignement and Agents, focusing on Domain Specific "World" Model and Human-AI Teaming, etc
+- Multi-party Multi-modal Dialogue/Discourse Analysis, and Human-AI Teaming~(e.g., Mental Health, Education, etc)
+- LLM/MLLM Alignement and Agents on Domain Specific "World" Model, AI for Science~(e.g., Hydrology, Material Science), etc
 - Efficient Structured Prediction and Symbolic Methods for Controlling and Augmenting Neural Networks
 - Robust Deployment, and Evaluation of Trustworthy AI
 
