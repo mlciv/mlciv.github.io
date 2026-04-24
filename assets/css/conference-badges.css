@@ -70,6 +70,9 @@
 .conference-badge.dissertation { background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%); }
 .conference-badge.phd { background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%); }
 
+/* Journals */
+.conference-badge.nature-machine-intelligence { background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%); }
+
 /* Two-column layout for publications */
 .bibliography {
   margin: 0.25rem 0;
