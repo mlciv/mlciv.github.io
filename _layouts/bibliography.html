@@ -77,7 +77,7 @@
     {% assign badge_class = 'l-s' %}
   {% elsif conference_type contains 'j. hydrol.' %}
     {% assign badge_class = 'j--hydrol-' %}
-  {% elsif conference_type contains 'nature machine intelligence' %}
+  {% elsif conference_type contains 'nature machine intelligence' or conference_type == 'nmi' or conference_type contains 'nat. mach. intell.' %}
     {% assign badge_class = 'nature-machine-intelligence' %}
   {% elsif conference_type contains 'iccv workshop' %}
     {% assign badge_class = 'iccv-workshop' %}
