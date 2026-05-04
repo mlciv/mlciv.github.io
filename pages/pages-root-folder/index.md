@@ -20,6 +20,8 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
+- 05/2026: Thanks for the kind computing credits support from Modal.com, [Modal](https://https://modal.com/).
+- 05/2026: Our proposal has been awarded by Association of Counselor Education and Supervision (ACES) 2026 Small Grants for Studies of AI-Client Simulations, [ACES](https://acesonline.net/).
 - 04/2026: Our paper on "LLM-Powered Multi-Agent Attacks on Cooperative Spectrum Sensing" is accepted to [ICCCN 2026](http://www.icccn.org/index.html).
 - 04/2026: Our paper on multimodal LLM for material science [MatterChat](https://www.nature.com/articles/s42256-026-01214-y) is accepted to Nature Machine Intelligence!
 - 02/2026: Congratulations to Cuong and Masiko for receving Undergraduate Research Opportunities Program (UROP) fellowship for Spring 2026!
