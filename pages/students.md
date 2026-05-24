@@ -20,10 +20,10 @@ header : no
 * Cuong Huynh (Summer 2025 - ), BS in CS 
 * Tiffany Nguyen (Spring 2025 - Fall 2025), Honors College, BS in CS, BA in Japanese
 * Ava Batson Perez (Fall 2025 - ), BS in CS
-* Sabrin R. Ahmed (Summer 2025 - ), BS in CS
 * Nicholas Immenschuh (Summer 2025), Honors College, BS in CS 
 * Santiago Leon Garavito (Spring 2026 - ), Honors College, BS in CS
 * Brendan Richards (Spring 2026 - ), Honors College, BS in CS
+* Sabrin R. Ahmed (Summer 2026 - ), BS in CS
 
 ## External Student Collaborators
 I also work with students outside of OU, including:
