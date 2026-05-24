@@ -9,8 +9,9 @@ header : no
 ## Graduate Students
 * Yiming Liu (Spring 2025 - ), PhD Student in CS 
 * Ziyue Zhang (Fall 2025 - ), PhD Student in DSA
-* David "Shane" Elliott (Fall 2023 - ; with OUNLP since Summer 2026), PhD Student in CS 
+* David "Shane" Elliott (with OUNLP since Summer 2026), PhD Student in CS 
 * Arman Radmanesh (Summer 2025 - ), MS Student in DSA
+* Bryan L. Tran (Summer 2026 - ), MS Student in CS
 * Abhinaya Deepika Peri (Spring 2026 - ), MS Student in DSA
 * Shreya Mattegunta(Spring 2026 - ), MS Student in DSA
 * Bryan L. Tran (Summer 2026 - ), MS Student in CS
