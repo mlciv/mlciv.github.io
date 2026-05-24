@@ -12,7 +12,7 @@ header : no
 * David "Shane" Elliott (with OUNLP since Summer 2026), PhD Student in CS 
 * Arman Radmanesh (Summer 2025 - ), MS Student in DSA
 * Abhinaya Deepika Peri (Spring 2026 - ), MS Student in DSA
-* Shreya Mattegunta(Spring 2026 - ), MS Student in DSA
+* Shreya Mattegunta (Spring 2026 - ), MS Student in DSA
 * Bryan L. Tran (Summer 2026 - ), MS Student in CS
 
 ## Undergraduate Reseachers
@@ -22,7 +22,7 @@ header : no
 * Ava Batson Perez (Fall 2025 - ), BS in CS
 * Sabrin R. Ahmed (Summer 2025 - ), BS in CS
 * Nicholas Immenschuh (Summer 2025), Honors College, BS in CS 
-* Santiago Leon Garavito(Spring 2026 - ), Honors College, BS in CS
+* Santiago Leon Garavito (Spring 2026 - ), Honors College, BS in CS
 * Brendan Richards (Spring 2026 - ), Honors College, BS in CS
 
 ## External Student Collaborators

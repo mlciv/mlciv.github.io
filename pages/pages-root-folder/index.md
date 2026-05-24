@@ -21,11 +21,11 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 
 # News  
 - 05/2026: A new [preprint](https://arxiv.org/abs/2605.17792v1) on "HydroAgent: Closing the Gap Between Frontier LLMs and Human Experts in Hydrologic Model Calibration via Simulator-Grounded RL"
-- 05/2026: Two collaborative projects funed by NSF ART: InTRO Scoping Translational Research ($15000 each). [ART Scoping](https://www.ou.edu/research-norman/centers-institutes/cross-cutting-foundations/art-translational-research/rfps).
+- 05/2026: Two collaborative projects funed by NSF ART: InTRO Scoping Translational Research ($15,000 each). [ART Scoping](https://www.ou.edu/research-norman/centers-institutes/cross-cutting-foundations/art-translational-research/rfps).
 - 05/2026: Congratulations to the Undergraduate Research Opportunities Program (UROP) awardees Brendan Richards, Cuong Huynh, and Santiago Leon for their undergraduate research fundings.
 - 05/2026: Congratulations to the Honors Research Apprenticeship Program (HRAP) awardees Nicholas Immenschuh and Addison Lin for their undergraduate research fundings.
 - 05/2026: Thanks for the kind computing credits support from Modal.com, [Modal](https://https://modal.com/).
-- 05/2026: Our proposal has been awarded by Association of Counselor Education and Supervision (ACES) 2026 Small Grants ($15000) for Studies of AI-Client Simulations, [ACES](https://acesonline.net/).
+- 05/2026: Our proposal has been awarded by Association of Counselor Education and Supervision (ACES) 2026 Small Grants ($15,000) for Studies of AI-Client Simulations, [ACES](https://acesonline.net/).
 - 04/2026: Our paper on "LLM-Powered Multi-Agent Attacks on Cooperative Spectrum Sensing" is accepted to [ICCCN 2026](http://www.icccn.org/index.html).
 - 04/2026: Our paper on multimodal LLM for material science [MatterChat](https://www.nature.com/articles/s42256-026-01214-y) is accepted to [Nature Machine Intelligence](https://www.nature.com/natmachintell/)!
 - 02/2026: Congratulations to Cuong and Masiko for receving Undergraduate Research Opportunities Program (UROP) fellowship for Spring 2026!
