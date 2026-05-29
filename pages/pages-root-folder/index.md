@@ -20,8 +20,9 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
+- 05/2026: Awarded ICAST seed grant for 20K [ICAST](https://www.ou.edu/icast/news-events/2026/icast-2026-seed-grant-opportunity).
 - 05/2026: A new [preprint](https://arxiv.org/abs/2605.17792v1) on "HydroAgent: Closing the Gap Between Frontier LLMs and Human Experts in Hydrologic Model Calibration via Simulator-Grounded RL"
-- 05/2026: Two collaborative projects funed by NSF ART: InTRO Scoping Translational Research ($15,000 each). [ART Scoping](https://www.ou.edu/research-norman/centers-institutes/cross-cutting-foundations/art-translational-research/rfps).
+- 05/2026: Two collaborative projects funed by NSF ART: InTRO Scoping Translational Research ($15K each). [ART Scoping](https://www.ou.edu/research-norman/centers-institutes/cross-cutting-foundations/art-translational-research/rfps).
 - 05/2026: Congratulations to the Undergraduate Research Opportunities Program (UROP) awardees Brendan Richards, Cuong Huynh, and Santiago Leon for their undergraduate research fundings.
 - 05/2026: Congratulations to the Honors Research Apprenticeship Program (HRAP) awardees Nicholas Immenschuh and Addison Lin for their undergraduate research fundings.
 - 05/2026: Thanks for the kind computing credits support from Modal.com, [Modal](https://https://modal.com/).
