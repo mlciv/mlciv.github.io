@@ -20,6 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
+- 06/2026: A paper on dialogue clarificaiton on dialogue discourse parsing has been accepted to [SIGDIAL 2026](https://2026.sigdial.org/). Congratulation to Yiming!
 - 05/2026: Awarded ICAST seed grant for 20K [ICAST](https://www.ou.edu/icast/news-events/2026/icast-2026-seed-grant-opportunity).
 - 05/2026: A new [preprint](https://arxiv.org/abs/2605.17792v1) on "HydroAgent: Closing the Gap Between Frontier LLMs and Human Experts in Hydrologic Model Calibration via Simulator-Grounded RL"
 - 05/2026: Two collaborative projects funed by NSF ART: InTRO Scoping Translational Research ($15K each). [ART Scoping](https://www.ou.edu/research-norman/centers-institutes/cross-cutting-foundations/art-translational-research/rfps).
@@ -99,4 +100,4 @@ Errors in Small Group Classroom Discourse" got accepted to
 # Academic Service
 - Standing Reviewer for Journals: [Computational Linguistics](https://submissions.cljournal.org/index.php/cljournal)
 - Area Chair for [ACL Rolling Review(ARR)](https://aclrollingreview.org/)
-- PC Member / Reviewer for Conferences and Workshops: ACL, EMNLP, NAACL, EACL, COLING, CoNLL, COLM, AAAI, ACL Rolling Review, AIED, EDM, [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA](https://aclanthology.org/venues/bea/), [NLP4ConvAI](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023), [Agent Skills](https://www.agentskills-workshop.org/)
+- PC Member / Reviewer for Conferences and Workshops: ACL, EMNLP, NAACL, SIGDIAL, EACL, COLING, CoNLL, COLM, AAAI, ACL Rolling Review, AIED, EDM, [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA](https://aclanthology.org/venues/bea/), [NLP4ConvAI](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023), [Agent Skills](https://www.agentskills-workshop.org/)
