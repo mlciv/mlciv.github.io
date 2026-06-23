@@ -20,6 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
+- 06/2026: Our paper ["Rethinking On-policy Optimization for Query Augmentation"](https://arxiv.org/abs/2510.17139) is accepted to [TMLR](https://openreview.net/forum?id=mmqbjhz5Br)!
 - 06/2026: A paper on dialogue clarificaiton on discourse parsing has been accepted to [SIGDIAL 2026](https://2026.sigdial.org/). Congratulations to Yiming!
 - 05/2026: Awarded ICAST seed grant for 20K [ICAST](https://www.ou.edu/icast/news-events/2026/icast-2026-seed-grant-opportunity).
 - 05/2026: A new [preprint](https://arxiv.org/abs/2605.17792v1) on "HydroAgent: Closing the Gap Between Frontier LLMs and Human Experts in Hydrologic Model Calibration via Simulator-Grounded RL"
