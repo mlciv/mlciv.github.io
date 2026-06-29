@@ -20,6 +20,7 @@ I work on **Natural Language Processing** and **Machine Learning**. Current rese
 - Robust Deployment, and Evaluation of Trustworthy AI
 
 # News  
+- 06/2026: Invited to serve as an NSF Review Panelist.
 - 06/2026: Our paper ["AI Agent for Hydrologic Modeling: Definition, Development and Application"](https://essopenarchive.org/doi/full/10.22541/essoar.176894821.13120988/v1) is accepted to [Geophysical Research Letters](https://agupubs.onlinelibrary.wiley.com/journal/19448007)!
 - 06/2026: Our paper ["Rethinking On-policy Optimization for Query Augmentation"](https://arxiv.org/abs/2510.17139) is accepted to [TMLR](https://openreview.net/forum?id=mmqbjhz5Br)!
 - 06/2026: A paper on dialogue clarificaiton on discourse parsing has been accepted to [SIGDIAL 2026](https://2026.sigdial.org/). Congratulations to Yiming!
