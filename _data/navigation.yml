@@ -20,12 +20,12 @@
   url: "/publications/"
   side: left
 
-- title: Students
-  url: "/students"
+- title: Lab
+  url: "https://ounlp.org/team/"
   side: left
 
 - title: Teaching
-  url: "/teaching/"
+  url: "https://ounlp.org/teaching/"
   side: left
 
 #
