@@ -38,10 +38,10 @@
   class: icon-orcid
   title: ""
 
-#- name: GitHub
-#  url: http://github.com/mlciv
-#  class: icon-github
-#  title: ""
+- name: GitHub
+  url: https://github.com/mlciv
+  class: icon-github
+  title: ""
 #
 #
 #- name: Twitter
