@@ -51,6 +51,7 @@
     shorttitle={EACL},
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2026.eacl-long.285/",
+    code = {https://github.com/shiryusann/KanbunKundoku},
     pages = "6031--6045",
     ISBN = "979-8-89176-380-7",
     abstract = "Ancient people translated classical Chinese into Japanese using a system of annotations placed around characters. We abstract this process as sequence tagging tasks and fit them into modern language technologies. The research on this annotation and translation system faces a low resource problem. We alleviate this problem by introducing an LLM-based annotation pipeline and constructing a new dataset from digitized open-source translation data. We show that in the low-resource setting, introducing auxiliary Chinese NLP tasks enhances the training of sequence tagging tasks. We also evaluate the performance of Large Language Models (LLMs) on this task. While they achieve high scores on direct machine translation, our method could serve as a supplement to LLMs to improve the quality of character{'}s annotation."
@@ -66,6 +67,7 @@
   year={2026},
   month={June},
   url={https://openreview.net/forum?id=mmqbjhz5Br},
+  code={https://github.com/BaleChen/RethinkQAug},
   abstract={Recent advances in large language models (LLMs) have led to a surge of interest in query augmentation for information retrieval (IR). Two main approaches have emerged. The first prompts LLMs to generate answers or pseudo-documents that serve as new queries, relying purely on the model's parametric knowledge or contextual information. The second applies reinforcement learning (RL) to fine-tune LLMs for query rewriting, directly optimizing retrieval metrics. While having respective advantages and limitations, the two approaches have not been compared under consistent experimental conditions. In this work, we present the first systematic comparison of prompting-based and RL-based query augmentation across diverse benchmarks, including evidence-seeking, ad hoc, and tool retrieval. Our key finding is that simple, training-free query augmentation often performs on par with, or even surpasses, more expensive RL-based counterparts, especially when using powerful LLMs. Motivated by this discovery, we introduce a novel hybrid method, On-policy Pseudo-document Query Expansion (OPQE), which, instead of rewriting a query, the LLM policy learns to generate a pseudo-document that maximizes retrieval performance, thus merging the flexibility and generative structure of prompting with the targeted optimization of RL. We show OPQE outperforms both standalone prompting and RL-based rewriting, demonstrating that a synergistic approach yields the best results. Our implementation is made available to facilitate reproducibility.}
 }
 
@@ -87,6 +89,7 @@
     address = "Suzhou, China",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2025.tsar-1.19/",
+    code = {https://github.com/ounlp/Multi-Round-Text-Simplifier},
     pages = "223--230",
     ISBN = "979-8-89176-176-6",
     abstract = "This paper describes the system submission of our team OUNLP to the TSAR-2025 shared task on readability-controlled text simplification. Based on the analysis of prompt-based text simplification methods, we discovered that simplification performance is highly related to the gap between the source CEFR level and the target CEFR level. Inspired by this finding, we propose two multi-round simplification methods generated via GPT-4o rule-based simplification (MRS-Rule) and jointly rule-based LLM simplification (MRS-Joint). Our submitted systems ranked 7th out of 20 teams. Later improvements with MRS-Joint show that taking the LLM simplified candidates as the starting point could further boost multi-round simplification performance."
@@ -155,6 +158,7 @@
   shorttitle = {Nat. Mach. Intell.},
   issn = {2522-5839},
   doi = {10.1038/s42256-026-01214-y},
+  code = {https://www.nature.com/articles/s42256-026-01214-y#code-availability},
   abstract = {Understanding and predicting the properties of inorganic materials is crucial for accelerating advancements in materials science and driving applications in energy, electronics and beyond. Integrating material structure data with language-based information through multimodal large language models (LLMs) offers great potential to support these efforts by enhancing human--artificial intelligence interaction. However, a key challenge lies in integrating
       atomic structures at full resolution into LLMs. In this work, we introduce MatterChat, a versatile structure-aware multimodal LLM that unifies material structural data and textual inputs into a single cohesive model. MatterChat uses a bridging module to effectively align a pretrained universal machine learning interatomic potential with a pretrained LLM, reducing training costs and enhancing flexibility. Our results demonstrate that MatterChat greatly improves performance in
           material property prediction and human--artificial intelligence interaction, surpassing general-purpose LLMs such as GPT-4. We also demonstrate its usefulness in applications such as more advanced scientific reasoning and step-by-step material synthesis.}
