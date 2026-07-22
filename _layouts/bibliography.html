@@ -2698,7 +2698,7 @@
     <a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">BibTeX</a>
     <div id="{{key}}-bibtex" style="display:none;">
     <pre class="collapse">{% assign bibtex_lines = entry.bibtex | split: '
-' %}{% assign filtered_lines = '' %}{% for line in bibtex_lines %}{% unless line contains 'shorttitle = {' %}{% assign filtered_lines = filtered_lines | append: line | append: '
+' %}{% assign filtered_lines = '' %}{% for line in bibtex_lines %}{% unless line contains 'shorttitle = {' or line contains 'code = {' %}{% assign filtered_lines = filtered_lines | append: line | append: '
 ' %}{% endunless %}{% endfor %}{{ filtered_lines }}</pre>
     </div>
 
@@ -2710,6 +2710,11 @@
     {% if entry.url %}
     &nbsp;|&nbsp;
     <a href="{{ entry.url }}">URL</a>
+    {% endif %}
+
+    {% if entry.code %}
+    &nbsp;|&nbsp;
+    <a href="{{ entry.code }}">Code</a>
     {% endif %}
 
     {% if links['slides.pdf'] %}
