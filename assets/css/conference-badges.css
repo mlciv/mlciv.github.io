@@ -4120,3 +4120,8 @@
     padding-top: 0;
   }
 }
+/* SIGDIAL - joins the Computational Linguistics (green) family */
+.conference-badge.sigdial { background: linear-gradient(135deg, #27ae60 0%, #229954 100%); }
+
+/* Hydrology / Earth Science (teal) - topic-based, applied via per-entry badge={hydro} regardless of venue */
+.conference-badge.hydro { background: linear-gradient(135deg, #16a085 0%, #117a65 100%); }

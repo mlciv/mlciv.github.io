@@ -2686,6 +2686,14 @@
   {% else %}
     {% assign badge_class = '' %}
   {% endif %}
+  {% comment %} SIGDIAL joins the CL (green) family {% endcomment %}
+  {% if conference_type contains 'sigdial' %}
+    {% assign badge_class = 'sigdial' %}
+  {% endif %}
+  {% comment %} per-entry topic override (e.g. badge={hydro}) beats the venue color {% endcomment %}
+  {% if entry.badge %}
+    {% assign badge_class = entry.badge %}
+  {% endif %}
   <span class="conference-badge {{ badge_class }}">{{ entry.shorttitle }}</span>
 {% endif %}
 </div>
@@ -2698,7 +2706,7 @@
     <a data-toggle="collapse" href="javascript:toggleDiv('{{key}}-bibtex')">BibTeX</a>
     <div id="{{key}}-bibtex" style="display:none;">
     <pre class="collapse">{% assign bibtex_lines = entry.bibtex | split: '
-' %}{% assign filtered_lines = '' %}{% for line in bibtex_lines %}{% unless line contains 'shorttitle = {' or line contains 'code = {' %}{% assign filtered_lines = filtered_lines | append: line | append: '
+' %}{% assign filtered_lines = '' %}{% for line in bibtex_lines %}{% unless line contains 'shorttitle = {' or line contains 'code = {' or line contains 'badge = {' %}{% assign filtered_lines = filtered_lines | append: line | append: '
 ' %}{% endunless %}{% endfor %}{{ filtered_lines }}</pre>
     </div>
 
