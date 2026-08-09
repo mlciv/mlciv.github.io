@@ -20,6 +20,7 @@ We advance **natural language processing** and **machine learning** toward trust
 - Robust deployment and evaluation of trustworthy AI
 
 # News  
+- 08/2026: Our paper ["A Hyperparameter Tuning Strategy for an LSTM Model to Simulate Reservoir Outflows: Large-Scale Evaluation across 441 Dams in the CONUS"](https://www.sciencedirect.com/science/article/pii/S0022169426013016) is accepted to [Journal of Hydrology](https://www.sciencedirect.com/journal/journal-of-hydrology)!
 - 06/2026: Invited to serve as an NSF Review Panelist.
 - 06/2026: Our paper ["AI Agent for Hydrologic Modeling: Definition, Development and Application"](https://essopenarchive.org/doi/full/10.22541/essoar.176894821.13120988/v1) is accepted to [Geophysical Research Letters](https://agupubs.onlinelibrary.wiley.com/journal/19448007)!
 - 06/2026: Our paper ["Rethinking On-policy Optimization for Query Augmentation"](https://arxiv.org/abs/2510.17139) is accepted to [TMLR](https://openreview.net/forum?id=mmqbjhz5Br)!
