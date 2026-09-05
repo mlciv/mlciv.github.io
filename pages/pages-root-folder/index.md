@@ -20,6 +20,7 @@ We advance **natural language processing** and **machine learning** toward trust
 - Robust deployment and evaluation of trustworthy AI
 
 # News  
+- 09/2026: Congratulations to Yiming on being awarded a STAR-D (Departmental Stimulation & Translation of Academic Research) mini-grant!
 - 08/2026: A new [preprint](https://arxiv.org/abs/2608.18473) on "A Locally Deployable Tool-Grounded LLM Multi-agent Framework for Automating Methane Emission Analysis and Reporting".
 - 08/2026: Our paper ["A Hyperparameter Tuning Strategy for an LSTM Model to Simulate Reservoir Outflows: Large-Scale Evaluation across 441 Dams in the CONUS"](https://www.sciencedirect.com/science/article/pii/S0022169426013016) is accepted to [Journal of Hydrology](https://www.sciencedirect.com/journal/journal-of-hydrology)!
 - 06/2026: Invited to serve as an NSF Review Panelist.
@@ -32,7 +33,7 @@ We advance **natural language processing** and **machine learning** toward trust
 - 05/2026: Congratulations to the Undergraduate Research Opportunities Program (UROP) awardees Brendan Richards, Cuong Huynh, and Santiago Leon for their undergraduate research fundings.
 - 05/2026: Congratulations to the Honors Research Apprenticeship Program (HRAP) awardees Nicholas Immenschuh and Addison Lin for their undergraduate research fundings.
 - 05/2026: Thanks for the kind computing credits support from Modal.com, [Modal](https://https://modal.com/).
-- 05/2026: Our proposal has been awarded by Association of Counselor Education and Supervision (ACES) 2026 Small Grants for Studies of AI-Client Simulations, [ACES](https://acesonline.net/).
+- 05/2026: Our proposal has been awarded by Association of Counselor Education and Supervision (ACES) 2026 Small Grants for Studies of AI-Client Simulations, [ACES](https://acesonline.net/aces-research-grant-news/).
 - 04/2026: Our paper on "LLM-Powered Multi-Agent Attacks on Cooperative Spectrum Sensing" is accepted to [ICCCN 2026](http://www.icccn.org/index.html).
 - 04/2026: Our paper on multimodal LLM for material science [MatterChat](https://www.nature.com/articles/s42256-026-01214-y) is accepted to [Nature Machine Intelligence](https://www.nature.com/natmachintell/)!
 - 02/2026: Congratulations to Cuong and Masiko for receving Undergraduate Research Opportunities Program (UROP) fellowship for Spring 2026!
