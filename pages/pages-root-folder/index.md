@@ -104,6 +104,6 @@ Errors in Small Group Classroom Discourse" got accepted to
 -->
 
 # Academic Service
-- Standing Reviewer for Journals: [Computational Linguistics](https://submissions.cljournal.org/index.php/cljournal)
+- Standing Reviewer for Journals: [Computational Linguistics](https://submissions.cljournal.org/index.php/cljournal), [Environmental Modelling & Software](https://www.sciencedirect.com/journal/environmental-modelling-and-software), [Geophysical Research Letters](https://agupubs.onlinelibrary.wiley.com/journal/19448007)
 - Area Chair for [ACL Rolling Review(ARR)](https://aclrollingreview.org/)
-- PC Member / Reviewer for Conferences and Workshops: ACL, EMNLP, NAACL, SIGDIAL, EACL, COLING, CoNLL, COLM, AAAI, ACL Rolling Review, AIED, EDM, [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA](https://aclanthology.org/venues/bea/), [NLP4ConvAI](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023), [Agent Skills](https://www.agentskills-workshop.org/)
+- PC Member / Reviewer for Conferences and Workshops: ACL, EMNLP, NAACL, SIGDIAL, EACL, COLING, CoNLL, COLM, AAAI, ICLR, ACL Rolling Review, AIED, EDM, [LAK](https://www.solaresearch.org/events/lak/), [MRP'2019](http://mrp.nlpl.eu/2019/), [BEA](https://aclanthology.org/venues/bea/), [NLP4ConvAI](https://www.aclweb.org/portal/content/call-papers-5th-workshop-nlp-conversational-ai), [AmericasNLP'23](https://turing.iimas.unam.mx/americasnlp/2023_st.html), [SLaTE'23](https://sites.google.com/view/slate2023), [Agent Skills](https://www.agentskills-workshop.org/)
