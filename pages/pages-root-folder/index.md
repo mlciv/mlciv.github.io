@@ -29,7 +29,7 @@ We advance **natural language processing** and **machine learning** toward trust
 - 06/2026: Our paper ["Beyond Supervised Clarification: Input Rewriting with LLMs for Dialogue Discourse Parsing"](https://arxiv.org/abs/2607.01964) has been accepted to [SIGDIAL 2026](https://2026.sigdial.org/). Congratulations to Yiming!
 - 05/2026: Awarded ICAST seed grant [ICAST](https://www.ou.edu/icast/news-events/2026/icast-2026-seed-grant-opportunity).
 - 05/2026: A new [preprint](https://arxiv.org/abs/2605.17792v1) on "HydroAgent: Closing the Gap Between Frontier LLMs and Human Experts in Hydrologic Model Calibration via Simulator-Grounded RL"
-- 05/2026: Two collaborative projects funed by NSF ART: InTRO Scoping Translational Research. [ART Scoping](https://www.ou.edu/research-norman/centers-institutes/cross-cutting-foundations/art-translational-research/rfps).
+- 05/2026: A collaborative project funded by NSF ART: InTRO Scoping Translational Research. [ART Scoping](https://www.ou.edu/research-norman/centers-institutes/cross-cutting-foundations/art-translational-research/rfps).
 - 05/2026: Congratulations to the Undergraduate Research Opportunities Program (UROP) awardees Brendan Richards, Cuong Huynh, and Santiago Leon for their undergraduate research fundings.
 - 05/2026: Congratulations to the Honors Research Apprenticeship Program (HRAP) awardees Nicholas Immenschuh and Addison Lin for their undergraduate research fundings.
 - 05/2026: Thanks for the kind computing credits support from Modal.com, [Modal](https://https://modal.com/).
