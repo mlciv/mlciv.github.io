@@ -20,6 +20,7 @@ We advance **natural language processing** and **machine learning** toward trust
 - Robust deployment and evaluation of trustworthy AI
 
 # News  
+- 09/2026: Our project was awarded a computing allocation through the [NAIRR Pilot](https://nairrpilot.org/)!
 - 09/2026: Congratulations to Yiming on being awarded a STAR-D (Departmental Stimulation & Translation of Academic Research) mini-grant!
 - 08/2026: A new [preprint](https://arxiv.org/abs/2608.18473) on "A Locally Deployable Tool-Grounded LLM Multi-agent Framework for Automating Methane Emission Analysis and Reporting".
 - 08/2026: Our paper ["A Hyperparameter Tuning Strategy for an LSTM Model to Simulate Reservoir Outflows: Large-Scale Evaluation across 441 Dams in the CONUS"](https://www.sciencedirect.com/science/article/pii/S0022169426013016) is accepted to [Journal of Hydrology](https://www.sciencedirect.com/journal/journal-of-hydrology)!
