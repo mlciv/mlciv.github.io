@@ -20,6 +20,7 @@ We advance **natural language processing** and **machine learning** toward trust
 - Robust deployment and evaluation of trustworthy AI
 
 # News  
+- 10/2026: One paper is accepted to [JMIR Mental Health](https://mental.jmir.org/)!
 - 09/2026: Our project "Input Rewriting for Dialog Act Tagging" was awarded a computing allocation through the [NAIRR Pilot](https://nairrpilot.org/)!
 - 09/2026: Congratulations to Yiming on being awarded a STAR-D (Departmental Stimulation & Translation of Academic Research) mini-grant!
 - 08/2026: A new [preprint](https://arxiv.org/abs/2608.18473) on "A Locally Deployable Tool-Grounded LLM Multi-agent Framework for Automating Methane Emission Analysis and Reporting".
