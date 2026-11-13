@@ -17,12 +17,3 @@ header : no
 - 2025: NSF ACCESS GPU credits — compute allocation for a proposal on small language models
 - 2025: [OU Alternative Textbook Grant](https://libraries.ou.edu/our-libraries/news/ou-libraries-awards-alternative-textbook-grants), OU Libraries — open course materials on LLMs and agentic AI
 
-## Honors & Awards
-- 2023: iSAT Trainee Grant
-- 2019: CoNLL Shared Task on Meaning Representation Parsing — 1st on AMR
-- 2019: DSTC7 — 2nd on Track 1
-- 2010: VMware Cloud Computing Innovation Cup — Top 50
-- 2009: Google Android Innovative Idea Sharing Award
-- 2007: *Computer World* Magazine Scholarship (50 students per year in China)
-- 2007: Microsoft Imagine Cup, Visual Gaming — Top 2 in China, Top 18 worldwide
-- 2006: HUST ACM Programming Contest — Top 3
